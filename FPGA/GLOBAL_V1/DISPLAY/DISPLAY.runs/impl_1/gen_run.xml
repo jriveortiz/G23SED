@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1733531508">
+  <File Type="ROUTE-PWR" Name="DISPLAY_PUNTOS_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="DISPLAY_PUNTOS.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="DISPLAY_PUNTOS_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="DISPLAY_PUNTOS_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="DISPLAY_PUNTOS.msk"/>
+  <File Type="ROUTE-CLK" Name="DISPLAY_PUNTOS_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="DISPLAY_PUNTOS.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="DISPLAY_PUNTOS_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="DISPLAY_PUNTOS.bit"/>
+  <File Type="BG-DRC" Name="DISPLAY_PUNTOS.drc"/>
+  <File Type="BG-BGN" Name="DISPLAY_PUNTOS.bgn"/>
+  <File Type="BG-BIN" Name="DISPLAY_PUNTOS.bin"/>
+  <File Type="BITSTR-RBT" Name="DISPLAY_PUNTOS.rbt"/>
+  <File Type="BITSTR-NKY" Name="DISPLAY_PUNTOS.nky"/>
+  <File Type="BITSTR-BMM" Name="DISPLAY_PUNTOS_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="DISPLAY_PUNTOS.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="DISPLAY_PUNTOS_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="DISPLAY_PUNTOS.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="DISPLAY_PUNTOS_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="DISPLAY_PUNTOS.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="DISPLAY_PUNTOS_boot.pdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="DISPLAY_PUNTOS.npi"/>
+  <File Type="OPT-DRC" Name="DISPLAY_PUNTOS_drc_opted.rpt"/>
+  <File Type="RBD_FILE" Name="DISPLAY_PUNTOS.rbd"/>
+  <File Type="OPT-HWDEF" Name="DISPLAY_PUNTOS.hwdef"/>
+  <File Type="PLACE-IO" Name="DISPLAY_PUNTOS_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="DISPLAY_PUNTOS_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="DISPLAY_PUNTOS_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="DISPLAY_PUNTOS_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="DISPLAY_PUNTOS_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="DISPLAY_PUNTOS_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="DISPLAY_PUNTOS_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="DISPLAY_PUNTOS_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="DISPLAY_PUNTOS_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="DISPLAY_PUNTOS_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="DISPLAY_PUNTOS_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="DISPLAY_PUNTOS_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="DISPLAY_PUNTOS_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="DISPLAY_PUNTOS_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="DISPLAY_PUNTOS_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="DISPLAY_PUNTOS_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="DISPLAY_PUNTOS_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="DISPLAY_PUNTOS_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="DISPLAY_PUNTOS_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="DISPLAY_PUNTOS_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="DISPLAY_PUNTOS_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="DISPLAY_PUNTOS_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="DISPLAY_PUNTOS_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="DISPLAY_PUNTOS_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="DISPLAY_PUNTOS_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="DISPLAY_PUNTOS_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="DISPLAY_PUNTOS_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="DISPLAY_PUNTOS_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="DISPLAY_PUNTOS_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="DISPLAY_PUNTOS_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="DISPLAY_PUNTOS_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="DISPLAY_PUNTOS_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="DISPLAY_PUNTOS_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="DISPLAY_PUNTOS_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="DISPLAY_PUNTOS.pdi"/>
+  <File Type="PL-PDI-FILE" Name="DISPLAY_PUNTOS_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="DISPLAY_PUNTOS.rcfi"/>
+  <File Type="CFI_FILE" Name="DISPLAY_PUNTOS.cfi"/>
+  <File Type="RNPI_FILE" Name="DISPLAY_PUNTOS.rnpi"/>
+  <File Type="ROUTE-RQS" Name="DISPLAY_PUNTOS_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="DISPLAY_PUNTOS_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/DECODER.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DECODER_LETRAS.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/n.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DIVISOR_HZ.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/unsigned_to_bcd.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FILTRO_LETRAS.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DISPLAY.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="DISPLAY_PUNTOS"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../LABORATORIO/digilent-xdc-master/Nexys-4-DDR-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1713206447"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
