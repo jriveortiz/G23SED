@@ -1,8 +1,8 @@
-#  Proyecto de integración FPGA + STM32F407
+#  Proyectos de FPGA y STM32F407
 
 ## Descripción 📖
 
-Este proyecto demuestra la integración entre un FPGA y un microcontrolador STM32F407 para realizar tratamiento de audio. Se implementaron funciones específicas en el FPGA utilizando VHDL, mientras que el STM32F407 se utilizó para [descripción de la funcionalidad del microcontrolador].
+Este repositorio trata el trabajo de una FPGA haciendo el juego del Yathzee y un microcontrolador STM32F407 para ---. Se implementaron funciones específicas en el FPGA utilizando VHDL, mientras que el STM32F407 se utilizó para ---.
 
 ## Características principales ✨
 
@@ -24,7 +24,7 @@ Este proyecto demuestra la integración entre un FPGA y un microcontrolador STM3
 - Vivado.
 - STM32CubeIDE.
 - IDE Playground.
-- Fusion 360.
+- draw.io.
 
 ## Instrucciones de instalación 🔧
 
@@ -54,7 +54,7 @@ Conecta los pines del FPGA y STM32 según el esquema incluido en la carpeta `doc
 ```plaintext
 ├── FPGA/
 │   ├── src/               # Archivos fuente para FPGA
-│   ├── constraints/       # Archivos de restricciones (pines)
+│   ├── GLOBAL/            # Archivos de proyecto FPGA Global
 │   └── bitstream/         # Binarios generados para el FPGA
 ├── STM32/
 │   ├── src/               # Código fuente para STM32
