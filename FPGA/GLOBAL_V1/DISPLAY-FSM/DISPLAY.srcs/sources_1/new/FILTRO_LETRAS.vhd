@@ -6,7 +6,7 @@ use work.tipos_personalizados.all;
 --use UNISIM.VComponents.all;
 
 entity FILTRO_LETRAS is
-    Port ( letras : in STD_LOGIC_VECTOR (3 downto 0);
+    Port ( letras : in STD_LOGIC_VECTOR (4 downto 0);
            segm_3 : out STD_LOGIC_VECTOR (6 downto 0);
            segm_4 : out STD_LOGIC_VECTOR (6 downto 0);
            segm_5 : out STD_LOGIC_VECTOR (6 downto 0);
@@ -22,31 +22,31 @@ begin
     --A, b, C, d, E, F, G, H, I, J, L, O, P, S, U y el '-' siempre en mayuscula
     --Tambien numeros del 1 al 9 como char en entrada
     case letras is
-        when "0000" => --INCIO
+        when "00000" => --INCIO
             caracter(7) <= 'H';
             caracter(6) <= 'O';
             caracter(5) <= 'L';
             caracter(4) <= 'A'; -- Asignar 'A' al índice 4
             caracter(3) <= '-'; -- Asignar '-' al índice 3
-        when "0001" => --ESTADO 1
+        when "00001" => --ESTADO 1
             caracter(7) <= 'I';
             caracter(6) <= 'H';
             caracter(5) <= 'I';
             caracter(4) <= 'C'; -- Asignar 'A' al índice 4
             caracter(3) <= '-';
-        when "1101" => -- ETAPA 2 - CASO JUGADORES
+        when "01101" => -- ETAPA 2 - CASO JUGADORES
             caracter(7) <= 'J';
             caracter(6) <= 'U';
             caracter(5) <= 'G';
             caracter(4) <= 'A'; -- Asignar 'A' al índice 4
             caracter(3) <= '-';
-        when "1110" => -- ETAPA 3
+        when "01110" => -- ETAPA 3
             caracter(7) <= '3';
             caracter(6) <= 'C';
             caracter(5) <= 'A';
             caracter(4) <= 'S'; -- Asignar 'A' al índice 4
             caracter(3) <= 'E';
-        when "1111"=> --INTERMITENTE
+        when "01111"=> --INTERMITENTE
             caracter(7) <= 'X';
             caracter(6) <= 'X';
             caracter(5) <= 'X';

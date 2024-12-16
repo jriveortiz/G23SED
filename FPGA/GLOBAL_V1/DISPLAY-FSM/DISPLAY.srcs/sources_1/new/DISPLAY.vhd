@@ -13,7 +13,7 @@ entity DISPLAY_PUNTOS is
         intermitente      : in STD_LOGIC;                          -- Reloj de entrada
         solo_letras : in std_logic; 
         puntos   : in unsigned(9 downto 0);               -- Puntos (10 bits)
-        letras   : in std_logic_vector(3 downto 0);       -- Letras (4 bits), proporcionadas por la FSM
+        letras   : in std_logic_vector(4 downto 0);       -- Letras (4 bits), proporcionadas por la FSM
         
         digictrl : out unsigned(7 downto 0);              -- Control de los dígitos (8 bits de salida)
         segmentos: out STD_LOGIC_VECTOR(6 downto 0)       -- Segmentos para la visualización de los dígitos (8 bits de salida)
@@ -43,7 +43,7 @@ UTB1: entity work.unsigned_to_bcd port map (CLK,puntos,centenas,decenas,unidades
 --DECODER DE LETRAS QUE ME DA 4 7 SEGEMENTOS CON EL NOMBRE
 --con lo anterior lleno el vector segmentos_vector (0 to 7)
 
-process(clk_util,intermitente)
+process(clk_util,intermitente,habilitador_display)
 begin
     if intermitente = '1' then
         segmentos <= (others => '0');
@@ -56,9 +56,13 @@ begin
         digisel <= rotate_left(digisel, 1); -- Actualiza digisel
         digictrl <= not(digisel); 
         
+        --Se encarga de apagar las seccion de puntuaciones
         if solo_letras = '1' then 
-        
+            digictrl(0) <= '1';
+            digictrl(1) <= '1';
+            digictrl(2) <= '1';  
         end if;
+        
         segmentos <= segmentos_vector(contador);
         
         if(contador = 7) then 
@@ -66,7 +70,11 @@ begin
         else 
             contador <= contador + 1;
         end if;
+    
+    elsif habilitador_display = '0' then
+        digictrl <= (others => '1');
     end if;
+    
 end process;
 
 D1: entity work.DECODER port map(unidades,solo_letras,segmentos_vector(0));
