@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+D:/Users/User/dados/dados.srcs/sim_1/new/lfsr.vhd,1734103238,vhdl,,,,tb_generador_lfsr,,,,,,,,
+D:/Users/User/dados/dados.srcs/sim_1/new/tb_generaciondados.vhd,1734375287,vhdl,,,,tb_generaciondados,,,,,,,,
+D:/Users/User/dados/dados.srcs/sources_1/new/generaciondados.vhd,1734378718,vhdl,,,,generaciondados,,,,,,,,
+D:/Users/User/dados/dados.srcs/sources_1/new/top.vhd,1734373299,vhdl,D:/Users/User/dados/dados.srcs/sources_1/new/generaciondados.vhd,,,generador_lfsr,,,,,,,,
+D:/Users/User/dados/dados.srcs/sources_1/new/types_pkg.vhd,1734280864,vhdl,D:/Users/User/dados/dados.srcs/sources_1/new/generaciondados.vhd,,,types_pkg,,,,,,,,
