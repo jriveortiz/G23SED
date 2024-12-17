@@ -24,6 +24,9 @@ architecture rtl of generaciondados is
     signal CE_prev : std_logic := '0'; -- Para detectar flanco de CE
     signal ready_i : std_logic := '0';
     signal actualizar_dados: std_logic := '0';
+    
+    signal ready_all : std_logic := '0'; -- Señal para indicar que todo está listo
+    signal rdy_pulse : std_logic := '0'; -- Pulso de un ciclo para rdy
 
     component Generador_LFSR is
     generic (
@@ -68,43 +71,43 @@ begin
     end process;
 
 
-    -- Proceso para actualizar los dados
+    -- Proceso para actualizar los dados y ready_flags
     process (clk, rst)
     begin
         if rst = '1' then
             dados_i <= (others => 0);  
             ready_flags <= (others => '0');  
-            ready_i <= '0';  
         elsif rising_edge(clk) then
             if actualizar_dados = '1' then 
                 for i in 0 to n_max-1 loop
                     if tirar_dados(i) = '1' then
                         dados_i(i) <= rnd_values(i);  
                     end if;
-                        ready_flags(i) <= '1';  
+                    ready_flags(i) <= '1';  -- Marcamos listo solo si se actualiza
                 end loop;
-            else
-                ready_flags <= (others => '0');  
+            else 
+                ready_flags <= (others => '0');
             end if;
         end if;
     end process;
 
-    -- Proceso para verificar si todos los dados están listos (pulso rdy)
-    process (ready_flags)
+    -- Proceso síncrono para evaluar si todos los ready_flags están listos
+    process (clk, rst)
     begin
-       
+        if rst = '1' then
+            ready_i <= '0';  -- Reset inicial
+        elsif rising_edge(clk) then
             ready_i <= '1';
-            
             for i in ready_flags'range loop
                 if ready_flags(i) /= '1' then
-                    ready_i <= '0'; 
+                    ready_i <= '0';-- Si algún flag no está listo, apaga ready_i
                 end if;
-             end loop;    
-       
+            end loop;
+        end if;
     end process;
 
-dados <= dados_i;
-rdy <= ready_i;
+    rdy <= ready_i; 
+    dados <= dados_i; 
 end architecture;
 
 

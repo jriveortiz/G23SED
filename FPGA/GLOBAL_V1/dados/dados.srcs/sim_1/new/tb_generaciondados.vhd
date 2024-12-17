@@ -101,9 +101,9 @@ begin
         CE <= '0';
         wait for clk_period * 3;
 
-        -- Caso adicional: Comprobar que la señal 'rdy' se mantiene activa hasta el siguiente flanco de 'CE'
+        -- Caso adicional: Comprobar que la señal 'rdy' manda un pulso y los dados anteriores
         CE <= '1';
-        wait for clk_period * 10; -- Comprobamos la activación de 'rdy'
+        wait for clk_period * 10; 
         CE <= '0';
         wait for clk_period * 2;
         
