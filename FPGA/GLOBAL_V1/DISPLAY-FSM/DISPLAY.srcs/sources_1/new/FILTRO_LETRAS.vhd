@@ -1,12 +1,14 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use work.tipos_personalizados.all;
+use work.types_pkg.all;
 --use IEEE.NUMERIC_STD.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
 entity FILTRO_LETRAS is
     Port ( letras : in STD_LOGIC_VECTOR (4 downto 0);
+           dados: in integer_vector(4 downto 0);
            segm_3 : out STD_LOGIC_VECTOR (6 downto 0);
            segm_4 : out STD_LOGIC_VECTOR (6 downto 0);
            segm_5 : out STD_LOGIC_VECTOR (6 downto 0);

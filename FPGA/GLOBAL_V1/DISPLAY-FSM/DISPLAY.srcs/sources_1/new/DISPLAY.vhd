@@ -2,6 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use work.tipos_personalizados.all;
+use work.types_pkg.all;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
@@ -14,7 +15,7 @@ entity DISPLAY_PUNTOS is
         solo_letras : in std_logic; 
         puntos   : in unsigned(9 downto 0);               -- Puntos (10 bits)
         letras   : in std_logic_vector(4 downto 0);       -- Letras (4 bits), proporcionadas por la FSM
-        
+        dados: in integer_vector(4 downto 0);
         digictrl : out unsigned(7 downto 0);              -- Control de los dígitos (8 bits de salida)
         segmentos: out STD_LOGIC_VECTOR(6 downto 0)       -- Segmentos para la visualización de los dígitos (8 bits de salida)
     );
