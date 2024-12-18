@@ -22,15 +22,15 @@ signal char_dados : string(1 to 6) := "123456";
 begin
 process(letras)
 begin
-    --A, b, C, d, E, F, G, H, I, J, L, O, P, S, U y el '-' siempre en mayuscula
+    --A, b, C, d, E, F, G, H, I, J, L, n, O, P, S, U y el '-' siempre en mayuscula
     --Tambien numeros del 1 al 9 como char en entrada
     case letras is
         when 1 => --INCIO
-            caracter(7) <= 'H';
-            caracter(6) <= 'O';
-            caracter(5) <= 'L';
-            caracter(4) <= 'A'; -- Asignar 'A' al índice 4
-            caracter(3) <= '-'; -- Asignar '-' al índice 3
+            caracter(7) <= '4';
+            caracter(6) <= 'A';
+            caracter(5) <= 'H';
+            caracter(4) <= '7'; -- Asignar 'A' al índice 4
+            caracter(3) <= 'T'; -- Asignar '-' al índice 3
         when 2 => --ESTADO 1
             caracter(7) <= 'I';
             caracter(6) <= 'H';
