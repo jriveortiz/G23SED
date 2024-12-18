@@ -20,7 +20,7 @@ entity FSM is
         boton_enter: in std_logic;
         
         habilitador_display: out std_logic;
-        letras   : out std_logic_vector(4 downto 0);       -- Letras (4 bits), proporcionadas por la FSM
+        letras : out integer range 0 to 32;       -- Letras (4 bits), proporcionadas por la FSM
         intermitente: out STD_LOGIC;
         habilitador_num: out STD_LOGIC;
         dados_conservar: out std_logic_vector(4 downto 0);
@@ -49,15 +49,16 @@ begin
     --etapa <= etapa mod 9;
     case etapa is
         when 1 => --INCIO
-            letras <= "00000";--CASO HOLA EN FILTRO LETRAS
-            habilitador_num <= '0';--solo muestra los primeros 5 displays
+            --yahtzee
+            letras <= 0;
+            habilitador_num <= '1';--solo muestra los primeros 5 displays
             -- ENTER PARA PASAR AL SIGUIENTE ESTADO
             if boton_enter = '1' then
                 etapa <= 2;
             end if; 
         
         when 2 =>--JUGADORES en caso de querer meter mas de 2 jugadores
-            letras <= "01110";--Numero 14 
+            letras <= 17;
             jugadores(1) <= (others =>'0'); 
             jugadores(2) <= (others =>'0'); 
             --Necesitamos que este estado "puntuaciones" muestre 2
@@ -67,12 +68,13 @@ begin
                 etapa <= 3;
             end if;
             
-        when 3 =>--defino ciclos pero antes digo en que turno estoy
+        when 3 =>--CAMBIA TURNOS
+        --defino ciclos pero antes digo en que turno estoy
             --DISPLAY --> Turn- "NUMERO DE TURNO"
-            letras <= "01111";--Numero 15 
+           
             --salida de contador puntos (n_turno salida)
             --n_turno <= contador_turnos;
-            habilitador_num <= '1';
+            
             
             --Como he declarado el valor incial 2 cuando empiece pasará por jugador 1
             --en el primer turno
@@ -82,17 +84,20 @@ begin
             else 
                 indice_jugador <= 2;
             end if; 
-            
-            
+            etapa <= 4;
             -- buscar manera de ir sumando y restando con up y down
             --señal a sumar uno para el contador (tenemos que crear contador)
             --señal de contador como entrada a puntuaciones y este caso "letras" mostrar el turn 
             
-            if boton_enter = '1' then
-                etapa <= 4;
-            end if;
+        when 4 =>    
+             letras <= 15;--JUGADOR NUMERO
+             habilitador_num <= '1';
+             
+             if boton_enter = '1' then
+                etapa <= 5;
+             end if;
         
-        when 4 =>--Lanzamiento de dados no enclavados
+        when 5 =>--Lanzamiento de dados no enclavados
             --letras de 1 a 13 en binario para los casos
             --O 1 depende de si 1 o 0 activa o desactiva el genrador de num aleatorio
             --dados_conservar <= "00000";
@@ -185,7 +190,12 @@ begin
             if boton_enter = '1' then
                 etapa <=1 ;
             end if;
-        end case; 
+        
+        when others =>
+            etapa <=0;
+        
+        end case;
+             
 end process;    
 --etapa 2 numero de jugadores???
 --etapa 3 dice el turno en el que estamos

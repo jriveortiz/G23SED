@@ -10,11 +10,11 @@ use work.types_pkg.all;
 entity DISPLAY_PUNTOS is
     Port (
         CLK      : in STD_LOGIC;                          -- Reloj de entrada
-        habilitador_display: in std_logic;
-        intermitente      : in STD_LOGIC;                          -- Reloj de entrada
+        habilitador_display : in std_logic;
+        intermitente : in STD_LOGIC;                          -- Reloj de entrada
         solo_letras : in std_logic; 
-        puntos   : in unsigned(9 downto 0);               -- Puntos (10 bits)
-        letras   : in std_logic_vector(4 downto 0);       -- Letras (4 bits), proporcionadas por la FSM
+        puntos : in unsigned(9 downto 0);               -- Puntos (10 bits)
+        letras : in integer range 0 to 32;
         dados: in integer_vector(4 downto 0);
         digictrl : out unsigned(7 downto 0);              -- Control de los dígitos (8 bits de salida)
         segmentos: out STD_LOGIC_VECTOR(6 downto 0)       -- Segmentos para la visualización de los dígitos (8 bits de salida)
@@ -81,7 +81,7 @@ end process;
 D1: entity work.DECODER port map(unidades,solo_letras,segmentos_vector(0));
 D2: entity work.DECODER port map(decenas,solo_letras,segmentos_vector(1));
 D3: entity work.DECODER port map(centenas,solo_letras,segmentos_vector(2));
-D4: entity work.FILTRO_LETRAS port map(letras,segmentos_vector(3),segmentos_vector(4),segmentos_vector(5),segmentos_vector(6),segmentos_vector(7));
+D4: entity work.FILTRO_LETRAS port map(letras,dados,segmentos_vector(3),segmentos_vector(4),segmentos_vector(5),segmentos_vector(6),segmentos_vector(7));
 
 
 

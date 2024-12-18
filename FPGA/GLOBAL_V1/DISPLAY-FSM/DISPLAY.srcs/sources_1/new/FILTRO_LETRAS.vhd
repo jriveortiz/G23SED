@@ -7,7 +7,7 @@ use work.types_pkg.all;
 --use UNISIM.VComponents.all;
 
 entity FILTRO_LETRAS is
-    Port ( letras : in STD_LOGIC_VECTOR (4 downto 0);
+    Port ( letras : in integer range 0 to 32;
            dados: in integer_vector(4 downto 0);
            segm_3 : out STD_LOGIC_VECTOR (6 downto 0);
            segm_4 : out STD_LOGIC_VECTOR (6 downto 0);
@@ -18,42 +18,50 @@ end FILTRO_LETRAS;
 
 architecture Behavioral of FILTRO_LETRAS is
 signal caracter: caracter_vector;
+signal char_dados : string(1 to 6) := "123456";
 begin
 process(letras)
 begin
     --A, b, C, d, E, F, G, H, I, J, L, O, P, S, U y el '-' siempre en mayuscula
     --Tambien numeros del 1 al 9 como char en entrada
     case letras is
-        when "00000" => --INCIO
+        when 1 => --INCIO
             caracter(7) <= 'H';
             caracter(6) <= 'O';
             caracter(5) <= 'L';
             caracter(4) <= 'A'; -- Asignar 'A' al índice 4
             caracter(3) <= '-'; -- Asignar '-' al índice 3
-        when "00001" => --ESTADO 1
+        when 2 => --ESTADO 1
             caracter(7) <= 'I';
             caracter(6) <= 'H';
             caracter(5) <= 'I';
             caracter(4) <= 'C'; -- Asignar 'A' al índice 4
             caracter(3) <= '-';
-        when "01101" => -- ETAPA 2 - CASO JUGADORES
+        when 3 => -- ETAPA 2 - CASO JUGADORES
             caracter(7) <= 'J';
             caracter(6) <= 'U';
             caracter(5) <= 'G';
             caracter(4) <= 'A'; -- Asignar 'A' al índice 4
             caracter(3) <= '-';
-        when "01110" => -- ETAPA 3
+        when 4 => -- ETAPA 3
             caracter(7) <= '3';
             caracter(6) <= 'C';
             caracter(5) <= 'A';
             caracter(4) <= 'S'; -- Asignar 'A' al índice 4
             caracter(3) <= 'E';
-        when "01111"=> --INTERMITENTE
+        when 5 => --INTERMITENTE
             caracter(7) <= 'X';
             caracter(6) <= 'X';
             caracter(5) <= 'X';
             caracter(4) <= 'X'; -- Asignar 'A' al índice 4
             caracter(3) <= 'X';
+        when 16 =>
+            caracter(7) <= char_dados(dados(4));
+            caracter(6) <= char_dados(dados(3));
+            caracter(5) <= char_dados(dados(2));
+            caracter(4) <= char_dados(dados(1));
+            caracter(3) <= char_dados(dados(0));
+   
         when others=>
             caracter(7) <= 'X';
             caracter(6) <= 'X';

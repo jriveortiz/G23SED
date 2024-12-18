@@ -25,9 +25,11 @@ begin
             when 'I' => segments <= "1001111"; -- I
             when 'J' => segments <= "1000011"; -- J
             when 'L' => segments <= "1110001"; -- L
+            when 'N' => segments <= "1101010"; -- N
             when 'O' => segments <= "0000001"; -- O
             when 'P' => segments <= "0011000"; -- P
             when 'S' => segments <= "0100100"; -- S
+            when 'T' => segments <= "0111111"; -- guion alto
             when 'U' => segments <= "1000001"; -- U
             when '-' => segments <= "1111110"; -- Guion (-)
             -- Caso por defecto (no reconocido)
