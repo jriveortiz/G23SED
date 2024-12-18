@@ -19,12 +19,15 @@ entity FSM is
         boton_abajo: in std_logic;
         boton_enter: in std_logic;
         
+        habilitador_dados: out std_logic;
         habilitador_display: out std_logic;
         letras : out integer range 0 to 32;       -- Letras (4 bits), proporcionadas por la FSM
         intermitente: out STD_LOGIC;
         habilitador_num: out STD_LOGIC;
-        dados_conservar: out std_logic_vector(4 downto 0);
-        suma_al_total: out std_logic
+        tirar_dados: out std_logic_vector(4 downto 0);
+        --esto va con un multiplexor a la salida de cada puntuación
+        jugador_n: out std_logic-- '0' para jugador 1 y '1' para jugador 2 
+        --suma_al_total: out std_logic
 );
 end FSM;
 
@@ -35,179 +38,206 @@ architecture Behavioral of FSM is
 signal etapa: integer range 1 to 10:=1;
 signal n_jugadores: integer range 1 to 10:=2;--Si introducimos mas jugadores empezaría en 1
 signal caso_punto: integer range 1 to 13:=1;
-signal contador_dado: integer range 1 to 4:=1;
-signal contador_turnos: integer range 1 to 30:=1;
+signal contador_dado: integer range 0 to 2:=0;
+signal contador_turnos: integer range 1 to 30:=0;
 signal jugadores: jugadores_2;
 signal indice_jugador: integer range 1 to 2:=2;
+
 --signal jugador_1: std_logic_vector(13 downto 1);
 --signal jugador_2: std_logic_vector(13 downto 1);
 begin
 --etapa 1 saludo
-process(clk,etapa)
-
+process(clk,etapa,reset)
+variable flag_sw: std_logic;
 begin
     --etapa <= etapa mod 9;
-    case etapa is
-        when 1 => --INCIO
-            --yahtzee
-            letras <= 0;
-            habilitador_num <= '1';--solo muestra los primeros 5 displays
-            -- ENTER PARA PASAR AL SIGUIENTE ESTADO
-            if boton_enter = '1' then
-                etapa <= 2;
-            end if; 
-        
-        when 2 =>--JUGADORES en caso de querer meter mas de 2 jugadores
-            letras <= 17;
-            jugadores(1) <= (others =>'0'); 
-            jugadores(2) <= (others =>'0'); 
-            --Necesitamos que este estado "puntuaciones" muestre 2
-            habilitador_num <= '1';
-            --pasamos al siguiente estado
-            if boton_enter = '1' then
-                etapa <= 3;
-            end if;
+    if reset = '1' then
+        etapa<= 1;
+    
+    elsif rising_edge (clk) then 
+        case etapa is
+            when 1 => --INICIO
+                --yahtzee
+                letras <= 0;
+                habilitador_num <= '1';--solo muestra los primeros 5 displays
+                -- ENTER PARA PASAR AL SIGUIENTE ESTADO
+                if boton_enter = '1' then
+                    etapa <= 2;
+                end if; 
             
-        when 3 =>--CAMBIA TURNOS
-        --defino ciclos pero antes digo en que turno estoy
-            --DISPLAY --> Turn- "NUMERO DE TURNO"
-           
-            --salida de contador puntos (n_turno salida)
-            --n_turno <= contador_turnos;
+            when 2 =>--JUGADORES en caso de querer meter mas de 2 jugadores
+                letras <= 17;
+                --Reset al resgistro de turno de los jugadores
+                jugadores(1) <= (others =>'0'); 
+                jugadores(2) <= (others =>'0'); 
+                --Necesitamos que este estado "puntuaciones" muestre 2
+                habilitador_num <= '1';
+                --pasamos al siguiente estado
+                if boton_enter = '1' then
+                    etapa <= 3;
+                end if;
+                
+            when 3 =>--CAMBIA JUGADORES   
+                if indice_jugador = 2 then 
+                    indice_jugador <= 1;
+                    jugador_n <= '0';
+                else 
+                    indice_jugador <= 2;
+                    jugador_n <= '1';
+                end if; 
+                etapa <= 4;
             
-            
-            --Como he declarado el valor incial 2 cuando empiece pasará por jugador 1
-            --en el primer turno
-            
-            if indice_jugador = 2 then 
-                indice_jugador <= 1;
-            else 
-                indice_jugador <= 2;
-            end if; 
-            etapa <= 4;
-            -- buscar manera de ir sumando y restando con up y down
-            --señal a sumar uno para el contador (tenemos que crear contador)
-            --señal de contador como entrada a puntuaciones y este caso "letras" mostrar el turn 
-            
-        when 4 =>    
-             letras <= 15;--JUGADOR NUMERO
-             habilitador_num <= '1';
-             
-             if boton_enter = '1' then
+            when 4 =>-- SUMA 1 A TURNOS CUANDO PASA POR JP1 
+                if indice_jugador = 1 then
+                    contador_turnos <= contador_turnos + 1;-- enable al contador    
+                end if;
                 etapa <= 5;
-             end if;
-        
-        when 5 =>--Lanzamiento de dados no enclavados
-            --letras de 1 a 13 en binario para los casos
-            --O 1 depende de si 1 o 0 activa o desactiva el genrador de num aleatorio
-            --dados_conservar <= "00000";
-            for i in 0 to 4 loop
-                if sw_enclave(i) = '1' then 
-                    dados_conservar(i)<= '1';
-                else
-                    dados_conservar(i)<= '0';    
-                end if;
-            end loop;
-            contador_dado<= contador_dado+1;
-            etapa <= 5;
-         
-         when 5 => --Confirma que se hagan las 3 tiradas
-            --Mostrar en letras cada una de los dados y con eso se relanza dados
-            letras <= "10000";--Numero 16 
-            habilitador_num <= '1';
-            
-            if boton_enter = '1' and dados_listos = '1' then
-                if contador_dado = 3 then
+                
+            when 5 =>--MUESTRA TUNN - N
+                habilitador_num<= '1';
+                letras <= 18;-- "Turn-"
+                
+                 if boton_enter = '1' then
+                    etapa <= 5;
+                 end if;
+                
+            when 6 =>    
+                 habilitador_num<= '0';
+                 
+                 if indice_jugador = 1 then 
+                    letras <= 19;--poner jugador 1 ->JP-1
+                 elsif indice_jugador = 2 then 
+                    letras <= 20;--poner jugador 2->JP-2
+                 end if;
+                              
+                 if boton_enter = '1' then
+                    etapa <= 5;
+                 end if;
+            when 5 =>
+                letras <= 21;--DADOS
+                habilitador_num<= '0';
+                
+                if boton_enter = '1' then
                     etapa <= 6;
-                    contador_dado<= 0;
-                else
-                    etapa<=4;
-                end if;         
-            end if; 
-        
-        when 6 =>--DESGINA EL CASO A PUNTUACION Y PANTALLA
-            habilitador_num <= '1';
-            --Hago la transformación porque coinciden "caso_punto" con "letras"
-            letras <= std_logic_vector (to_unsigned(caso_punto,5));
-            
-            if puntuacion_listos = '1' then 
-                if boton_arriba = '1' then
-                    caso_punto <= caso_punto + 1;
-                    if jugadores(indice_jugador)(caso_punto) = '1' then 
-                        caso_punto <= caso_punto + 1;    
-                    end if;
-                    if caso_punto > 13 then
-                        caso_punto <= 0;
-                    end if;
-                
-                elsif boton_abajo = '1' then 
-                    caso_punto <= caso_punto - 1;
-                    if jugadores(indice_jugador)(caso_punto) = '1' then 
-                        caso_punto <= caso_punto - 1;    
-                    end if;
-                    if caso_punto < 1 then
-                        caso_punto <= 13;
-                    end if;
-                
-                elsif boton_enter = '1' then
-                    --señal para agregar ese dato de ptos al los puntos del jugador
-                    suma_al_total <= '1';
-                    jugadores(indice_jugador)(caso_punto) <= '1' ;
-                    contador_turnos <= contador_turnos + 1; 
-                    if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
-                        etapa <= 7;
-                    else
-                        etapa <= 3;
-                    end if; 
-              
                 end if;
-            end if;
-        
-        when 7 => -- MUESTRA PUNTOS JUGADOR 1
-            letras <= "10001";--Numero 17 JUG1- puntos 
-            habilitador_num <= '1'; 
-            if boton_enter = '1' then
-                etapa <=8 ;
-            end if;
-        
-        when 8 =>
-            letras <= "10010";--Numero 17 JUG2- puntos
-            habilitador_num <= '1'; 
-            if boton_enter = '1' then
-                etapa <=9 ;
-            end if;
-        
-        when 9 =>
-            letras <= "10011";--FIN
-            habilitador_num <= '0'; 
-            if boton_enter = '1' then
-                etapa <=10 ;
-            end if;
-        
-        when 10 =>
-            letras <= "10100";--REINICIAR
-             habilitador_num <= '0'; 
-            if boton_enter = '1' then
-                etapa <=1 ;
-            end if;
-        
-        when others =>
-            etapa <=0;
-        
-        end case;
+                
+            when 6 =>--Lanzamiento de dados no enclavados
+                for i in 0 to 4 loop
+                    if sw_enclave(i) = '1' then 
+                        tirar_dados(i)<= '0';
+                    else
+                        tirar_dados(i)<= '1';    
+                    end if;
+                end loop;
+                
+                habilitador_num <= '0';
+                habilitador_dados <= '1';--TIRA LOS DADOS
+                
+                contador_dado<= contador_dado+1;
+                etapa <= 7;
              
+             when 7 => --Confirma que se hagan las 3 tiradas
+                --Mostrar en letras cada una de los dados y con eso se relanza dados
+                habilitador_dados <= '0';
+                letras <= 22;--MOSTRAS 5 DADOS
+                habilitador_num <= '0';
+                
+                --and dados_listos = '1' hasta que a jorge se le salga del culo arreglarlo
+                if boton_enter = '1' then
+                    if contador_dado = 2 then
+                        etapa <= 6;
+                        contador_dado<= 0;
+                    else
+                        etapa<=8;
+                    end if;         
+                end if; 
+            
+            when 8 =>
+                flag_sw:= '0';
+                for i in 0 to 4 loop
+                    if sw_enclave(i) = '1' then
+                        flag_sw:= '1';        
+                    end if;
+                end loop;
+                
+                if flag_sw = '1' then 
+                    intermitente <= '1';
+                else
+                    etapa <= 9;       
+                end if;
+                
+            when 9 =>--DESGINA EL CASO A PUNTUACION Y PANTALLA
+                habilitador_num <= '1';
+                --Hago la transformación porque coinciden "caso_punto" con "letras"
+                letras <=caso_punto;
+                
+                if puntuacion_listos = '1' then 
+                    if boton_arriba = '1' then
+                        caso_punto <= caso_punto + 1;
+                        if jugadores(indice_jugador)(caso_punto) = '1' then 
+                            caso_punto <= caso_punto + 1;    
+                        end if;
+                        if caso_punto > 13 then
+                            caso_punto <= 1;
+                        end if;
+                    
+                    elsif boton_abajo = '1' then 
+                        caso_punto <= caso_punto - 1;
+                        if jugadores(indice_jugador)(caso_punto) = '1' then 
+                            caso_punto <= caso_punto - 1;    
+                        end if;
+                        if caso_punto < 1 then
+                            caso_punto <= 13;
+                        end if;
+                    
+                    elsif boton_enter = '1' then
+                        --señal para agregar ese dato de ptos al los puntos del jugador
+                        --suma_al_total <= '1';
+                        jugadores(indice_jugador)(caso_punto) <= '1' ;
+                        --contador_turnos <= contador_turnos + 1; 
+                        if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
+                            etapa <= 10;
+                        else
+                            etapa <= 3;
+                        end if; 
+                  
+                    end if;
+                end if;
+            
+            when 10 => -- MUESTRA PUNTOS JUGADOR 1
+                --NECESITAMOS UNA FORMA DE DIFERENCIAR LOS ESTADOS FINALES DE CADA JUGADOR
+                -- PARA ESTAPA 10 Y 11
+                letras <= 23;--P-FIN
+                habilitador_num <= '1'; 
+                if boton_enter = '1' then
+                    etapa <= 11 ;
+                end if;
+            
+            when 11 =>
+                letras <= 23;--P-FIN
+                habilitador_num <= '1'; 
+                if boton_enter = '1' then
+                    etapa <= 12 ;
+                end if;
+            
+            when 12 =>
+                letras <= 24;--FIN
+                habilitador_num <= '0'; 
+                if boton_enter = '1' then
+                    etapa <= 13;
+                end if;
+            
+            when 13 =>
+                letras <= 25;--REINICIAR-->BEGIN
+                habilitador_num <= '0'; 
+                if boton_enter = '1' then
+                    etapa <=1;
+                end if;
+            
+            when others =>
+                etapa <=1;
+            
+            end case;
+    end if;
 end process;    
---etapa 2 numero de jugadores???
---etapa 3 dice el turno en el que estamos
---etapa 4 tirar dados
-
---etapa 3 define ciclo de 13 casos hasta completar todos los casos de juego
---etapa 4 => ciclo 3 tiradas 5 dados
---etapa 5 => 
-    --suma de puntos, muestra los nombres de cada etapa y los puntos que ganaríamos
-    --tambien hay que tener en cuanta que si el estado ya ha sido usado y no volver a pasar por ahi
---etapa 6 muestra puntos totales de cada jugador???
---etapa 7 gracias por jugar
---etapa 8 reiniciar
-
 end Behavioral;

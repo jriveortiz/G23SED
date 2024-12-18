@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Mon Dec 16 16:15:26 2024
-# Process ID: 27044
+# Start of session at: Wed Dec 18 12:25:50 2024
+# Process ID: 19056
 # Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29100 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8948 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.xpr
 # Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/vivado.log
 # Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM\vivado.jou
 # Running On        :LAPTOP-I6E0CIJ5
@@ -19,7 +19,7 @@
 # Host memory       :8467 MB
 # Swap memory       :1997 MB
 # Total Virtual     :10464 MB
-# Available Virtual :2575 MB
+# Available Virtual :3201 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/DISPLAY.xpr
