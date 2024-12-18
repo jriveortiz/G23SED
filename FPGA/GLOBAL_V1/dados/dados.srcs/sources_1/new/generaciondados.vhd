@@ -25,8 +25,6 @@ architecture rtl of generaciondados is
     signal ready_i : std_logic := '0';
     signal actualizar_dados: std_logic := '0';
     
-    signal ready_all : std_logic := '0'; -- Señal para indicar que todo está listo
-    signal rdy_pulse : std_logic := '0'; -- Pulso de un ciclo para rdy
 
     component Generador_LFSR is
     generic (
