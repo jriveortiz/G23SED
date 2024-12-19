@@ -4,7 +4,11 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
+<<<<<<< HEAD
 <Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.xpr">
+=======
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.xpr">
+>>>>>>> df68f9908294cd50dedead341d37b2d70d9cd0e5
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3c8a9afd64e3412e9958448a3dcc207b"/>

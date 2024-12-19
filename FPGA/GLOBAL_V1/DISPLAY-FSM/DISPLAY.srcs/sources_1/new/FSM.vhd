@@ -25,6 +25,7 @@ entity FSM is
         intermitente: out STD_LOGIC;
         habilitador_num: out STD_LOGIC;
         tirar_dados: out std_logic_vector(4 downto 0);
+        etapa_temp: out integer range 1 to 15;
         --esto va con un multiplexor a la salida de cada puntuación
         jugador_n: out std_logic-- '0' para jugador 1 y '1' para jugador 2 
         --suma_al_total: out std_logic
@@ -37,11 +38,12 @@ architecture Behavioral of FSM is
 -- POR SALIDAS DE LA MISMA FSM
 signal etapa: integer range 1 to 15:= 1;
 signal n_jugadores: integer range 1 to 10:=2; -- Si introducimos mas jugadores empezaría en 1
-signal caso_punto: integer range 1 to 13:=1;
+signal caso_punto: integer range 1 to 13 := 1;
 signal contador_dado: integer range 0 to 2:=0;
-signal contador_turnos: integer range 1 to 30:=1;
+signal contador_turnos: integer range 0 to 13 := 1; -- se quitara despues
+signal contador_turnos2: integer range 0 to 13 := 1;
 signal jugadores: jugadores_2;
-signal indice_jugador: integer range 1 to 2:=2;
+signal indice_jugador: integer range 1 to 2 := 2;
 
 --signal jugador_1: std_logic_vector(13 downto 1);
 --signal jugador_2: std_logic_vector(13 downto 1);
@@ -59,7 +61,7 @@ begin
             when 1 => -- INICIO
                 -- Muestra escrito Yahtzee
                 letras <= 0;
-                habilitador_num <= '1';-- solo muestra los primeros 5 displays
+                habilitador_num <= '1';-- solo muestra los primeros 5 digitos en el display
                 -- ENTER PARA PASAR AL SIGUIENTE ESTADO
                 if boton_enter = '1' then
                     etapa <= 2;
@@ -90,7 +92,9 @@ begin
             
             when 4 => -- SUMA 1 A TURNOS CUANDO PASA POR JP1 (HASTA 13)
                 if indice_jugador = 1 then
-                    contador_turnos <= contador_turnos + 1; -- enable al contador    
+                    contador_turnos <= contador_turnos + 1; -- enable al contador   
+                else 
+                    contador_turnos2 <= contador_turnos2 + 1; 
                 end if;
                 etapa <= 5;
                 
@@ -196,7 +200,7 @@ begin
                     
                     elsif boton_enter = '1' then
                         -- señal para agregar ese dato de ptos a los puntos del jugador
-                        --suma_al_total <= '1';
+                        -- suma_al_total <= '1';
                         jugadores(indice_jugador)(caso_punto) <= '1' ;
                         --contador_turnos <= contador_turnos + 1; 
                         if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
@@ -211,14 +215,14 @@ begin
             when 12 => -- MUESTRA PUNTOS JUGADOR 1
                 -- NECESITAMOS UNA FORMA DE DIFERENCIAR LOS ESTADOS FINALES DE CADA JUGADOR
                 -- PARA ESTAPA 10 Y 11
-                letras <= 23;--P-FIN
+                letras <= 23; -- P-FIN
                 habilitador_num <= '1'; 
                 if boton_enter = '1' then
                     etapa <= 13 ;
                 end if;
             
             when 13 =>
-                letras <= 23;--P-FIN
+                letras <= 23; -- P-FIN
                 habilitador_num <= '1'; 
                 if boton_enter = '1' then
                     etapa <= 14 ;
@@ -243,5 +247,7 @@ begin
             
             end case;
     end if;
-end process;    
+end process; 
+
+etapa_temp <= etapa;   
 end Behavioral;
