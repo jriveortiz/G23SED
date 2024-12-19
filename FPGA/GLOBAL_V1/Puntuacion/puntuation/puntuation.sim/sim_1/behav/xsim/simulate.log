@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Note: Resultado esperado (param = 2): 2
+Time: 30 ns  Iteration: 0  Process: /case_i_ns_tb/test_process  File: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.srcs/sim_1/new/case_i_ns_tb.vhd
+Note: Fin del testbench
+Time: 50 ns  Iteration: 0  Process: /case_i_ns_tb/test_process  File: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.srcs/sim_1/new/case_i_ns_tb.vhd
