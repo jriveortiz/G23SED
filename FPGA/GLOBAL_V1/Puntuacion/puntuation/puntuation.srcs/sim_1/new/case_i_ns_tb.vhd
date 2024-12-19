@@ -12,12 +12,13 @@ architecture behavior of case_i_ns_tb is
 
   -- Señales para el testbench
   signal clk        : std_logic := '0';  -- Señal de reloj
-  signal reset      : std_logic := '0';  -- Señal de reset
-  signal seleccionar: std_logic := '0';  -- Señal de activación de selección
-  signal enable     : std_logic := '0';  -- Señal de habilitación
+ -- signal reset      : std_logic := '0';  -- Señal de reset
+  --signal seleccionar: std_logic := '0';  -- Señal de activación de selección
+  --signal enable     : std_logic := '0';  -- Señal de habilitación
   signal dados      : arrayofintegers := (2, 3, 2, 4, 5);  -- Vector de dados fijo
   signal resultado  : unsigned(9 downto 0);  -- Resultado de la operación
-  signal ready      : std_logic;  -- Señal de ready
+  --signal resultado_i : integer := 0;
+  --signal ready      : std_logic;  -- Señal de ready
   
   -- Componente DUT (Dispositivo bajo prueba)
   component case_i_ns is
@@ -25,13 +26,14 @@ architecture behavior of case_i_ns_tb is
       param : integer := 2  -- Valor del parámetro, ahora es 2
     );
     Port ( 
-      clk        : in  STD_LOGIC;
-      reset      : in  STD_LOGIC;
-      seleccionar: in  STD_LOGIC;
-      enable     : in  STD_LOGIC;
+      clk  : in  STD_LOGIC;
+      --reset      : in  STD_LOGIC;
+      --seleccionar: in  STD_LOGIC;
+      --enable     : in  STD_LOGIC;
       dados      : in arrayofintegers;  -- Usamos el tipo definido en el paquete
-      resultado  : out unsigned(9 downto 0);
-      ready      : out STD_LOGIC
+      resultado  : out unsigned(9 downto 0)
+      --resultado_i : out integer := 0;
+      --ready      : out STD_LOGIC
     );
   end component;
 
@@ -42,12 +44,13 @@ begin
     generic map (param => 2)  -- Ahora param es 2
     port map (
       clk => clk,
-      reset => reset,
-      seleccionar => seleccionar,
-      enable => enable,
+      --reset => reset,
+      --seleccionar => seleccionar,
+      --enable => enable,
       dados => dados,
-      resultado => resultado,
-      ready => ready
+      resultado => resultado
+      --resultado_i => resultado_i,
+      --ready => ready
     );
 
   -- Generación del reloj
@@ -63,30 +66,32 @@ begin
   test_process : process
   begin
     -- Paso 1: Activar enable (equivalente a ce en el DUT)
-    enable <= '1';
-    wait for 10 ns;  -- Esperar para visualizar los datos
-    enable <= '0';  -- Desactivar enable
+--    enable <= '1';
+--    wait for 20 ns;  -- Esperar para visualizar los datos
+--    enable <= '0';  -- Desactivar enable
     
-    -- Paso 2: Esperar para visualizar los datos
-    wait for 10 ns;  -- Tiempo de espera para observar los valores de dados
+--    -- Paso 2: Esperar para visualizar los datos
+--    wait for 20 ns;  -- Tiempo de espera para observar los valores de dados
     
-    -- Paso 3: Activar seleccionar
-    seleccionar <= '1';
-    wait for 10 ns;
-    seleccionar <= '0';  -- Desactivar seleccionar
-    
-    -- Paso 4: Activar reset
-    reset <= '1';
-    wait for 10 ns;
-    reset <= '0';  -- Desactivar reset
+--    -- Paso 3: Activar seleccionar
+--    seleccionar <= '0';
+--    wait for 20 ns;
+--    seleccionar <= '1';  -- Desactivar seleccionar
+--    wait for 20 ns;
+--    seleccionar <= '0';
+--    wait for 20 ns;
+--    -- Paso 4: Activar reset
+--    reset <= '1';
+--    wait for 20 ns;
+--    reset <= '0';  -- Desactivar reset
     
     -- Esperar que el DUT procese los datos
     wait for 30 ns;  -- Tiempo de espera para el procesamiento del DUT
 
     -- Verificar el resultado
-    report "Resultado obtenido: " & integer'image(to_integer(resultado));  -- Conversión de unsigned a integer
+    --report "Resultado obtenido: " & integer'image(to_integer(resultado));  -- Conversión de unsigned a integer
     report "Resultado esperado (param = 2): " & integer'image(2);  -- Valor esperado de la operación
-    wait for 10 ns;  -- Esperar antes de terminar el testbench
+    wait for 20 ns;  -- Esperar antes de terminar el testbench
 
     -- Fin del test
     assert false report "Fin del testbench" severity note;

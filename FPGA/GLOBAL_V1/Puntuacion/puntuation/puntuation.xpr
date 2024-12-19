@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/usuario/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3c8a9afd64e3412e9958448a3dcc207b"/>
@@ -61,7 +61,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys4_ddr"/>
-    <Option Name="WTXSimLaunchSim" Val="4"/>
+    <Option Name="WTXSimLaunchSim" Val="19"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -94,7 +94,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/new/conversion_datos.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/conversion_datos.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/conversion_datos.vhd"/>
           <Attr Name="ImportTime" Val="1734516626"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -102,7 +102,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/case_i_ns.vhd">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/case_i_ns.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/case_i_ns.vhd"/>
           <Attr Name="ImportTime" Val="1734546504"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -111,7 +111,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/case_escaleras.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/case_escaleras.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/case_escaleras.vhd"/>
           <Attr Name="ImportTime" Val="1734451796"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -120,7 +120,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/case_tcy.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/case_tcy.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/case_tcy.vhd"/>
           <Attr Name="ImportTime" Val="1734452847"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -129,7 +129,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/entid_glob_lista.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/entid_glob_lista.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/entid_glob_lista.vhd"/>
           <Attr Name="ImportTime" Val="1734525591"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -138,7 +138,7 @@
       <File Path="$PSRCDIR/sources_1/imports/new/punt_glob.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/punt_glob.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/punt_glob.vhd"/>
           <Attr Name="ImportTime" Val="1734525860"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -147,8 +147,15 @@
       <File Path="$PSRCDIR/sources_1/imports/new/select_case.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/select_case.vhd"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Vivado_proyectos/Puntuacion/Puntuacion.srcs/sources_1/new/select_case.vhd"/>
           <Attr Name="ImportTime" Val="1734525860"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/demux.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -162,7 +169,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/Vivado_proyectos/Nexys-4-DDR-Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Vivado_proyectos/Nexys-4-DDR-Master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../Vivado_proyectos/Nexys-4-DDR-Master.xdc"/>
           <Attr Name="ImportTime" Val="1729453340"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
