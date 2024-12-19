@@ -48,7 +48,7 @@ signal indice_jugador: integer range 1 to 2 := 2;
 --signal jugador_1: std_logic_vector(13 downto 1);
 --signal jugador_2: std_logic_vector(13 downto 1);
 begin
-
+habilitador_display <= '1';
 process(clk,etapa,reset)
     variable flag_sw: std_logic;
 begin

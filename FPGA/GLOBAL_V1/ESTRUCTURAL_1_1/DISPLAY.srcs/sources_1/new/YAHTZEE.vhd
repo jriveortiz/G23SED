@@ -77,6 +77,9 @@ dados_aleatorios: entity work.generaciondados port map(
     dados => dados
 );
 
+--FALTA ENTIDAD PUNTUACIONES
+
+
 
 end Behavioral;
 
