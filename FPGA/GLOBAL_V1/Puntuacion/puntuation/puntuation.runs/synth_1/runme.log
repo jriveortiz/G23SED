@@ -1,0 +1,21 @@
+
+*** Running vivado
+    with args -log case_i_ns.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source case_i_ns.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Dec 19 15:46:27 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source case_i_ns.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 522.992 ; gain = 238.016
+Command: synth_design -top case_i_ns -part xc7a100tcsg324-1
+0 Infos, 0 Warnings, 0 Critical Warnings and 1 Errors encountered.
+synth_design failed
+ERROR: [Common 17-1293] The path 'C:/Users/usuario/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.cache/wt' already exists, is a directory, but is not writable.
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 15:46:45 2024...

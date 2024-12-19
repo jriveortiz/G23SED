@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../puntuation.srcs/sources_1/imports/new/conversion_datos.vhd" \
+"../../../../puntuation.srcs/sources_1/imports/new/case_i_ns.vhd" \
+"../../../../puntuation.srcs/sim_1/new/case_i_ns_tb.vhd" \
+
+# Do not sort compile order
+nosort
