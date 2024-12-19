@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Tue Dec 17 15:15:45 2024
-# Process ID: 24780
-# Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11128 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.xpr
-# Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/vivado.log
-# Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM\vivado.jou
+# Start of session at: Tue Dec 17 16:55:25 2024
+# Process ID: 4076
+# Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/dados
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24444 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\dados\dados.xpr
+# Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/dados/vivado.log
+# Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/dados\vivado.jou
 # Running On        :LAPTOP-I6E0CIJ5
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
@@ -17,12 +17,12 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :8467 MB
-# Swap memory       :3658 MB
-# Total Virtual     :12126 MB
-# Available Virtual :2335 MB
+# Swap memory       :1997 MB
+# Total Virtual     :10464 MB
+# Available Virtual :2535 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/DISPLAY.xpr
+open_project C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.xpr
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
@@ -86,45 +86,13 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/DISPLAY.gen/sources_1'.
+INFO: [Project 1-313] Project file moved from 'D:/Users/User/dados' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:20 . Memory (MB): peak = 1566.605 ; gain = 499.734
-update_compile_order -fileset sources_1
-add_files -norecurse {C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/DISPLAY.srcs/sources_1/new/EDGEDTCTR.vhd C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/DISPLAY.srcs/sources_1/new/SYNCHRNZR.vhd}
-update_compile_order -fileset sources_1
-close [ open C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd w ]
-add_files C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/DISPLAY-FSM/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd
-update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FILTRO_BOTON.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\SYNCHRNZR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\DISPLAY.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FSM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\EDGEDTCTR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FILTRO_BOTON.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FILTRO_BOTON.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FILTRO_BOTON.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\SYNCHRNZR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\DISPLAY.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FSM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\EDGEDTCTR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\DISPLAY.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\DISPLAY.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FILTRO_BOTON.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\SYNCHRNZR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\DISPLAY.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FSM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\EDGEDTCTR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\SYNCHRNZR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\SYNCHRNZR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FILTRO_BOTON.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\SYNCHRNZR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\DISPLAY.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FSM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\EDGEDTCTR.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FSM.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\DISPLAY-FSM\DISPLAY.srcs\sources_1\new\FSM.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:16 . Memory (MB): peak = 1531.109 ; gain = 468.484
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 17 17:16:41 2024...

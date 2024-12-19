@@ -2,8 +2,8 @@
 2020.2
 May 22 2024
 19:03:11
-D:/Users/User/dados/dados.srcs/sim_1/new/lfsr.vhd,1734103238,vhdl,,,,tb_generador_lfsr,,,,,,,,
-D:/Users/User/dados/dados.srcs/sim_1/new/tb_generaciondados.vhd,1734375287,vhdl,,,,tb_generaciondados,,,,,,,,
-D:/Users/User/dados/dados.srcs/sources_1/new/generaciondados.vhd,1734378718,vhdl,,,,generaciondados,,,,,,,,
-D:/Users/User/dados/dados.srcs/sources_1/new/top.vhd,1734373299,vhdl,D:/Users/User/dados/dados.srcs/sources_1/new/generaciondados.vhd,,,generador_lfsr,,,,,,,,
-D:/Users/User/dados/dados.srcs/sources_1/new/types_pkg.vhd,1734280864,vhdl,D:/Users/User/dados/dados.srcs/sources_1/new/generaciondados.vhd,,,types_pkg,,,,,,,,
+C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.srcs/sim_1/new/lfsr.vhd,1734103238,vhdl,,,,tb_generador_lfsr,,,,,,,,
+C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.srcs/sim_1/new/tb_generaciondados.vhd,1734449649,vhdl,,,,tb_generaciondados,,,,,,,,
+C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.srcs/sources_1/new/generaciondados.vhd,1734617052,vhdl,,,,generaciondados,,,,,,,,
+C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.srcs/sources_1/new/top.vhd,1734373299,vhdl,,,,generador_lfsr,,,,,,,,
+C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.srcs/sources_1/new/types_pkg.vhd,1734280864,vhdl,C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.srcs/sim_1/new/tb_generaciondados.vhd;C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.srcs/sources_1/new/generaciondados.vhd,,,types_pkg,,,,,,,,

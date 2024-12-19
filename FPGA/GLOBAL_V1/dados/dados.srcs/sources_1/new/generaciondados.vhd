@@ -38,7 +38,6 @@ architecture rtl of generaciondados is
    end component Generador_LFSR;
 
 begin
-
     -- Instanciar n_max generadores LFSR
     lfsr_generators: for i in 0 to n_max-1 generate
         LFSR_inst: Generador_LFSR
@@ -104,7 +103,7 @@ begin
         end if;
     end process;
 
-    rdy <= ready_i; 
+    rdy <= not ready_i; 
     dados <= dados_i; 
 end architecture;
 

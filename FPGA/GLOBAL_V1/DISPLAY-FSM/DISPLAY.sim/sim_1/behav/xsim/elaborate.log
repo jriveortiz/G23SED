@@ -1,7 +1,7 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_DISPLAY_PUNTOS_behav xil_defaultlib.TB_DISPLAY_PUNTOS -log elaborate.log 
+Running: D:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FSM_tb_behav xil_defaultlib.FSM_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -13,11 +13,6 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package xil_defaultlib.tipos_personalizados
-Compiling architecture behavioral of entity xil_defaultlib.DIVISOR_HZ [divisor_hz_default]
-Compiling architecture behavioral of entity xil_defaultlib.unsigned_to_bcd [unsigned_to_bcd_default]
-Compiling architecture dataflow of entity xil_defaultlib.DECODER [decoder_default]
-Compiling architecture behavioral of entity xil_defaultlib.DECODER_LETRAS [decoder_letras_default]
-Compiling architecture behavioral of entity xil_defaultlib.FILTRO_LETRAS [filtro_letras_default]
-Compiling architecture behavioral of entity xil_defaultlib.DISPLAY_PUNTOS [display_puntos_default]
-Compiling architecture behavioral of entity xil_defaultlib.tb_display_puntos
-Built simulation snapshot TB_DISPLAY_PUNTOS_behav
+Compiling architecture behavioral of entity xil_defaultlib.FSM [fsm_default]
+Compiling architecture behavioral of entity xil_defaultlib.fsm_tb
+Built simulation snapshot FSM_tb_behav

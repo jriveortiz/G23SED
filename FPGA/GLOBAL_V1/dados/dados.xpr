@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="D:/Users/User/dados/dados.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/User/Documents/GitHub/G23SED/FPGA/GLOBAL_V1/dados/dados.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="a68da6029a79434eb36cf14d511e97dd"/>
@@ -61,7 +61,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys-a7-100t"/>
-    <Option Name="WTXSimLaunchSim" Val="26"/>
+    <Option Name="WTXSimLaunchSim" Val="27"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -119,7 +119,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/User/Nexys-A7-100T-Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../Nexys-A7-100T-Master.xdc"/>
+          <Attr Name="ImportPath" Val="D:/Users/User/Nexys-A7-100T-Master.xdc"/>
           <Attr Name="ImportTime" Val="1729260597"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
