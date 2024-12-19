@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Dec 19 21:55:20 2024
-# Process ID: 3220
+# Start of session at: Thu Dec 19 19:59:10 2024
+# Process ID: 8796
 # Current directory: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10232 C:\Users\usuario\Github\G23SED\FPGA\GLOBAL_V1\Puntuacion\puntuation\puntuation.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8408 C:\Users\usuario\Github\G23SED\FPGA\GLOBAL_V1\Puntuacion\puntuation\puntuation.xpr
 # Log file: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/vivado.log
 # Journal file: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation\vivado.jou
 # Running On        :DESKTOP-J6QLH0T
@@ -19,8 +19,6 @@
 # Host memory       :17107 MB
 # Swap memory       :2550 MB
 # Total Virtual     :19657 MB
-# Available Virtual :14074 MB
+# Available Virtual :8960 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/usuario/Vivado_proyectos/puntuation/puntuation.xpr
-update_compile_order -fileset sources_1

@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.srcs/sources_1/imports/new/case_i_ns.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'case_i_ns'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/puntuation.srcs/sim_1/new/case_i_ns_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'case_i_ns_tb'

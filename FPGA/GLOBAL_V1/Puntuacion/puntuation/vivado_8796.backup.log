@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Dec 19 21:55:20 2024
-# Process ID: 3220
+# Start of session at: Thu Dec 19 19:59:10 2024
+# Process ID: 8796
 # Current directory: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10232 C:\Users\usuario\Github\G23SED\FPGA\GLOBAL_V1\Puntuacion\puntuation\puntuation.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8408 C:\Users\usuario\Github\G23SED\FPGA\GLOBAL_V1\Puntuacion\puntuation\puntuation.xpr
 # Log file: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation/vivado.log
 # Journal file: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/Puntuacion/puntuation\vivado.jou
 # Running On        :DESKTOP-J6QLH0T
@@ -19,7 +19,7 @@
 # Host memory       :17107 MB
 # Swap memory       :2550 MB
 # Total Virtual     :19657 MB
-# Available Virtual :14074 MB
+# Available Virtual :8960 MB
 #-----------------------------------------------------------
 start_gui
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
@@ -123,12 +123,5 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 availa
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
 INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-open_project C:/Users/usuario/Vivado_proyectos/puntuation/puntuation.xpr
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/usuario/Vivado_proyectos/puntuation/puntuation.gen/sources_1'.
-Scanning sources...
-Finished scanning sources
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1332.824 ; gain = 61.180
-update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 19 20:00:16 2024...
