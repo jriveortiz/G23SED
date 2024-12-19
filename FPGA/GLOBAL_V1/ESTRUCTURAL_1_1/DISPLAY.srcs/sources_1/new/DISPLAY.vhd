@@ -53,6 +53,9 @@ begin
             digictrl <= (others => '0');  
         end if;
     
+    elsif habilitador_display = '0' then
+        digictrl <= (others => '1');
+    
     elsif rising_edge(clk_util) and habilitador_display = '1' then
         digisel <= rotate_left(digisel, 1); -- Actualiza digisel
         digictrl <= not(digisel); 
@@ -72,8 +75,7 @@ begin
             contador <= contador + 1;
         end if;
     
-    elsif habilitador_display = '0' then
-        digictrl <= (others => '1');
+    
     end if;
     
 end process;
