@@ -3,11 +3,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity FSM_tb is
---
+-- No ports for a testbench
 end FSM_tb;
 
-architecture behavioral of FSM_tb is
+architecture Behavioral of FSM_tb is
 
+    -- Component declaration for the Unit Under Test (UUT)
     component FSM
         Port (
             clk: in std_logic;
@@ -25,10 +26,12 @@ architecture behavioral of FSM_tb is
             intermitente: out std_logic;
             habilitador_num: out std_logic;
             tirar_dados: out std_logic_vector(4 downto 0);
+            etapa_temp: out integer range 1 to 15;
             jugador_n: out std_logic
         );
     end component;
 
+    -- Signals for testbench
     signal clk: std_logic := '0';
     signal reset: std_logic := '0';
     signal s_in_dados: std_logic := '0';
@@ -38,19 +41,21 @@ architecture behavioral of FSM_tb is
     signal boton_arriba: std_logic := '0';
     signal boton_abajo: std_logic := '0';
     signal boton_enter: std_logic := '0';
-    signal habilitador_dados: std_logic;
-    signal habilitador_display: std_logic;
+    signal habilitador_dados: std_logic := '0';
+    signal habilitador_display: std_logic := '0';
     signal letras: integer range 0 to 32;
-    signal intermitente: std_logic;
+    signal intermitente: std_logic := '0';
     signal habilitador_num: std_logic;
     signal tirar_dados: std_logic_vector(4 downto 0);
     signal jugador_n: std_logic;
+    signal etapa_temp: integer range 1 to 15:= 1;
 
-    
+    -- Clock period definition
     constant clk_period: time := 10 ns;
 
 begin
-  
+
+    -- Instantiate the Unit Under Test (UUT)
     uut: FSM
         Port map (
             clk => clk,
@@ -68,9 +73,11 @@ begin
             intermitente => intermitente,
             habilitador_num => habilitador_num,
             tirar_dados => tirar_dados,
-            jugador_n => jugador_n
+            jugador_n => jugador_n,
+            etapa_temp => etapa_temp
         );
 
+    -- Clock generation
     clk_process: process
     begin
         while True loop
@@ -81,12 +88,15 @@ begin
         end loop;
     end process;
 
+    -- Stimulus process
     stim_proc: process
     begin
-        -- Reset inicial
+        -- Initialize inputs
         reset <= '1';
         wait for 20 ns;
         reset <= '0';
+
+        puntuacion_listos <= '1';
 
         -- Etapa 1: Inicio
         boton_enter <= '1';
@@ -123,27 +133,31 @@ begin
         boton_enter <= '1';
         wait for clk_period;
         boton_enter <= '0';
-        dados_listos <= '0';
         wait for 50 ns;
-
-        -- Etapa 8: Validar switches enclavados
-        sw_enclave <= "11111";
+        
+        -- Etapa 8: Lanzamiento de dados
+        boton_enter <= '1';
         wait for clk_period;
-        sw_enclave <= "00000";
+        boton_enter <= '0';
         wait for 50 ns;
 
-        -- Etapa 9: Designar caso puntuación
-        puntuacion_listos <= '1';
+        -- Etapa 9: Lanzamiento de dados
+        boton_enter <= '1';
+        wait for clk_period;
+        boton_enter <= '0';
+        wait for 50 ns;
+        
+         -- Etapa 10: Designar caso puntuación
         boton_arriba <= '1';
         wait for clk_period;
         boton_arriba <= '0';
         boton_abajo <= '1';
         wait for clk_period;
         boton_abajo <= '0';
+        wait for clk_period;
         boton_enter <= '1';
         wait for clk_period;
         boton_enter <= '0';
-        puntuacion_listos <= '0';
         wait for 50 ns;
 
         -- Etapa 10: Mostrar puntos jugador 1
@@ -170,10 +184,11 @@ begin
         boton_enter <= '0';
         wait for 50 ns;
 
-        -- Fin simulacion
+        -- Finish simulation
         wait for 500 ns;
         wait;
     end process;
 
-end behavioral;
+end Behavioral;
+
 
