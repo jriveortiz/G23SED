@@ -120,7 +120,7 @@ begin
                  end if;
                  
             when 7 => -- ETAPA DE TRANSICION
-                letras <= 21; -- dados
+                letras <= 21; -- "dados"
                 habilitador_num<= '0';
                 
                 if boton_enter = '1' then
