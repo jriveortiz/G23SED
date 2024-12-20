@@ -68,16 +68,16 @@ begin
                 end if; 
             
             when 2 => -- JUGADORES en caso de querer meter mas de 2 jugadores
-                letras <= 17;
+                --letras <= 17;
                 --Reset al registro de turno de los jugadores
                 jugadores(1) <= (others =>'0'); 
                 jugadores(2) <= (others =>'0'); 
                 -- Necesitamos que este estado "puntuaciones" muestre 2 (Jugador_2)
-                habilitador_num <= '1';
+                --habilitador_num <= '1';
                 -- Pasamos al siguiente estado
-                if boton_enter = '1' then
-                    etapa <= 3;
-                end if;
+                --if boton_enter = '1' then
+                etapa <= 3;
+                --end if;
                 
             when 3 => -- CAMBIA ENTRE JUGADORES EN CADA RONDA
                 if indice_jugador = 2 then 
