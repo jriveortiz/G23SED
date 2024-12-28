@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "punt_total_tb_behav" "xil_defaultlib.punt_total_tb" -log "elaborate.log" 

@@ -1,0 +1,7 @@
+Running: xsim.dir/caso_magico_tb_behav/xsimk.exe -simmode gui -wdb caso_magico_tb_behav.wdb -simrunnum 0 -socket 57485
+Design successfully loaded
+Design Loading Memory Usage: 8352 KB (Peak: 8352 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 8864 KB (Peak: 8864 KB)
+Simulation CPU Usage: 62 ms

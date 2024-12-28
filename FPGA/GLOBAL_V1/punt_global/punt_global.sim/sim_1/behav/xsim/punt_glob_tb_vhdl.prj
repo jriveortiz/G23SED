@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../punt_global.srcs/sources_1/imports/new/conversion_datos.vhd" \
+"../../../../punt_global.srcs/sources_1/imports/new/case_escaleras.vhd" \
+"../../../../punt_global.srcs/sources_1/imports/new/case_i_ns.vhd" \
+"../../../../punt_global.srcs/sources_1/imports/new/case_tcy.vhd" \
+"../../../../punt_global.srcs/sources_1/new/caso_fullh.vhd" \
+"../../../../punt_global.srcs/sources_1/new/caso_magico.vhd" \
+"../../../../punt_global.srcs/sources_1/new/caso_turnos.vhd" \
+"../../../../punt_global.srcs/sources_1/new/caso_yahtz.vhd" \
+"../../../../punt_global.srcs/sources_1/new/demux.vhd" \
+"../../../../punt_global.srcs/sources_1/imports/new/punt_glob.vhd" \
+"../../../../punt_global.srcs/sources_1/new/punt_total.vhd" \
+"../../../../punt_global.srcs/sim_1/new/punt_glob_tb.vhd" \
+
+# Do not sort compile order
+nosort
