@@ -28,6 +28,7 @@ begin
             when 'N' => segments <= "1101010"; -- N
             when 'O' => segments <= "0000001"; -- O
             when 'P' => segments <= "0011000"; -- P
+            when 'R' => segments <= "1111010"; -- R
             when 'S' => segments <= "0100100"; -- S
             when 'T' => segments <= "0111111"; -- guion alto
             when 'U' => segments <= "1000001"; -- U
@@ -44,6 +45,10 @@ begin
             when '7' => segments <= "0001111"; -- 7
             when '8' => segments <= "0000000"; -- 8
             when '9' => segments <= "0000100"; -- 9
+            -- igual, N             "abcdefg"
+            when '=' => segments <= "1110110";
+            when 'M' => segments <= "0001001";
+            
             when others => segments <= "1111111";
         end case;
     end process;
