@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/gabri/OneDrive/Escritorio/1 CUATRI 24-25/SISTEMAS DIGITALES/PROYECTO/DISPLAY/DISPLAY.runs/synth_1'
+HD_PWD='C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log DISPLAY_PUNTOS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DISPLAY_PUNTOS.tcl
+EAStep vivado -log YAHTZEE.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source YAHTZEE.tcl

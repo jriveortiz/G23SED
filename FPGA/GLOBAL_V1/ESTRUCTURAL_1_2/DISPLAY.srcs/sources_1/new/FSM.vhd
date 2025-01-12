@@ -25,7 +25,7 @@ entity FSM is
         intermitente: out STD_LOGIC;
         habilitador_num: out STD_LOGIC;
         tirar_dados: out std_logic_vector(4 downto 0);
-        etapa_temp: out integer range 1 to 15;--para visualuzar el estado
+        etapa_temp: out integer range 1 to 15;
         --esto va con un multiplexor a la salida de cada puntuación
         jugador_n: out std_logic-- '0' para jugador 1 y '1' para jugador 2 
         --suma_al_total: out std_logic

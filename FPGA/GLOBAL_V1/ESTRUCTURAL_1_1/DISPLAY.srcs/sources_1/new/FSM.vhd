@@ -24,6 +24,8 @@ entity FSM is
         letras : out integer range 0 to 32;       -- Letras (4 bits), proporcionadas por la FSM
         intermitente: out STD_LOGIC;
         habilitador_num: out STD_LOGIC;
+        primer_enter: out STD_LOGIC;--VALIDACION PARA CASO
+        segundo_enter: out STD_LOGIC;--VALIDACIONES PTS FINAL
         tirar_dados: out std_logic_vector(4 downto 0);
         etapa_temp: out integer range 1 to 15;
         --esto va con un multiplexor a la salida de cada puntuación
@@ -202,12 +204,15 @@ begin
                         -- señal para agregar ese dato de ptos a los puntos del jugador
                         -- suma_al_total <= '1';
                         jugadores(indice_jugador)(caso_punto) <= '1' ;
-                        --contador_turnos <= contador_turnos + 1; 
-                        if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
-                            etapa <= 12;
-                        else
-                            etapa <= 3;
-                        end if; 
+                        --contador_turnos <= contador_turnos + 1;
+                        --primer enter
+                        primer_enter <= '1'; 
+                        etapa <= 12; 
+--                        if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
+--                            etapa <= 12;
+--                        else
+--                            etapa <= 3;
+--                        end if; 
                   
                     end if;
                 end if;
@@ -215,18 +220,37 @@ begin
             when 12 => -- MUESTRA PUNTOS JUGADOR 1
                 -- NECESITAMOS UNA FORMA DE DIFERENCIAR LOS ESTADOS FINALES DE CADA JUGADOR
                 -- PARA ESTAPA 10 Y 11
+                --nuevo enter y el ready 
                 letras <= 23; -- P-FIN
-                habilitador_num <= '1'; 
+                habilitador_num <= '1';
+                primer_enter <= '0'; 
+                jugador_n<= '0';-- muestra pts jugador 1
+                
                 if boton_enter = '1' then
-                    etapa <= 13 ;
+                    segundo_enter <= '1';
+                    if  puntuacion_listos = '1' then 
+                        etapa <= 13 ;
+                    end if;
                 end if;
             
             when 13 =>
                 letras <= 23; -- P-FIN
-                habilitador_num <= '1'; 
+                habilitador_num <= '1';
+                primer_enter <= '0'; 
+                jugador_n<= '1';-- muestra pts jugador 2
+                
                 if boton_enter = '1' then
-                    etapa <= 14 ;
+                    segundo_enter <= '1';
+                    if  puntuacion_listos = '1' then 
+                        --etapa <= 13 ;
+                        if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
+                            etapa <= 14;
+                        else
+                            etapa <= 3;
+                        end if; 
+                    end if;
                 end if;
+               
             
             when 14 =>
                 letras <= 24; -- FIN

@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Dec  7 01:30:15 2024
-# Process ID: 9140
-# Current directory: C:/Users/gabri/OneDrive/Escritorio/1 CUATRI 24-25/SISTEMAS DIGITALES/PROYECTO/DISPLAY/DISPLAY.runs/synth_1
-# Command line: vivado.exe -log DISPLAY_PUNTOS.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DISPLAY_PUNTOS.tcl
-# Log file: C:/Users/gabri/OneDrive/Escritorio/1 CUATRI 24-25/SISTEMAS DIGITALES/PROYECTO/DISPLAY/DISPLAY.runs/synth_1/DISPLAY_PUNTOS.vds
-# Journal file: C:/Users/gabri/OneDrive/Escritorio/1 CUATRI 24-25/SISTEMAS DIGITALES/PROYECTO/DISPLAY/DISPLAY.runs/synth_1\vivado.jou
+# Start of session at: Sun Jan 12 20:16:16 2025
+# Process ID: 15648
+# Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/synth_1
+# Command line: vivado.exe -log YAHTZEE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source YAHTZEE.tcl
+# Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/synth_1/YAHTZEE.vds
+# Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/synth_1\vivado.jou
 # Running On        :LAPTOP-I6E0CIJ5
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :8467 MB
-# Swap memory       :1997 MB
-# Total Virtual     :10464 MB
-# Available Virtual :2007 MB
+# Swap memory       :5708 MB
+# Total Virtual     :14175 MB
+# Available Virtual :2691 MB
 #-----------------------------------------------------------
-source DISPLAY_PUNTOS.tcl -notrace
+source YAHTZEE.tcl -notrace

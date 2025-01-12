@@ -3,8 +3,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use work.tipos_personalizados.all;
 use work.types_pkg.all;
-use work.TiposComunes.all;
-
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
@@ -80,15 +78,9 @@ dados_aleatorios: entity work.generaciondados port map(
 );
 
 --FALTA ENTIDAD PUNTUACIONES
-puntuacion: entity work.punt_glob port map(
-    clk => clk,
-    reset => reset,
-    seleccion => letras,
-    seleccionar => enter_def,
-    seleccionar_pt => enter_def,
-    dados => dados,
-    resultado => puntos
-);
+
+
+
 end Behavioral;
 
 

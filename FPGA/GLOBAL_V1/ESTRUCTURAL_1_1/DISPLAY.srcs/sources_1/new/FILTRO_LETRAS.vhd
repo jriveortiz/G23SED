@@ -109,6 +109,12 @@ begin
             caracter(5) <= 'L';
             caracter(4) <= 'X';
             caracter(3) <= '-';
+        when 14=> --RESULTADO
+            caracter(7) <= 'P';
+            caracter(6) <= '7';
+            caracter(5) <= 'T';
+            caracter(4) <= 'S';
+            caracter(3) <= '-';
         when 18  => -- TURN N
             caracter(7) <= '7';
             caracter(6) <= 'T';

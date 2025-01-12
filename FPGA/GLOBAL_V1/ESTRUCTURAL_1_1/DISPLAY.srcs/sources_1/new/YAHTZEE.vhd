@@ -25,11 +25,11 @@ end YAHTZEE;
 
 architecture Behavioral of YAHTZEE is
 signal up_def,down_def,enter_def,dados_listos,puntuacion_listos,habilitador_dados: std_logic;
-signal habilitador_display,intermitente,habilitador_num,jugador_n:std_logic;
+signal habilitador_display,intermitente,habilitador_num,jugador_n,primer_enter,segundo_enter:std_logic;
 signal letras: integer range 0 to 32;
 signal tirar_dados: std_logic_vector(4 downto 0);
 signal etapa_temp: integer range 1 to 15;
-signal puntos : unsigned(9 downto 0);
+signal puntos,puntos_1,puntos_2 : unsigned(9 downto 0);
 signal dados: integer_vector(4 downto 0);
 
 begin
@@ -51,6 +51,8 @@ fsm: entity work.FSM port map(
     letras => letras,
     intermitente => intermitente,
     habilitador_num => habilitador_num,
+    primer_enter => primer_enter,
+    segundo_enter => segundo_enter,
     tirar_dados => tirar_dados,
     etapa_temp => etapa_temp,
     jugador_n => jugador_n 
@@ -78,6 +80,35 @@ dados_aleatorios: entity work.generaciondados port map(
 );
 
 --FALTA ENTIDAD PUNTUACIONES
+puntuaciones1: entity work.punt_glob port map(
+    clk=> clk,
+    reset => reset,
+    seleccion => letras,
+    seleccionar => primer_enter,
+    seleccionar_pt => segundo_enter,
+    dados => dados,
+    resultado => puntos_1,
+    ready => puntuacion_listos
+);
+
+puntuaciones2: entity work.punt_glob port map(
+    clk=> clk,
+    reset => reset,
+    seleccion => letras,
+    seleccionar => primer_enter,
+    seleccionar_pt => segundo_enter,
+    dados => dados,
+    resultado => puntos_2,
+    ready => puntuacion_listos
+);
+
+mux_fin: entity work.MUX_10_UNSIGNED port map(
+    jugador_1=> puntos_1,
+    jugador_2=> puntos_2,
+    seleccion => jugador_n,
+    salida => puntos
+    
+);
 
 
 

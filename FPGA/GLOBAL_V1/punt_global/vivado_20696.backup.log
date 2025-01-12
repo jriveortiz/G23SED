@@ -1,0 +1,415 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jan 12 13:01:54 2025
+# Process ID: 20696
+# Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20948 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\punt_global\punt_global.xpr
+# Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/vivado.log
+# Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global\vivado.jou
+# Running On        :LAPTOP-I6E0CIJ5
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8467 MB
+# Swap memory       :1997 MB
+# Total Virtual     :10464 MB
+# Available Virtual :2763 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/punt_global' since last save.
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/production/1.2/board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/production/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/production/1.2/board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 1541.879 ; gain = 468.191
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: punt_glob
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1664
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2400.844 ; gain = 439.555
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'punt_glob' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:21]
+INFO: [Synth 8-3491] module 'caso_yahtz' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_yahtz.vhd:36' bound to instance 'instance_caso_yahtz' of component 'caso_yahtz' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'caso_yahtz' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_yahtz.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'caso_yahtz' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_yahtz.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+	Parameter param bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized0' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+	Parameter param bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized0' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized1' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+	Parameter param bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized1' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized2' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+	Parameter param bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized2' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized3' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+	Parameter param bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized3' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized4' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+	Parameter param bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized4' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd:23]
+	Parameter param bound to: 3 - type: integer 
+	Parameter res bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'case_tcy' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:33' bound to instance 'instance_case_t' of component 'case_tcy' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:298]
+INFO: [Synth 8-638] synthesizing module 'case_tcy' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:49]
+	Parameter param bound to: 3 - type: integer 
+	Parameter res bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_tcy' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:49]
+	Parameter param bound to: 4 - type: integer 
+	Parameter res bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'case_tcy' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:33' bound to instance 'instance_case_c' of component 'case_tcy' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:313]
+INFO: [Synth 8-638] synthesizing module 'case_tcy__parameterized1' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:49]
+	Parameter param bound to: 4 - type: integer 
+	Parameter res bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_tcy__parameterized1' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:49]
+	Parameter param bound to: 5 - type: integer 
+	Parameter res bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'case_tcy' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:33' bound to instance 'instance_case_y' of component 'case_tcy' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'case_tcy__parameterized3' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:49]
+	Parameter param bound to: 5 - type: integer 
+	Parameter res bound to: 50 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_tcy__parameterized3' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd:49]
+INFO: [Synth 8-3491] module 'caso_fullh' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_fullh.vhd:16' bound to instance 'instance_caso_fullh' of component 'caso_fullh' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:344]
+INFO: [Synth 8-638] synthesizing module 'caso_fullh' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_fullh.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'caso_fullh' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_fullh.vhd:29]
+	Parameter param bound to: 3 - type: integer 
+	Parameter res bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'case_escaleras' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_escaleras.vhd:7' bound to instance 'instance_caso_ep' of component 'case_escaleras' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:355]
+INFO: [Synth 8-638] synthesizing module 'case_escaleras' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_escaleras.vhd:22]
+	Parameter param bound to: 3 - type: integer 
+	Parameter res bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_escaleras' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_escaleras.vhd:22]
+	Parameter param bound to: 4 - type: integer 
+	Parameter res bound to: 25 - type: integer 
+INFO: [Synth 8-3491] module 'case_escaleras' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_escaleras.vhd:7' bound to instance 'instance_caso_eg' of component 'case_escaleras' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:370]
+INFO: [Synth 8-638] synthesizing module 'case_escaleras__parameterized1' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_escaleras.vhd:22]
+	Parameter param bound to: 4 - type: integer 
+	Parameter res bound to: 25 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_escaleras__parameterized1' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_escaleras.vhd:22]
+INFO: [Synth 8-3491] module 'caso_magico' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_magico.vhd:15' bound to instance 'instance_caso_m' of component 'caso_magico' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:384]
+INFO: [Synth 8-638] synthesizing module 'caso_magico' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_magico.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'caso_magico' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_magico.vhd:28]
+INFO: [Synth 8-3491] module 'caso_turnos' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_turnos.vhd:6' bound to instance 'instancia_caso_turnos' of component 'caso_turnos' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:395]
+INFO: [Synth 8-638] synthesizing module 'caso_turnos' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_turnos.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'caso_turnos' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_turnos.vhd:15]
+INFO: [Synth 8-3491] module 'punt_total' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/punt_total.vhd:32' bound to instance 'instancia_punt_total' of component 'punt_total' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:404]
+INFO: [Synth 8-638] synthesizing module 'punt_total' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/punt_total.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'punt_total' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/punt_total.vhd:68]
+INFO: [Synth 8-3491] module 'demux' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/demux.vhd:8' bound to instance 'instancia_demux' of component 'demux' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:440]
+INFO: [Synth 8-638] synthesizing module 'demux' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/demux.vhd:32]
+INFO: [Synth 8-226] default block is never used [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/demux.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'demux' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/demux.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'punt_glob' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd:21]
+WARNING: [Synth 8-7129] Port dados[4][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][20] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][19] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][18] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][17] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][16] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][15] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][14] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][13] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][12] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][11] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][10] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][20] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][19] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][18] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][17] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][16] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][15] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][14] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][13] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][12] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][11] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][10] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][20] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][19] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][18] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][17] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][16] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][15] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][14] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][13] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][12] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][11] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][10] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][20] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][19] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][18] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][17] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][16] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][15] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][14] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][13] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][12] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][11] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][10] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[0][20] in module caso_magico is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2528.570 ; gain = 567.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2528.570 ; gain = 567.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2528.570 ; gain = 567.281
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 2528.570 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/constrs_1/imports/Vivado_proyectos/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/constrs_1/imports/Vivado_proyectos/Nexys-4-DDR-Master.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2603.727 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 2619.828 ; gain = 658.539
+56 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2619.828 ; gain = 1058.090
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'punt_glob_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'punt_glob_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj punt_glob_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/conversion_datos.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_escaleras.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'case_escaleras'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_i_ns.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'case_i_ns'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/case_tcy.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'case_tcy'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_fullh.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'caso_fullh'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_magico.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'caso_magico'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_turnos.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'caso_turnos'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/caso_yahtz.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'caso_yahtz'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/demux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'demux'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/imports/new/punt_glob.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'punt_glob'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sources_1/new/punt_total.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'punt_total'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.srcs/sim_1/new/punt_glob_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'punt_glob_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot punt_glob_tb_behav xil_defaultlib.punt_glob_tb -log elaborate.log"
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot punt_glob_tb_behav xil_defaultlib.punt_glob_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.tiposcomunes
+Compiling architecture behavioral of entity xil_defaultlib.caso_yahtz [caso_yahtz_default]
+Compiling architecture behavioral of entity xil_defaultlib.case_i_ns [\case_i_ns(param=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_i_ns [\case_i_ns(param=2)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_i_ns [\case_i_ns(param=3)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_i_ns [\case_i_ns(param=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_i_ns [\case_i_ns(param=5)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_i_ns [\case_i_ns(param=6)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_tcy [\case_tcy(param=3,res=15)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_tcy [\case_tcy(param=4,res=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_tcy [\case_tcy(param=5,res=50)\]
+Compiling architecture behavioral of entity xil_defaultlib.caso_fullh [caso_fullh_default]
+Compiling architecture behavioral of entity xil_defaultlib.case_escaleras [\case_escaleras(param=3,res=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.case_escaleras [\case_escaleras(param=4,res=25)\]
+Compiling architecture behavioral of entity xil_defaultlib.caso_magico [caso_magico_default]
+Compiling architecture behavioral of entity xil_defaultlib.caso_turnos [caso_turnos_default]
+Compiling architecture behavioral of entity xil_defaultlib.punt_total [punt_total_default]
+Compiling architecture behavioral of entity xil_defaultlib.demux [demux_default]
+Compiling architecture behavioral of entity xil_defaultlib.punt_glob [punt_glob_default]
+Compiling architecture behavioral of entity xil_defaultlib.punt_glob_tb
+Built simulation snapshot punt_glob_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2637.426 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/punt_global/punt_global.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "punt_glob_tb_behav -key {Behavioral:sim_1:Functional:punt_glob_tb} -tclbatch {punt_glob_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source punt_glob_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'punt_glob_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:15 . Memory (MB): peak = 2665.984 ; gain = 28.559
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 12 13:51:26 2025...
