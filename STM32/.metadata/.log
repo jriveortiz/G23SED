@@ -1,0 +1,37 @@
+!SESSION 2025-01-13 19:00:19.969 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-13 19:01:30.244
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-13 19:01:30.247
+!MESSAGE Log4j2 initialized with config file C:\Users\usuario\Github\G23SED\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-13 19:01:34.591
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-13 19:10:31.892
+!MESSAGE Indexed 'MP3' (34 sources, 100 headers) in 5.63 sec: 7,831 declarations; 50,035 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0035%)
+!SESSION 2025-01-13 20:06:56.809 -----------------------------------------------
+eclipse.buildId=Version 1.17.0
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  C:\Users\usuario\Github\G23SED\STM32\MP3\.project
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 C:\Users\usuario\Github\G23SED\STM32\MP3\.project
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2025-01-13 20:07:06.530
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-01-13 20:07:06.530
+!MESSAGE Log4j2 initialized with config file C:\Users\usuario\Github\G23SED\STM32\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-01-13 20:07:11.601
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-01-13 20:07:18.021
+!MESSAGE Indexed 'MP3' (34 sources, 136 headers) in 5.84 sec: 14,210 declarations; 70,352 references; 1 unresolved inclusions; 92 syntax errors; 240 unresolved names (0.28%)
