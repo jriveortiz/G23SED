@@ -29,8 +29,10 @@ entity FSM is
         tirar_dados: out std_logic_vector(4 downto 0);
         etapa_temp: out integer range 1 to 15;
         --esto va con un multiplexor a la salida de cada puntuación
-        jugador_n: out std_logic-- '0' para jugador 1 y '1' para jugador 2 
+        jugador_n: out std_logic;-- '0' para jugador 1 y '1' para jugador 2 
         --suma_al_total: out std_logic
+        CE1: out std_logic;
+        CE2: out std_logic
 );
 end FSM;
 
@@ -46,6 +48,7 @@ signal contador_turnos: integer range 0 to 13 := 1; -- se quitara despues
 signal contador_turnos2: integer range 0 to 13 := 1;
 signal jugadores: jugadores_2;
 signal indice_jugador: integer range 1 to 2 := 2;
+
 
 --signal jugador_1: std_logic_vector(13 downto 1);
 --signal jugador_2: std_logic_vector(13 downto 1);
