@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jan 14 16:29:27 2025
+# Process ID: 12792
+# Current directory: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/impl_1
+# Command line: vivado.exe -log YAHTZEE.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source YAHTZEE.tcl -notrace
+# Log file: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/impl_1/YAHTZEE.vdi
+# Journal file: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-J6QLH0T
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-4800MQ CPU @ 2.70GHz
+# CPU Frequency     :2694 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :17107 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19657 MB
+# Available Virtual :12726 MB
+#-----------------------------------------------------------
+source YAHTZEE.tcl -notrace
+Command: open_checkpoint YAHTZEE_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.084 . Memory (MB): peak = 303.695 ; gain = 7.719
+ERROR: [Runs 36-527] DCP does not exist: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/impl_1/YAHTZEE_routed.dcp
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 14 16:29:51 2025...

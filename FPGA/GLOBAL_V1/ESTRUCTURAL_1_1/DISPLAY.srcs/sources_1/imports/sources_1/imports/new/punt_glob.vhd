@@ -9,7 +9,7 @@ entity punt_glob is
     Port ( 
         clk        : in  STD_LOGIC;
         reset      : in  STD_LOGIC;
-        CE      : in  STD_LOGIC;
+        ce      : in  STD_LOGIC;
         seleccion  : in integer range 0 to 32;  -- Definir rango de seleccion
         seleccionar: in  STD_LOGIC;
         seleccionar_pt : in  STD_LOGIC;
@@ -147,7 +147,7 @@ component case_i_ns
         Port (
             clk         : in std_logic;
             reset       : in std_logic;
-            CE          : in std_logic;
+            ce          : in std_logic;
             seleccionar : in std_logic;
             input1      : in unsigned(9 downto 0);
             input2      : in unsigned(9 downto 0);
@@ -408,7 +408,7 @@ begin
         Port map (
             clk         => clk,
             reset       => reset_pt,
-            CE          => CE,
+            CE          => ce,
             seleccionar => seleccionar_pt,
             input1      => resultado1,
             input2      => resultado2,

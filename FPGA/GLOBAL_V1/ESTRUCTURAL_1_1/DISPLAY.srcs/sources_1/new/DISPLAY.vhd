@@ -27,7 +27,7 @@ signal clk_util: std_logic;
 signal clk_intermitente: std_logic;
 signal digisel: unsigned(7 downto 0):= "00000001"; 
 -- Calculado previamente para obtener 70HZ dividir entre 2 si parpadea
-constant FACTOR_VISUAL: integer:= 1428570/8;--/8 por cada segmento a alimentar
+constant FACTOR_VISUAL: integer:= 1428570/16;--/8 por cada segmento a alimentar
 -- Calculado previamente para obtener la intermitente
 constant FACTOR_INTERMITENTE: integer:= 50000000;
 signal contador: integer range 0 to 7:=0;
@@ -64,7 +64,11 @@ begin
         if solo_letras = '0' then --habilitador_num
             digictrl(0) <= '1';
             digictrl(1) <= '1';
-            digictrl(2) <= '1';  
+            digictrl(2) <= '1';
+--        else
+--            digictrl(0) <= '0';
+--            digictrl(1) <= '0';
+--            digictrl(2) <= '0';  
         end if;
         
         segmentos <= segmentos_vector(contador);

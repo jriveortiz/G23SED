@@ -13,18 +13,22 @@ entity YAHTZEE is
         
         sw_enclave: in std_logic_vector(4 downto 0);
         
-        boton_arriba: in std_logic;
+   boton_arriba: in std_logic;
         boton_abajo: in std_logic;
         boton_enter: in std_logic;
+       -- up_def: in std_logic;
+       -- down_def: in std_logic;
+        -- enter_def: in std_logic;
         
         digictrl : out unsigned(7 downto 0);              -- Control de los dígitos (8 bits de salida)
-        segmentos: out STD_LOGIC_VECTOR(6 downto 0)       -- Segmentos para la visualización de los dígitos (8 bits de salida)
-    
+        segmentos: out STD_LOGIC_VECTOR(6 downto 0);       -- Segmentos para la visualización de los dígitos (8 bits de salida)
+        leds: out std_logic_vector(15 downto 1)
     );
 end YAHTZEE;
 
 architecture Behavioral of YAHTZEE is
-signal up_def,down_def,enter_def,dados_listos,puntuacion_listos,habilitador_dados: std_logic;
+signal up_def,down_def,enter_def :std_logic;
+signal dados_listos,puntuacion_listos,habilitador_dados: std_logic;
 signal habilitador_display,intermitente,habilitador_num,jugador_n,primer_enter,segundo_enter:std_logic;
 signal letras: integer range 0 to 32;
 signal tirar_dados: std_logic_vector(4 downto 0);
@@ -59,7 +63,8 @@ fsm: entity work.FSM port map(
     etapa_temp => etapa_temp,
     jugador_n => jugador_n, 
     CE1 => CE1,
-    CE2 => CE2
+    CE2 => CE2,
+    leds => leds
 );
 
 display: entity work.DISPLAY_PUNTOS port map (

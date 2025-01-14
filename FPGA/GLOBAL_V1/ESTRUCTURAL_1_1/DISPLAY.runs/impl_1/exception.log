@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Users\usuario\Github\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_1_1\DISPLAY.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permiso denegado

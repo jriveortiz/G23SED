@@ -44,6 +44,6 @@ architecture Behavioral of caso_yahtz is
 
 begin
 
-resultado <= TO_UNSIGNED(234,10);
+resultado <= TO_UNSIGNED(233,10);
 
 end Behavioral;

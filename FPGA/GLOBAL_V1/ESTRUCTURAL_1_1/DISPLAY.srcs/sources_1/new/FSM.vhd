@@ -32,7 +32,8 @@ entity FSM is
         jugador_n: out std_logic;-- '0' para jugador 1 y '1' para jugador 2 
         --suma_al_total: out std_logic
         CE1: out std_logic;
-        CE2: out std_logic
+        CE2: out std_logic;
+        leds: out std_logic_vector(15 downto 1)
 );
 end FSM;
 
@@ -40,7 +41,7 @@ architecture Behavioral of FSM is
 -- CREO QUE TODAS ESTAS SEÑALES DEBEN GESTIONARLAS CONTADORES EXTERNOS
 -- Y MEMORIA EXTERNA DE LA FSM Y QUE ESTO LO RECIBA COMO ENTRADA Y QUE HAGA CAMBIAR
 -- POR SALIDAS DE LA MISMA FSM
-signal etapa: integer range 1 to 15:= 1;
+
 signal n_jugadores: integer range 1 to 10:=2; -- Si introducimos mas jugadores empezaría en 1
 signal caso_punto: integer range 1 to 13 := 1;
 signal contador_dado: integer range 0 to 2:=0;
@@ -54,13 +55,14 @@ signal indice_jugador: integer range 1 to 2 := 2;
 --signal jugador_2: std_logic_vector(13 downto 1);
 begin
 habilitador_display <= '1';
-process(clk,etapa,reset)
+process(clk,reset)
     variable flag_sw: std_logic;
+    variable etapa: integer range 1 to 15:= 1;
 begin
-    -- etapa <= etapa mod 9;
+    -- etapa := etapa mod 9;
     -- Reset Global
-    if reset = '1' then
-        etapa <= 1;
+    if reset = '0' then
+        etapa := 1;
     elsif rising_edge (clk) then 
         case etapa is
             when 1 => -- INICIO
@@ -69,8 +71,9 @@ begin
                 habilitador_num <= '1';-- solo muestra los primeros 5 digitos en el display
                 -- ENTER PARA PASAR AL SIGUIENTE ESTADO
                 if boton_enter = '1' then
-                    etapa <= 2;
+                    etapa := 2;
                 end if; 
+                --leds <= (100000000000000);
             
             when 2 => -- JUGADORES en caso de querer meter mas de 2 jugadores
                 --letras <= 17;
@@ -81,7 +84,7 @@ begin
                 --habilitador_num <= '1';
                 -- Pasamos al siguiente estado
                 --if boton_enter = '1' then
-                etapa <= 3;
+                etapa := 3;
                 --end if;
                 
             when 3 => -- CAMBIA ENTRE JUGADORES EN CADA RONDA
@@ -93,22 +96,24 @@ begin
                     jugador_n <= '1';
                 end if;
                  
-                etapa <= 4;
+                etapa := 4;
             
             when 4 => -- SUMA 1 A TURNOS CUANDO PASA POR JP1 (HASTA 13)
                 if indice_jugador = 1 then
                     contador_turnos <= contador_turnos + 1; -- enable al contador   
+                    --señal de sumador
                 else 
-                    contador_turnos2 <= contador_turnos2 + 1; 
+                    contador_turnos2 <= contador_turnos2 + 1;
+                    --señal de sumador 
                 end if;
-                etapa <= 5;
+                etapa := 5;
                 
             when 5 => -- MUESTRA "TURN - N"
                 habilitador_num<= '1';
                 letras <= 18; -- "Turn-"
                 
                  if boton_enter = '1' then
-                    etapa <= 6;
+                    etapa := 6;
                  end if;
                 
             when 6 =>    
@@ -121,7 +126,7 @@ begin
                  end if;
                               
                  if boton_enter = '1' then
-                    etapa <= 7;
+                    etapa := 7;
                  end if;
                  
             when 7 => -- ETAPA DE TRANSICION
@@ -129,7 +134,7 @@ begin
                 habilitador_num<= '0';
                 
                 if boton_enter = '1' then
-                    etapa <= 8;
+                    etapa := 8;
                 end if;
                 
             when 8 => -- LANZAMIENTO DE DADOS NO ENCLAVADOS
@@ -145,7 +150,7 @@ begin
                 habilitador_dados <= '1'; -- tira los dados
                 
                 contador_dado <= contador_dado + 1;
-                etapa <= 9; 
+                etapa := 9; 
              
              when 9 => -- CONFIRMACION DE LAS 3 TIRADAS
                 -- Muestra en la señal letras cada uno de los dados y con eso se relanzan
@@ -155,10 +160,10 @@ begin
                 
                 if boton_enter = '1' and dados_listos = '1' then
                     if contador_dado = 2 then 
-                        etapa <= 10;
+                        etapa := 10;
                         contador_dado <= 0; -- reset del contador de tiradas
                     else
-                        etapa <= 8;
+                        etapa := 8;
                     end if;         
                 end if; 
             
@@ -175,7 +180,7 @@ begin
                 if flag_sw = '1' then 
                     intermitente <= '1';
                 else
-                    etapa <= 11;       
+                    etapa := 11;       
                 end if;
                 
             when 11 => -- DESIGNA EL CASO A PUNTUACION Y PANTALLA
@@ -210,11 +215,11 @@ begin
                         --contador_turnos <= contador_turnos + 1;
                         --primer enter
                         primer_enter <= '1'; 
-                        etapa <= 12; 
+                        etapa := 12; 
 --                        if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
---                            etapa <= 12;
+--                            etapa := 12;
 --                        else
---                            etapa <= 3;
+--                            etapa := 3;
 --                        end if; 
                   
                     end if;
@@ -232,7 +237,7 @@ begin
                 if boton_enter = '1' then
                     segundo_enter <= '1';
                     if  puntuacion_listos = '1' then 
-                        etapa <= 13 ;
+                        etapa := 13 ;
                     end if;
                 end if;
             
@@ -245,11 +250,11 @@ begin
                 if boton_enter = '1' then
                     segundo_enter <= '1';
                     if  puntuacion_listos = '1' then 
-                        --etapa <= 13 ;
+                        --etapa := 13 ;
                         if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
-                            etapa <= 14;
+                            etapa := 14;
                         else
-                            etapa <= 3;
+                            etapa := 3;
                         end if; 
                     end if;
                 end if;
@@ -259,22 +264,26 @@ begin
                 letras <= 24; -- FIN
                 habilitador_num <= '0'; 
                 if boton_enter = '1' then
-                    etapa <= 15;
+                    etapa := 15;
                 end if;
             
             when 15 =>
                 letras <= 25; -- REINICIAR --> BEGIN
                 habilitador_num <= '0'; 
                 if boton_enter = '1' then
-                    etapa <= 1;
+                    etapa := 1;
                 end if;
             
             when others =>
-                etapa <= 1;
+                etapa := 1;
             
             end case;
     end if;
-end process; 
 
 etapa_temp <= etapa;   
+leds <= (others => '0'); -- Inicializa todos los bits en '0'
+leds(etapa) <= '1';      -- Activa solo el bit en la posición 'etapa'
+
+end process; 
+
 end Behavioral;
