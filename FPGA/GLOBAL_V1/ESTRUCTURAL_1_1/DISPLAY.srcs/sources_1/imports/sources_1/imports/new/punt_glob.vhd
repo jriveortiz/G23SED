@@ -69,6 +69,7 @@ component case_i_ns
         Port (
             clk        : in  STD_LOGIC;
             reset      : in  STD_LOGIC;
+            ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC;
             dados: integer_vector(4 downto 0);
             resultado  : out unsigned(9 downto 0);
@@ -85,6 +86,7 @@ component case_i_ns
         Port (
             clk        : in  STD_LOGIC;
             reset      : in  STD_LOGIC;
+            ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC;
             dados: integer_vector(4 downto 0);
             resultado  : out unsigned(9 downto 0);
@@ -97,6 +99,7 @@ component case_i_ns
         Port (
             clk        : in  STD_LOGIC;
             reset      : in  STD_LOGIC := '0';
+            ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC := '0';
             dados: integer_vector(4 downto 0);  
             resultado  : out unsigned(9 downto 0);
@@ -113,6 +116,7 @@ component case_i_ns
         Port (
             clk        : in  STD_LOGIC;
             reset      : in  STD_LOGIC := '0';
+            ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC := '0';
             dados: integer_vector(4 downto 0);  
             resultado  : out unsigned(9 downto 0);
@@ -125,6 +129,7 @@ component case_i_ns
         Port (
             clk        : in  STD_LOGIC;
             reset      : in  STD_LOGIC := '0';
+            ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC := '0';
             dados: integer_vector(4 downto 0);  
             resultado  : out unsigned(9 downto 0);
@@ -222,6 +227,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado1,
@@ -236,6 +242,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado2,
@@ -250,6 +257,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado3,
@@ -264,6 +272,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado4,
@@ -278,6 +287,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado5,
@@ -292,6 +302,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado6,
@@ -306,6 +317,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado_t,
@@ -321,6 +333,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado_c,
@@ -336,6 +349,7 @@ begin
         port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado_y,
@@ -348,6 +362,7 @@ begin
         Port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado_f,
@@ -363,6 +378,7 @@ begin
         Port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado_ep,  -- Podría ser diferente si se desea separar resultados
@@ -378,6 +394,7 @@ begin
         Port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado_eg,  -- Podría ser diferente si se desea separar resultados
@@ -388,6 +405,7 @@ begin
         Port map (
             clk        => clk,
             reset      => reset,
+            CE          => ce,
             seleccionar=> seleccionar,
             dados      => dados,
             resultado  => resultado_m,

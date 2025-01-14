@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Tue Jan 14 18:05:27 2025
+| Date         : Tue Jan 14 18:59:28 2025
 | Host         : DESKTOP-J6QLH0T running 64-bit major release  (build 9200)
 | Command      : report_methodology -file YAHTZEE_methodology_drc_routed.rpt -pb YAHTZEE_methodology_drc_routed.pb -rpx YAHTZEE_methodology_drc_routed.rpx
 | Design       : YAHTZEE
@@ -23,12 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 52
+             Violations found: 48
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell   | 26         |
-| TIMING-16 | Warning          | Large setup violation         | 4          |
 | TIMING-18 | Warning          | Missing input or output delay | 22         |
 +-----------+------------------+-------------------------------+------------+
 
@@ -162,26 +161,6 @@ Related violations: <none>
 TIMING-17#26 Critical Warning
 Non-clocked sequential cell  
 The clock pin display/segmentos_reg[6]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-16#1 Warning
-Large setup violation  
-There is a large setup violation of -7.493 ns between dados_aleatorios/dados_i_reg[0][1]_replica/C (clocked by sys_clk_pin) and puntuaciones1/instance_caso_ep/resultado_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#2 Warning
-Large setup violation  
-There is a large setup violation of -7.574 ns between dados_aleatorios/dados_i_reg[0][1]_replica/C (clocked by sys_clk_pin) and puntuaciones2/instance_caso_eg/resultado_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#3 Warning
-Large setup violation  
-There is a large setup violation of -7.589 ns between dados_aleatorios/dados_i_reg[0][1]_replica/C (clocked by sys_clk_pin) and puntuaciones1/instance_caso_eg/resultado_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
-Related violations: <none>
-
-TIMING-16#4 Warning
-Large setup violation  
-There is a large setup violation of -7.803 ns between dados_aleatorios/dados_i_reg[0][1]_replica/C (clocked by sys_clk_pin) and puntuaciones2/instance_caso_ep/resultado_reg[4]/D (clocked by sys_clk_pin). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

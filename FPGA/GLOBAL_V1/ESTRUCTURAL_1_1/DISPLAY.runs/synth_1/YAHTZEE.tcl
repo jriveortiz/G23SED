@@ -56,8 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -95,7 +93,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd
   C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_fullh.vhd
   C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_magico.vhd
-  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/caso_turnos.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd
   C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/caso_yahtz.vhd
   C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/demux.vhd
   C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd

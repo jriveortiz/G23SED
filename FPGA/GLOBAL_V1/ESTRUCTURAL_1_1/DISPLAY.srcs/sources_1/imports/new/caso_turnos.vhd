@@ -20,7 +20,7 @@ begin
         variable turno: unsigned(9 downto 0) := (others => '0');
     begin
         if rising_edge(clk) then
-            if reset = '1' then
+            if reset'event and reset = '1' then
                 if turno = 13 then
                     turno := (others => '0');  -- Vuelve a 0 cuando llega a 13
                 else

@@ -18,6 +18,7 @@ Port (
         clk        : in  STD_LOGIC;
         reset      : in  STD_LOGIC:='0';
         seleccionar: in  STD_LOGIC:='0';
+        ce      : in  STD_LOGIC;
         --enable     : in  STD_LOGIC;
         dados      : in arrayofintegers;  
         resultado  : out unsigned(9 downto 0);
@@ -29,7 +30,7 @@ architecture Behavioral of caso_magico is
 
 begin
 
-    process (clk,reset,seleccionar)
+    process (clk,reset,seleccionar,ce)
     --variable i, j : integer;                          -- Índices de los bucles
     variable n_ns : arrayofintegers6 := (others => 0); -- Variable para conteo
     variable contador : integer := 0;                    -- Variable para indicar un trío
@@ -39,19 +40,20 @@ begin
             --resultado_i <= 0;  -- Reinicia la salida a 0
            ready <= '0';
            contador:=0;
---        elsif enable = '1' then
+        elsif ce = '1' then
 --            -- Operación sincronizada con el flanco de subida del reloj
 --            if flag = 1 then
-        elsif rising_edge(clk) then
-            contador:=0;
-            if seleccionar = '1' then
---            flag <= 0;
-                 ready <= '1';
+            if rising_edge(clk) then
+                contador:=0;
+                if seleccionar = '1' then
+    --            flag <= 0;
+                     ready <= '1';
+                end if;
+                for i in 0 to 4 loop
+                    contador:=contador+dados(i);
+                end loop;
+                resultado <= to_unsigned(contador, 10);
             end if;
-            for i in 0 to 4 loop
-                contador:=contador+dados(i);
-            end loop;
-            resultado <= to_unsigned(contador, 10);
        end if; 
     
 end process;
