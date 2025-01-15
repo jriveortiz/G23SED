@@ -11,7 +11,7 @@ entity punt_glob is
         reset      : in  STD_LOGIC;
         ce      : in  STD_LOGIC;
         seleccion  : in integer range 0 to 32;  -- Definir rango de seleccion
-        seleccionar: in  STD_LOGIC;
+        seleccionar: in  STD_LOGIC_vector(13 downto 1);
         seleccionar_pt : in  STD_LOGIC;
         --dados: integer_vector(4 downto 0);  -- Asumir que arrayofintegers es un tipo definido
         dados: in integer_vector(4 downto 0); 
@@ -228,7 +228,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(13),
             dados      => dados,
             resultado  => resultado1,
             ready      => ready1
@@ -243,7 +243,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(12),
             dados      => dados,
             resultado  => resultado2,
             ready      => ready2
@@ -258,7 +258,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(11),
             dados      => dados,
             resultado  => resultado3,
             ready      => ready3
@@ -273,7 +273,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(10),
             dados      => dados,
             resultado  => resultado4,
             ready      => ready4
@@ -288,7 +288,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(9),
             dados      => dados,
             resultado  => resultado5,
             ready      => ready5
@@ -303,7 +303,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(8),
             dados      => dados,
             resultado  => resultado6,
             ready      => ready6
@@ -318,7 +318,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(7),
             dados      => dados,
             resultado  => resultado_t,
             ready      => ready_t
@@ -334,7 +334,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(6),
             dados      => dados,
             resultado  => resultado_c,
             ready      => ready_c
@@ -350,7 +350,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(5),
             dados      => dados,
             resultado  => resultado_y,
             ready      => ready_y
@@ -363,7 +363,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(4),
             dados      => dados,
             resultado  => resultado_f,
             ready      => ready_f
@@ -379,7 +379,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(3),
             dados      => dados,
             resultado  => resultado_ep,  -- Podría ser diferente si se desea separar resultados
             ready      => ready_ep
@@ -395,7 +395,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(2),
             dados      => dados,
             resultado  => resultado_eg,  -- Podría ser diferente si se desea separar resultados
             ready      => ready_eg
@@ -406,7 +406,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar,
+            seleccionar=> seleccionar(1),
             dados      => dados,
             resultado  => resultado_m,
             ready      => ready_m
