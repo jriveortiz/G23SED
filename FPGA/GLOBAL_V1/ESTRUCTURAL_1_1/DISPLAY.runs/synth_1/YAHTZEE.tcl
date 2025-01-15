@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/synth_1/YAHTZEE.tcl"
+  variable script "C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/synth_1/YAHTZEE.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,50 +56,49 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.cache/wt [current_project]
-set_property parent.project_path C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.cache/wt [current_project]
+set_property parent.project_path C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.cache/ip [current_project]
+set_property ip_output_repo c:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/DECODER.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/DECODER_LETRAS.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/n.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/types_pkg.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/DIVISOR_HZ.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/FILTRO_LETRAS.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/DISPLAY.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/EDGEDTCTR.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/SYNCHRNZR.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/FSM.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/MUX_10_UNSIGNED.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/conversion_datos.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_fullh.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_magico.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/caso_yahtz.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/demux.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/YAHTZEE.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/DECODER.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/DECODER_LETRAS.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/n.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/types_pkg.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/DIVISOR_HZ.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/FILTRO_LETRAS.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/DISPLAY.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/EDGEDTCTR.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/SYNCHRNZR.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/FSM.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/MUX_10_UNSIGNED.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/conversion_datos.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_fullh.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_magico.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/caso_yahtz.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/demux.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd
+  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/sources_1/new/YAHTZEE.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -110,12 +109,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+read_xdc C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/utils_1/imports/synth_1/DISPLAY_PUNTOS.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.srcs/utils_1/imports/synth_1/DISPLAY_PUNTOS.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

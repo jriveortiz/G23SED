@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.xpr">
+<Project Product="Vivado" Version="7" Minor="67" Path="C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d5316af645864fe2968eb40f4f4be4f4"/>

@@ -16,24 +16,21 @@ architecture Behavioral of caso_turnos is
 
 begin
 
-    process(clk)
+    process(reset)
         variable turno: unsigned(9 downto 0) := (others => '0');
-        variable flag: std_logic;
+        
     begin
-        if rising_edge(clk) then
-            if reset'event and reset = '1' then
-                flag := '1';
-            end if;
+       
             
-            if  reset = '1' and flag = '1' then
+            if  reset = '1'  then
                 if turno = 13 then
                     turno := (others => '0');  -- Vuelve a 0 cuando llega a 13
                 else
                     turno := turno + 1;  -- Incrementa el turno
                 end if;
-                flag:= '0';
+                
             end if;
-        end if;
+       
         resultado <= turno;
         if turno = 0 then
             rst_punt_total <= '1';
