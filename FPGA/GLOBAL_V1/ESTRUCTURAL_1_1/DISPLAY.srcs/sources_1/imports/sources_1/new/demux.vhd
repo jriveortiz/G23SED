@@ -47,8 +47,8 @@ begin
                   input11 when 11,
                   input12 when 12,
                   input13 when 13,
-                  input14 when 14,
-                  input15 when 15,
+                  input14 when 23,
+                  input15 when 18,
                   (others => '0') when others;  -- En caso de que el selector esté fuera del rango
 
 end Behavioral;

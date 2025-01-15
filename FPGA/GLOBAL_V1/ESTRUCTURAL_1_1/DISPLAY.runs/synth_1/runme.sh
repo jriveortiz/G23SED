@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/synth_1'
+HD_PWD='C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_1_1/DISPLAY.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
