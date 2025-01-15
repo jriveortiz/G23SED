@@ -228,7 +228,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(13),
+            seleccionar=> seleccionar(1),
             dados      => dados,
             resultado  => resultado1,
             ready      => ready1
@@ -243,7 +243,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(12),
+            seleccionar=> seleccionar(2),
             dados      => dados,
             resultado  => resultado2,
             ready      => ready2
@@ -258,7 +258,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(11),
+            seleccionar=> seleccionar(3),
             dados      => dados,
             resultado  => resultado3,
             ready      => ready3
@@ -273,7 +273,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(10),
+            seleccionar=> seleccionar(4),
             dados      => dados,
             resultado  => resultado4,
             ready      => ready4
@@ -288,7 +288,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(9),
+            seleccionar=> seleccionar(5),
             dados      => dados,
             resultado  => resultado5,
             ready      => ready5
@@ -303,7 +303,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(8),
+            seleccionar=> seleccionar(6),
             dados      => dados,
             resultado  => resultado6,
             ready      => ready6
@@ -334,7 +334,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(6),
+            seleccionar=> seleccionar(8),
             dados      => dados,
             resultado  => resultado_c,
             ready      => ready_c
@@ -350,7 +350,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(5),
+            seleccionar=> seleccionar(9),
             dados      => dados,
             resultado  => resultado_y,
             ready      => ready_y
@@ -363,7 +363,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(4),
+            seleccionar=> seleccionar(10),
             dados      => dados,
             resultado  => resultado_f,
             ready      => ready_f
@@ -379,7 +379,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(3),
+            seleccionar=> seleccionar(11),
             dados      => dados,
             resultado  => resultado_ep,  -- Podría ser diferente si se desea separar resultados
             ready      => ready_ep
@@ -395,7 +395,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(2),
+            seleccionar=> seleccionar(12),
             dados      => dados,
             resultado  => resultado_eg,  -- Podría ser diferente si se desea separar resultados
             ready      => ready_eg

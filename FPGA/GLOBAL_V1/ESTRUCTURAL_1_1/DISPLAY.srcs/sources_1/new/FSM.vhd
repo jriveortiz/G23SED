@@ -24,7 +24,8 @@ entity FSM is
         letras : out integer range 0 to 32;       -- Letras (4 bits), proporcionadas por la FSM
         intermitente: out STD_LOGIC;
         habilitador_num: out STD_LOGIC;
-        primer_enter: out STD_LOGIC;--VALIDACION PARA CASO
+        primer_enter: out  STD_LOGIC_vector(13 downto 1);
+        --primer_enter: out STD_LOGIC;--VALIDACION PARA CASO
         segundo_enter: out STD_LOGIC;--VALIDACIONES PTS FINAL
         tirar_dados: out std_logic_vector(4 downto 0);
         etapa_temp: out integer range 1 to 15;
@@ -43,7 +44,7 @@ architecture Behavioral of FSM is
 -- POR SALIDAS DE LA MISMA FSM
 
 signal n_jugadores: integer range 1 to 10:=2; -- Si introducimos mas jugadores empezaría en 1
-signal caso_punto: integer range 1 to 13 := 1;
+
 signal contador_dado: integer range 0 to 2:=0;
 signal contador_turnos: integer range 0 to 13 := 1; -- se quitara despues
 signal contador_turnos2: integer range 0 to 13 := 1;
@@ -58,6 +59,7 @@ habilitador_display <= '1';
 process(clk,reset)
     variable flag_sw: std_logic;
     variable etapa: integer range 1 to 15:= 1;
+    variable caso_punto: integer range 1 to 13 := 1;
 begin
     -- etapa := etapa mod 9;
     -- Reset Global
@@ -189,41 +191,42 @@ begin
                 letras <= caso_punto;
                 
                 -- Si la puntuacion esta lista se introduce en uno de los 13 casos
-                if puntuacion_listos = '1' then 
-                    if boton_arriba = '1' then
-                        caso_punto <= caso_punto + 1;
-                        if jugadores(indice_jugador)(caso_punto) = '1' then 
-                            caso_punto <= caso_punto + 1;    
-                        end if;
-                        if caso_punto > 13 then
-                            caso_punto <= 1;
-                        end if;
-                    
-                    elsif boton_abajo = '1' then 
-                        caso_punto <= caso_punto - 1;
-                        if jugadores(indice_jugador)(caso_punto) = '1' then 
-                            caso_punto <= caso_punto - 1;    
-                        end if;
-                        if caso_punto < 1 then
-                            caso_punto <= 13;
-                        end if;
-                    
-                    elsif boton_enter = '1' then
-                        -- señal para agregar ese dato de ptos a los puntos del jugador
-                        -- suma_al_total <= '1';
-                        jugadores(indice_jugador)(caso_punto) <= '1' ;
-                        --contador_turnos <= contador_turnos + 1;
-                        --primer enter
-                        primer_enter <= '1'; 
-                        etapa := 12; 
+                --if puntuacion_listos = '1' then 
+                if boton_arriba = '1' then
+                    caso_punto := caso_punto + 1;
+                    if jugadores(indice_jugador)(caso_punto) = '1' then 
+                        caso_punto := caso_punto + 1;    
+                    end if;
+                    if caso_punto > 13 then
+                        caso_punto := 1;
+                    end if;
+                
+                elsif boton_abajo = '1' then 
+                    caso_punto := caso_punto - 1;
+                    if jugadores(indice_jugador)(caso_punto) = '1' then 
+                        caso_punto := caso_punto - 1;    
+                    end if;
+                    if caso_punto < 1 then
+                        caso_punto := 13;
+                    end if;
+                
+                elsif boton_enter = '1' then
+                    -- señal para agregar ese dato de ptos a los puntos del jugador
+                    -- suma_al_total <= '1';
+                    jugadores(indice_jugador)(caso_punto) <= '1' ;
+                    --contador_turnos <= contador_turnos + 1;
+                    --primer enter
+                    primer_enter <= (others =>'0');
+                    primer_enter(caso_punto) <= '1'; 
+                    etapa := 12; 
 --                        if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
 --                            etapa := 12;
 --                        else
 --                            etapa := 3;
 --                        end if; 
-                  
-                    end if;
+              
                 end if;
+                --end if;
             
             when 12 => -- MUESTRA PUNTOS JUGADOR 1
                 -- NECESITAMOS UNA FORMA DE DIFERENCIAR LOS ESTADOS FINALES DE CADA JUGADOR
@@ -231,7 +234,7 @@ begin
                 --nuevo enter y el ready 
                 letras <= 23; -- P-FIN
                 habilitador_num <= '1';
-                primer_enter <= '0'; 
+                primer_enter <= (others =>'0');
                 jugador_n<= '0';-- muestra pts jugador 1
                 
                 if boton_enter = '1' then
@@ -244,7 +247,7 @@ begin
             when 13 =>
                 letras <= 23; -- P-FIN
                 habilitador_num <= '1';
-                primer_enter <= '0'; 
+                primer_enter <= (others =>'0');
                 jugador_n<= '1';-- muestra pts jugador 2
                 
                 if boton_enter = '1' then

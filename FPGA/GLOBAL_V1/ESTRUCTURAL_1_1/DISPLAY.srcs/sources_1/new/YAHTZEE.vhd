@@ -29,7 +29,8 @@ end YAHTZEE;
 architecture Behavioral of YAHTZEE is
 signal up_def,down_def,enter_def :std_logic;
 signal dados_listos,puntuacion_listos,habilitador_dados: std_logic;
-signal habilitador_display,intermitente,habilitador_num,jugador_n,primer_enter,segundo_enter:std_logic;
+signal habilitador_display,intermitente,habilitador_num,jugador_n,segundo_enter:std_logic;
+signal primer_enter: STD_LOGIC_vector(13 downto 1);
 signal letras: integer range 0 to 32;
 signal tirar_dados: std_logic_vector(4 downto 0);
 signal etapa_temp: integer range 1 to 15;
