@@ -1,0 +1,96 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Wed Jan 15 22:37:55 2025
+| Host         : LAPTOP-I6E0CIJ5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file YAHTZEE_control_sets_placed.rpt
+| Design       : YAHTZEE
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    64 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    18 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             176 |           75 |
+| No           | No                    | Yes                    |             112 |           48 |
+| No           | Yes                   | No                     |              24 |            6 |
+| Yes          | No                    | No                     |              32 |           10 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              16 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+---------------------------+----------------------------------------------+------------------+----------------+--------------+
+|         Clock Signal        |       Enable Signal       |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+---------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG              |                           | puntuaciones2/instancia_caso_turnos/reset_pt |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG              |                           | puntuaciones1/instancia_caso_turnos/reset_pt |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG              | down/U2/E[0]              |                                              |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG              | fsm/letras0               |                                              |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG              | fsm/tirar_dados0          | fsm/tirar_dados[4]_i_1_n_1                   |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG              | n_0_1043_BUFG             |                                              |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG              | puntuaciones2n_1_896_BUFG |                                              |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG              | down/U2/primer_enter0     | down/U2/FSM_onehot_etapa_reg[10]_0           |                4 |             11 |         2.75 |
+|  display/HZ1/CLK_TEMP_reg_0 | fsm/E[0]                  |                                              |                2 |             11 |         5.50 |
+|  display/HZ1/CLK_TEMP_reg_0 |                           | fsm/intermitente                             |                8 |             15 |         1.88 |
+|  reset_turnos_BUFG          |                           |                                              |                6 |             20 |         3.33 |
+|  clk_IBUF_BUFG              |                           | fsm/FSM_onehot_etapa[15]_i_2_n_1             |                8 |             21 |         2.62 |
+|  clk_IBUF_BUFG              |                           | display/HZ1/CONTADOR0                        |                6 |             24 |         4.00 |
+|  n_0_1043_BUFG              |                           |                                              |               13 |             27 |         2.08 |
+|  puntuaciones2n_1_896_BUFG  |                           |                                              |               10 |             27 |         2.70 |
+|  clk_IBUF_BUFG              |                           | reset_turnos_BUFG                            |               11 |             30 |         2.73 |
+|  clk_IBUF_BUFG              |                           | reset_IBUF                                   |               19 |             44 |         2.32 |
+|  clk_IBUF_BUFG              |                           |                                              |               46 |            105 |         2.28 |
++-----------------------------+---------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+
