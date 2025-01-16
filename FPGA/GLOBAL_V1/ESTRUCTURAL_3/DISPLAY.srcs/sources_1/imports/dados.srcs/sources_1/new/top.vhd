@@ -26,8 +26,8 @@ begin
             when 3 => feedback <= lfsr_reg(2) xor lfsr_reg(0); -- x^3 + x + 1
             when 4 => feedback <= lfsr_reg(3) xor lfsr_reg(2); -- x^4 + x^3 + 1
             when 5 => feedback <= lfsr_reg(4) xor lfsr_reg(2); -- x^5 + x^3 + 1
-            when 6 => feedback <= lfsr_reg(5) xor lfsr_reg(4); -- x^6 + x^5 + 1
-            when 7 => feedback <= lfsr_reg(6) xor lfsr_reg(5); -- x^7 + x^6 + 1 
+            when 6 => feedback <= lfsr_reg(5) xor lfsr_reg(3); -- x^6 + x^5 + 1
+            when 7 => feedback <= lfsr_reg(6) xor lfsr_reg(4); -- x^7 + x^6 + 1 
             when others => feedback <= lfsr_reg(ancho) xor lfsr_reg(ancho + 1);            
         end case;
     end process;
@@ -35,7 +35,7 @@ begin
     -- Actualizar el LFSR
     process (clk, rst)
     begin
-        if rst = '1' then
+        if rst = '0' then
             lfsr_reg <= (others => '1'); -- Reinicia el LFSR con un valor no nulo
         elsif rising_edge(clk) then
             -- Shift con retroalimentación

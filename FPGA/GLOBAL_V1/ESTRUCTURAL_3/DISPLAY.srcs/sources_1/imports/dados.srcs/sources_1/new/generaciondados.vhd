@@ -8,8 +8,8 @@ entity generaciondados is
         n_max : positive := 5  --máximo de dados
     );
     port (
-        clk, rst     : in  std_logic;                          -- Reloj y reset (activo en bajo)
-        CE           : in  std_logic;                          -- Chip Enable
+        clk, rst     : in  std_logic;                          
+        CE           : in  std_logic;                          
         tirar_dados  : in  std_logic_vector(n_max-1 downto 0); -- Dados a tirar (1=tirar, 0=conservar)
         rdy         : out std_logic;                          -- Señal de salida
         dados        : out integer_vector(n_max-1 downto 0)   -- Array de n_max dados
@@ -33,9 +33,9 @@ architecture rtl of generaciondados is
         ancho : positive := 3 -- Ancho del registro
     );
     port (
-        clk     : in std_logic;  -- Reloj
-        rst     : in std_logic;  -- Reset (activo en bajo)
-        rnd_out : out integer    -- Salida aleatoria como entero [1..6]
+        clk     : in std_logic;  
+        rst     : in std_logic;  
+        rnd_out : out integer    
     );
    end component Generador_LFSR;
 
@@ -57,7 +57,7 @@ begin
     -- Proceso para detectar el flanco de subida de CE
     process (clk, rst)
     begin
-        if rst = '1' then
+        if rst = '0' then
             CE_prev <= '0';
             actualizar_dados <= '0';
         elsif rising_edge(clk) then
@@ -69,8 +69,6 @@ begin
             end if;
         end if;
     end process;
-
-
     -- Proceso para actualizar los dados y ready_flags
     process (clk, rst)
     begin
