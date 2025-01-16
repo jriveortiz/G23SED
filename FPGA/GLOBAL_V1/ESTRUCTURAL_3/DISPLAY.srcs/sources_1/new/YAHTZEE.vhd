@@ -37,7 +37,7 @@ signal etapa_temp: integer range 1 to 15;
 signal puntos,puntos_1,puntos_2 : unsigned(9 downto 0);
 signal dados: integer_vector(4 downto 0);
 
-signal CE1: std_logic;
+signal CE1,CE2: std_logic;
 
 begin
 up: entity work.FILTRO_BOTON port map(clk,boton_arriba,up_def);
@@ -64,7 +64,9 @@ fsm: entity work.FSM port map(
     segundo_enter => segundo_enter,
     tirar_dados => tirar_dados,
     etapa_temp => etapa_temp,
-    jugador_n => jugador_n, 
+    jugador_n => jugador_n,
+    H_JP1 => CE1,
+    H_JP2 => CE2, 
     leds => leds
 );
 
@@ -90,7 +92,7 @@ dados_aleatorios: entity work.generaciondados port map(
 );
 
 --FALTA ENTIDAD PUNTUACIONES
-CE1<= not jugador_n;
+--CE1<= not jugador_n;
 puntuaciones1: entity work.punt_glob port map(
     clk=> clk,
     reset => reset_turnos,
@@ -106,7 +108,7 @@ puntuaciones1: entity work.punt_glob port map(
 puntuaciones2: entity work.punt_glob port map(
     clk=> clk,
     reset => reset_turnos,
-    CE => jugador_n, 
+    CE => CE2, 
     seleccion => letras,
     seleccionar => primer_enter,
     seleccionar_pt => segundo_enter,

@@ -18,18 +18,15 @@ begin
 
     process(reset)
         variable turno: unsigned(9 downto 0) := (others => '0');
-        
     begin
-       
-            
-            if  reset = '1'  then
-                if turno = 13 then
-                    turno := (others => '0');  -- Vuelve a 0 cuando llega a 13
-                else
-                    turno := turno + 1;  -- Incrementa el turno
-                end if;
-                
+        if  reset = '1'  then
+            if turno = 13 then
+                turno := (others => '0');  -- Vuelve a 0 cuando llega a 13
+            else
+                turno := turno + 1;  -- Incrementa el turno
             end if;
+            
+        end if;
        
         resultado <= turno;
         if turno = 0 then
