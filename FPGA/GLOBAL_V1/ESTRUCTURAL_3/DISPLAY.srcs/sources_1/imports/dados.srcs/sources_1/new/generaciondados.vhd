@@ -21,9 +21,8 @@ architecture rtl of generaciondados is
     signal rnd_values : integer_vector(n_max-1 downto 0);
     signal ready_flags : std_logic_vector(n_max-1 downto 0) := (others => '0');
     signal dados_i : integer_vector(n_max-1 downto 0) := (others => 0);
-    signal CE_prev : std_logic := '0'; -- Para detectar flanco de CE
     signal ready_i : std_logic := '0';
-    signal actualizar_dados: std_logic := '0';
+    
     
     signal ready_all : std_logic := '0'; -- Señal para indicar que todo está listo
     signal rdy_pulse : std_logic := '0'; -- Pulso de un ciclo para rdy
@@ -54,29 +53,14 @@ begin
             );
     end generate;
 
-    -- Proceso para detectar el flanco de subida de CE
-    process (clk, rst)
-    begin
-        if rst = '0' then
-            CE_prev <= '0';
-            actualizar_dados <= '0';
-        elsif rising_edge(clk) then
-            CE_prev <= CE;
-            if CE = '1' and CE_prev = '0' then
-                actualizar_dados <= '1';  -- Flanco detectado
-            else
-                actualizar_dados <= '0';
-            end if;
-        end if;
-    end process;
     -- Proceso para actualizar los dados y ready_flags
     process (clk, rst)
     begin
-        if rst = '1' then
-            dados_i <= (others => 0);  
+        if rst = '0' then
+            dados_i <= (others => 7);  
             ready_flags <= (others => '0');  
         elsif rising_edge(clk) then
-            if actualizar_dados = '1' then 
+            if CE = '1' then 
                 for i in 0 to n_max-1 loop
                     if tirar_dados(i) = '1' then
                         dados_i(i) <= rnd_values(i);  
@@ -92,7 +76,7 @@ begin
     -- Proceso síncrono para evaluar si todos los ready_flags están listos
     process (clk, rst)
     begin
-        if rst = '1' then
+        if rst = '0' then
             ready_i <= '0';  -- Reset inicial
         elsif rising_edge(clk) then
             ready_i <= '1';

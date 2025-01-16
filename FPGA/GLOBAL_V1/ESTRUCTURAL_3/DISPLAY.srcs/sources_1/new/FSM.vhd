@@ -55,7 +55,7 @@ architecture Behavioral of FSM is
 begin
 habilitador_display <= '1';
 process(clk,reset)
-    variable contador_dado: integer range 0 to 2:=0;
+    variable contador_dado: integer range 0 to 3:=0;
     variable jugadores: jugadores_2;--IMPORTANTE vector de casos ok de cada jugador
     variable indice_jugador: integer range 1 to 2 := 2;
     variable flag_sw: std_logic;
@@ -64,6 +64,7 @@ process(clk,reset)
 begin
     -- etapa := etapa mod 9;
     -- Reset Global
+    habilitador_dados <= '1'; -- tira los dados
     if reset = '0' then
         etapa := 1;
     elsif rising_edge (clk) then 
@@ -150,8 +151,9 @@ begin
                         tirar_dados(i)<= '1';    
                     end if;
                 end loop;
-                
+             --   tirar_dados <= (others => '1');
                 habilitador_num <= '0';
+               
                 habilitador_dados <= '1'; -- tira los dados
                 
                 contador_dado := contador_dado + 1;
@@ -164,8 +166,9 @@ begin
                 letras <= 22; -- muestra los 5 dados
                 habilitador_num <= '0';
                 
-                if boton_enter = '1' and dados_listos = '1' then
-                    if contador_dado = 2 then 
+                --if boton_enter = '1' and dados_listos = '1' then
+                if boton_enter = '1' then
+                    if contador_dado = 3 then 
                         contador_dado := 0; -- reset del contador de tiradas
                         etapa := 10;
                     else
@@ -186,17 +189,19 @@ begin
                 if flag_sw = '1' then 
                     intermitente <= '1';
                 else
-                    etapa := 11;       
+                    etapa := 11;
+                    intermitente <= '0';       
                 end if;
                 
             when 11 => -- DESIGNA EL CASO A PUNTUACION Y PANTALLA
+                
                 habilitador_num <= '1';
                 --Hago la transformación porque coinciden "caso_punto" con "letras"
                 letras <= caso_punto;
                 
                 -- Si la puntuacion esta lista se introduce en uno de los 13 casos
                 --if puntuacion_listos = '1' then 
-                if boton_arriba = '1' then
+                if boton_arriba = '1' and caso_punto < 13 then
                     caso_punto := caso_punto + 1;
                     if jugadores(indice_jugador)(caso_punto) = '1' then 
                         caso_punto := caso_punto + 1;    
@@ -205,7 +210,7 @@ begin
                         caso_punto := 1;
                     end if;
                 
-                elsif boton_abajo = '1' then 
+                elsif boton_abajo = '1' and caso_punto > 1 then 
                     caso_punto := caso_punto - 1;
                     if jugadores(indice_jugador)(caso_punto) = '1' then 
                         caso_punto := caso_punto - 1;    
@@ -246,7 +251,8 @@ begin
                 segundo_enter <= '0';
                 jugador_n <= '0';-- muestra pts jugador 1
                 
-                if boton_enter = '1' and puntuacion_listos_1 = '1' then
+                --if boton_enter = '1' and puntuacion_listos_1 = '1' then
+                if boton_enter = '1' then
                         etapa := 14;
                 end if;
             

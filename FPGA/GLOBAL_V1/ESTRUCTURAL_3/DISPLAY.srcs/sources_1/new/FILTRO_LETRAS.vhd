@@ -98,7 +98,7 @@ begin
             caracter(4) <= 'M';
             caracter(3) <= 'M'; 
         when 12  => -- YAHTZEE
-            caracter(7) <= 'Y';
+            caracter(7) <= '4';
             caracter(6) <= 'A';
             caracter(5) <= 'H';
             caracter(4) <= '7';
@@ -117,10 +117,10 @@ begin
             caracter(3) <= '-';
         when 18  => -- TURN N
             caracter(7) <= '7';
-            caracter(6) <= 'T';
-            caracter(5) <= 'U';
-            caracter(4) <= 'R';
-            caracter(3) <= 'N';
+            caracter(6) <= 'U';
+            caracter(5) <= 'R';
+            caracter(4) <= 'N';
+            caracter(3) <= '-';
         when 19  => -- JUG1-
             caracter(7) <= 'J';
             caracter(6) <= 'U';

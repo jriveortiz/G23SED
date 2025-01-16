@@ -60,11 +60,11 @@ begin
     stimulus_process: process
     begin
         -- Reset Inicial
-        rst <= '0';
+        rst <= '1';
         wait for 20 ns;
-        rst <= '1';  -- Activamos el reset
+        rst <= '0';  -- Activamos el reset
         wait for 20 ns;
-        rst <= '0';  -- Desactivamos el reset
+        rst <= '1';  -- Desactivamos el reset
         
         -- Caso 1: Sin tirar dados (todos los bits de tirar_dados en 0)
         CE <= '1';  -- Habilitamos el chip enable

@@ -27,9 +27,9 @@ signal clk_util: std_logic;
 signal clk_intermitente: std_logic;
 signal digisel: unsigned(7 downto 0):= "00000001"; 
 -- Calculado previamente para obtener 70HZ dividir entre 2 si parpadea
-constant FACTOR_VISUAL: integer:= 1428570/16;--/8 por cada segmento a alimentar
+constant FACTOR_VISUAL: integer:= 1428570/12;--/8 por cada segmento a alimentar
 -- Calculado previamente para obtener la intermitente
-constant FACTOR_INTERMITENTE: integer:= 50000000;
+constant FACTOR_INTERMITENTE: integer:= 50000;
 signal contador: integer range 0 to 7:=0;
 signal segmentos_vector: matriz_vectores;
 signal unidades,decenas,centenas: STD_LOGIC_VECTOR(3 downto 0):= "0000";
