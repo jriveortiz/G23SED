@@ -32,7 +32,7 @@ entity FSM is
         etapa_temp: out integer range 1 to 15;
         --esto va con un multiplexor a la salida de cada puntuación
         jugador_n,H_JP1,H_JP2: out std_logic;-- '0' para jugador 1 y '1' para jugador 2 
-        leds: out std_logic_vector(16 downto 1)
+        leds: out std_logic_vector(15 downto 1)
 );
 end FSM;
 
@@ -69,7 +69,7 @@ process(clk,reset)
                       indice: integer) is
     variable intentos: integer range 0 to 13 := 0; -- Contador de intentos
     begin
-        loop
+        while intentos < 14 loop
             -- Incrementar o decrementar caso
             caso := caso + incremento;
 
@@ -81,15 +81,10 @@ process(clk,reset)
             end if;
             
             intentos := intentos + 1;
-            if intentos > 13 then
-                exit; -- Salir si se alcanza el límite
-            end if;
-
-
-            -- Salir del bucle si el caso no está seleccionado
             if jugadores(indice)(caso) = '0' then
-                exit;
-            end if;
+                exit;    
+            end if;    
+                   
         end loop;
     end procedure;
 
@@ -242,42 +237,42 @@ begin
                 --Hago la transformación porque coinciden "caso_punto" con "letras"
                 --caso_punto:= 1;
                 -- Asignar valor inicial a letras
-                letras <= caso_punto;
-                
-                -- Procedimiento para avanzar al siguiente caso disponible
-                -- Lógica principal
-                if boton_arriba = '1' then
-                    avanzar(caso_punto, 1,jugadores,indice_jugador); -- Avanzar al siguiente caso no seleccionado
-                elsif boton_abajo = '1' then
-                    avanzar(caso_punto, -1,jugadores,indice_jugador); -- Retroceder al caso anterior no seleccionado
-                end if;
-                
-                
-                
 --                letras <= caso_punto;
                 
---                -- Si la puntuacion esta lista se introduce en uno de los 13 casos
---                --if puntuacion_listos = '1' then 
---                if boton_arriba = '1' and caso_punto < 13 then
---                    caso_punto := caso_punto + 1;
+--                -- Procedimiento para avanzar al siguiente caso disponible
+--                -- Lógica principal
+--                if boton_arriba = '1' then
+--                    avanzar(caso_punto, 1,jugadores,indice_jugador); -- Avanzar al siguiente caso no seleccionado
+--                elsif boton_abajo = '1' then
+--                    avanzar(caso_punto, -1,jugadores,indice_jugador); -- Retroceder al caso anterior no seleccionado
+--                end if;
+                
+                
+                
+                letras <= caso_punto;
+                
+                -- Si la puntuacion esta lista se introduce en uno de los 13 casos
+                --if puntuacion_listos = '1' then 
+                if boton_arriba = '1' and caso_punto < 13 then
+                    caso_punto := caso_punto + 1;
                     
---                    if jugadores(indice_jugador)(caso_punto) = '1' then 
---                        caso_punto := caso_punto + 1;    
---                    end if;
---                    if caso_punto > 13 then
---                        caso_punto := 1;
---                    end if;
+                    if jugadores(indice_jugador)(caso_punto) = '1' then 
+                        caso_punto := caso_punto + 1;    
+                    end if;
+                    if caso_punto > 13 then
+                        caso_punto := 1;
+                    end if;
                 
---                elsif boton_abajo = '1' and caso_punto > 1 then 
---                    caso_punto := caso_punto - 1;
---                    if jugadores(indice_jugador)(caso_punto) = '1' then 
---                        caso_punto := caso_punto - 1;    
---                    end if;
---                    if caso_punto < 1 then
---                        caso_punto := 13;
---                    end if;
+                elsif boton_abajo = '1' and caso_punto > 1 then 
+                    caso_punto := caso_punto - 1;
+                    if jugadores(indice_jugador)(caso_punto) = '1' then 
+                        caso_punto := caso_punto - 1;    
+                    end if;
+                    if caso_punto < 1 then
+                        caso_punto := 13;
+                    end if;
                 
-                if boton_enter = '1' then
+                elsif boton_enter = '1' then
                     -- señal para agregar ese dato de ptos a los puntos del jugador
                     -- suma_al_total <= '1';
                     jugadores(indice_jugador)(caso_punto) := '1' ;
@@ -292,7 +287,7 @@ begin
 --                            etapa := 3;
 --                        end if; 
                 end if;
-                --end if;
+--            end if;
             when 11 =>--ETAPA FUGAZ
                 primer_enter <= (others =>'0');
                 segundo_enter <= '1';

@@ -22,7 +22,7 @@ entity YAHTZEE is
         
         digictrl : out unsigned(7 downto 0);              -- Control de los dígitos (8 bits de salida)
         segmentos: out STD_LOGIC_VECTOR(6 downto 0);       -- Segmentos para la visualización de los dígitos (8 bits de salida)
-        leds: out std_logic_vector(16 downto 1)
+        leds: out std_logic_vector(15 downto 1)
     );
 end YAHTZEE;
 
