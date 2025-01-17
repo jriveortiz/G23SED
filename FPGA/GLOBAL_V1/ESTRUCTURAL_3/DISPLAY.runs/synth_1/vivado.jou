@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Jan 17 08:40:11 2025
-# Process ID: 15384
+# Start of session at: Fri Jan 17 17:11:08 2025
+# Process ID: 13048
 # Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.runs/synth_1
 # Command line: vivado.exe -log YAHTZEE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source YAHTZEE.tcl
 # Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.runs/synth_1/YAHTZEE.vds
@@ -17,8 +17,8 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :8467 MB
-# Swap memory       :4299 MB
-# Total Virtual     :12766 MB
-# Available Virtual :2493 MB
+# Swap memory       :5642 MB
+# Total Virtual     :14110 MB
+# Available Virtual :2859 MB
 #-----------------------------------------------------------
 source YAHTZEE.tcl -notrace
