@@ -23,6 +23,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "waveplayer.h"
+#include "File_handling.h"
 
 /* USER CODE END Includes */
 
@@ -66,6 +68,26 @@ void MX_USB_HOST_Process(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+extern ApplicationTypeDef Appli_state; //variable externa en usb_host.c
+extern AUDIO_PLAYBACK_StateTypeDef AudioState;  //variable externa en uwaveplayer.c
+
+int IsFinished = 0;
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if (GPIO_Pin == GPIO_PIN_0 ) //se pueden añadir mas botones
+	{
+		//AudioState = AUDIO_STATE_NEXT; //Aqui se selecciona que hace el boton
+		if (AudioState == AUDIO_STATE_PLAY )
+		{
+			AudioState = AUDIO_STATE_PAUSE;
+		}
+		if (AudioState == AUDIO_STATE_WAIT )
+		{
+			AudioState = AUDIO_STATE_RESUME;
+		}
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -114,6 +136,22 @@ int main(void)
     MX_USB_HOST_Process();
 
     /* USER CODE BEGIN 3 */
+    if (Appli_state == APPLICATION_READY)
+    {
+    	Mount_USB();
+    	AUDIO_PLAYER_Start(0); //El cero indica el indice del archivo de audio
+
+    	while (!IsFinished)
+    	{
+    		AUDIO_PLAYER_Process(true); //LOOP TRUE: Despues de que el ultimo audio termine, empieza con el primero
+    		if (AudioState == AUDIO_STATE_STOP )
+    		{
+    			IsFinished = 1 ;
+    		}
+    	}
+
+    }
+
   }
   /* USER CODE END 3 */
 }
