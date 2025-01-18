@@ -28,7 +28,7 @@ entity FSM is
         intermitente: out STD_LOGIC;
         habilitador_num: out STD_LOGIC;
         primer_enter: out  STD_LOGIC_vector(13 downto 1);
-        segundo_enter: out STD_LOGIC;--VALIDACIONES PTS FINAL
+--        segundo_enter: out STD_LOGIC;--VALIDACIONES PTS FINAL
         tirar_dados: out std_logic_vector(4 downto 0);
         etapa_temp: out integer range 1 to 15;
         --esto va con un multiplexor a la salida de cada puntuación
@@ -304,7 +304,7 @@ begin
 --            end if;
             when 12 =>--ETAPA FUGAZ
                 primer_enter <= (others =>'0');
-                segundo_enter <= '1';
+--                segundo_enter <= '1';
                 etapa := 13; 
             
             
@@ -314,7 +314,7 @@ begin
                 --nuevo enter y el ready 
                 letras <= 23; -- P-FIN
                 habilitador_num <= '1';
-                segundo_enter <= '0';
+--                segundo_enter <= '0';
                 jugador_n <= '0';-- muestra pts jugador 1
                 H_JP1 <= '1';
                 H_JP2 <= '0';

@@ -12,7 +12,6 @@ entity punt_glob is
         ce      : in  STD_LOGIC;
         seleccion  : in integer range 0 to 32;  -- Definir rango de seleccion
         seleccionar: in  STD_LOGIC_vector(13 downto 1);
-        seleccionar_pt : in  STD_LOGIC;
         --dados: integer_vector(4 downto 0);  -- Asumir que arrayofintegers es un tipo definido
         dados: in integer_vector(4 downto 0); 
         resultado  : out unsigned(9 downto 0);
@@ -71,7 +70,7 @@ component case_i_ns
             reset      : in  STD_LOGIC;
             ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC;
-            dados: integer_vector(4 downto 0);
+            dados: in integer_vector(4 downto 0);
             resultado  : out unsigned(9 downto 0);
             ready      : out STD_LOGIC
         );
@@ -88,7 +87,7 @@ component case_i_ns
             reset      : in  STD_LOGIC;
             ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC;
-            dados: integer_vector(4 downto 0);
+            dados: in integer_vector(4 downto 0);
             resultado  : out unsigned(9 downto 0);
             ready      : out STD_LOGIC
         );
@@ -101,7 +100,7 @@ component case_i_ns
             reset      : in  STD_LOGIC := '0';
             ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC := '0';
-            dados: integer_vector(4 downto 0);  
+            dados: in integer_vector(4 downto 0);  
             resultado  : out unsigned(9 downto 0);
             ready      : out STD_LOGIC
         );
@@ -118,7 +117,7 @@ component case_i_ns
             reset      : in  STD_LOGIC := '0';
             ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC := '0';
-            dados: integer_vector(4 downto 0);  
+            dados: in integer_vector(4 downto 0);  
             resultado  : out unsigned(9 downto 0);
             ready      : out STD_LOGIC
         );
@@ -131,7 +130,7 @@ component case_i_ns
             reset      : in  STD_LOGIC := '0';
             ce      : in  STD_LOGIC;
             seleccionar: in  STD_LOGIC := '0';
-            dados: integer_vector(4 downto 0);  
+            dados: in integer_vector(4 downto 0);  
             resultado  : out unsigned(9 downto 0);
             ready      : out STD_LOGIC
         );
@@ -153,7 +152,6 @@ component case_i_ns
             clk         : in std_logic;
             reset       : in std_logic;
             ce          : in std_logic;
-            seleccionar : in std_logic;
             input1      : in unsigned(9 downto 0);
             input2      : in unsigned(9 downto 0);
             input3      : in unsigned(9 downto 0);
@@ -265,7 +263,7 @@ begin
         );
 
     -- Instancia para param = 4
-    instance4: entity work.case_i_ns
+    instance4: entity work.case_i_ns 
         generic map (
             param => 4
         )
@@ -350,7 +348,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(9),
+            seleccionar=> seleccionar(12),
             dados      => dados,
             resultado  => resultado_y,
             ready      => ready_y
@@ -363,7 +361,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(10),
+            seleccionar=> seleccionar(9),
             dados      => dados,
             resultado  => resultado_f,
             ready      => ready_f
@@ -379,7 +377,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(11),
+            seleccionar=> seleccionar(10),
             dados      => dados,
             resultado  => resultado_ep,  -- Podría ser diferente si se desea separar resultados
             ready      => ready_ep
@@ -395,7 +393,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(12),
+            seleccionar=> seleccionar(11),
             dados      => dados,
             resultado  => resultado_eg,  -- Podría ser diferente si se desea separar resultados
             ready      => ready_eg
@@ -406,7 +404,7 @@ begin
             clk        => clk,
             reset      => reset,
             CE          => ce,
-            seleccionar=> seleccionar(1),
+            seleccionar=> seleccionar(13),
             dados      => dados,
             resultado  => resultado_m,
             ready      => ready_m
@@ -427,7 +425,6 @@ begin
             clk         => clk,
             reset       => reset_pt,
             CE          => ce,
-            seleccionar => seleccionar_pt,
             input1      => resultado1,
             input2      => resultado2,
             input3      => resultado3,

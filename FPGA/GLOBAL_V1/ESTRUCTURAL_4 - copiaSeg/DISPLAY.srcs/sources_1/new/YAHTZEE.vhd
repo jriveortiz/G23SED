@@ -29,7 +29,7 @@ end YAHTZEE;
 architecture Behavioral of YAHTZEE is
 signal up_def,down_def,enter_def,sumturno1,sumturno2: std_logic;
 signal dados_listos,puntuacion_listos_1,puntuacion_listos_2,habilitador_dados: std_logic;
-signal habilitador_display,intermitente,habilitador_num,jugador_n,segundo_enter:std_logic;
+signal habilitador_display,intermitente,habilitador_num,jugador_n:std_logic;
 signal primer_enter: STD_LOGIC_vector(13 downto 1);
 signal letras: integer range 0 to 32;
 signal tirar_dados: std_logic_vector(4 downto 0);
@@ -62,7 +62,7 @@ fsm: entity work.FSM port map(
     intermitente => intermitente,
     habilitador_num => habilitador_num,
     primer_enter => primer_enter,
-    segundo_enter => segundo_enter,
+--    segundo_enter => segundo_enter,
     tirar_dados => tirar_dados,
     etapa_temp => etapa_temp,
     jugador_n => jugador_n,
@@ -100,7 +100,6 @@ puntuaciones1: entity work.punt_glob port map(
     CE => CE1,
     seleccion => letras,
     seleccionar => primer_enter,
-    seleccionar_pt => segundo_enter,
     dados => dados,
     resultado => puntos_1,
     ready => puntuacion_listos_1
@@ -112,7 +111,6 @@ puntuaciones2: entity work.punt_glob port map(
     CE => CE2, 
     seleccion => letras,
     seleccionar => primer_enter,
-    seleccionar_pt => segundo_enter,
     dados => dados,
     resultado => puntos_2,
     ready => puntuacion_listos_2

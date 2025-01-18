@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.runs/impl_1/YAHTZEE.tcl"
+  variable script "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.runs/impl_1/YAHTZEE.tcl"
   variable category "vivado_impl"
 }
 
@@ -113,15 +113,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.cache/wt [current_project]
-  set_property parent.project_path C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.xpr [current_project]
-  set_property ip_output_repo C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.runs/synth_1/YAHTZEE.dcp
+  add_files -quiet {{C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.runs/synth_1/YAHTZEE.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc
+  read_xdc {{C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

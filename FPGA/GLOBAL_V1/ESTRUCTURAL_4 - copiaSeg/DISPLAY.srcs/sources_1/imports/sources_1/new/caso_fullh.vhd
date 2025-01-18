@@ -3,7 +3,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;  -- Reemplaza STD_LOGIC_ARITH y STD_LOGIC_UNSIGNED
-use work.TiposComunes.all;
+use work.types_pkg.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -21,7 +21,7 @@ Port (
         seleccionar: in  STD_LOGIC:='0';
         ce      : in  STD_LOGIC;
         --enable     : in  STD_LOGIC;
-        dados      : in arrayofintegers;  
+        dados      : in integer_vector(4 downto 0);  
         resultado  : out unsigned(9 downto 0);
         ready       : out STD_LOGIC
         );
@@ -67,13 +67,13 @@ begin
                     else 
                         flag3 := flag3 -1;
                     end if;
-                     if n_ns(i) = 3 then
+                     if n_ns(i) = 2 then
                         flag2 := flag2 + 1;
                     else 
                         flag2 := flag2 -1;
                     end if;
                 end loop;
-                if flag2 > 0 then
+                if flag2 > 0 and flag3 > 0 then
                     resultado <= to_unsigned(25, 10);
                 else
                     resultado <= to_unsigned(0, 10); -- Asignar 0 como un número sin signo de 10 bits

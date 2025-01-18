@@ -3,12 +3,12 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Jan 17 19:24:54 2025
-# Process ID: 13108
-# Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9164 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.xpr
-# Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/vivado.log
-# Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4\vivado.jou
+# Start of session at: Sat Jan 18 18:49:09 2025
+# Process ID: 16888
+# Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4072 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.xpr
+# Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/vivado.log
+# Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg\vivado.jou
 # Running On        :LAPTOP-I6E0CIJ5
 # Platform          :Windows Server 2016 or Windows 10
 # Operating System  :19045
@@ -17,12 +17,14 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :8467 MB
-# Swap memory       :2976 MB
-# Total Virtual     :11443 MB
-# Available Virtual :2339 MB
+# Swap memory       :1997 MB
+# Total Virtual     :10464 MB
+# Available Virtual :3548 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.xpr
+open_project {C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg'
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
@@ -86,224 +88,171 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2024.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.gen/sources_1'.
+INFO: [Project 1-313] Project file moved from 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
-open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:17 . Memory (MB): peak = 1583.340 ; gain = 517.828
+open_project: Time (s): cpu = 00:00:35 ; elapsed = 00:00:18 . Memory (MB): peak = 1577.453 ; gain = 516.305
 update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-set_property top punt_glob_tb [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'punt_glob_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'punt_glob_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj punt_glob_tb_vhdl.prj"
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/types_pkg.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/conversion_datos.vhd" into library xil_defaultlib
-WARNING: [VRFC 10-3607] overwriting existing primary unit 'tiposcomunes' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/conversion_datos.vhd:35]
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'case_i_ns'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'punt_glob'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'case_escaleras'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'case_tcy'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_fullh.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'caso_fullh'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_magico.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'caso_magico'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'caso_turnos'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/new/caso_yahtz.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'caso_yahtz'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/new/demux.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'demux'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'punt_total'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sim_1/new/tb_puntuacionglobal.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'punt_glob_tb'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot punt_glob_tb_behav xil_defaultlib.punt_glob_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot punt_glob_tb_behav xil_defaultlib.punt_glob_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-3290] entity port 'dados' does not match with type integer_vector of component port [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:104]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit punt_glob_tb in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1605.879 ; gain = 0.000
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'punt_glob_tb'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'punt_glob_tb' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj punt_glob_tb_vhdl.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot punt_glob_tb_behav xil_defaultlib.punt_glob_tb -log elaborate.log"
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot punt_glob_tb_behav xil_defaultlib.punt_glob_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-3290] entity port 'dados' does not match with type integer_vector of component port [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:104]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit punt_glob_tb in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1624.023 ; gain = 0.000
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-ERROR: [Common 17-180] Spawn failed: No error
 reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/utils_1/imports/synth_1/DISPLAY_PUNTOS.dcp with file C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.runs/synth_1/YAHTZEE.dcp
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
+INFO: [Project 1-1161] Replacing file C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.srcs/utils_1/imports/synth_1/DISPLAY_PUNTOS.dcp with file C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.runs/synth_1/YAHTZEE.dcp
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
 launch_runs impl_1 -to_step write_bitstream -jobs 4
-[Fri Jan 17 19:40:40 2025] Launched synth_1...
-Run output will be captured here: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.runs/synth_1/runme.log
-[Fri Jan 17 19:40:40 2025] Launched impl_1...
-Run output will be captured here: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.runs/impl_1/runme.log
+[Sat Jan 18 19:01:35 2025] Launched synth_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.runs/synth_1/runme.log
+[Sat Jan 18 19:01:35 2025] Launched impl_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.runs/synth_1
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sim_1\new\tb_puntuacionglobal.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
 ERROR: [Common 17-180] Spawn failed: No error
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2024.1.0
-  **** Build date : Mar  6 2024 at 20:50:54
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2024.1.0
-  ****** Build date   : Mar 09 2024-01:00:37
-    **** Build number : 2024.1.1709942437
-      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
-      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1634.449 ; gain = 10.426
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292BB31CFA
-set_property PROGRAM.FILE {C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.runs/impl_1/YAHTZEE.bit} [get_hw_devices xc7a100t_0]
-current_hw_device [get_hw_devices xc7a100t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
-set_property PROGRAM.FILE {C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.runs/impl_1/YAHTZEE.bit} [get_hw_devices xc7a100t_0]
-program_hw_devices [get_hw_devices xc7a100t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292BB31CFA
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 19:47:19 2025...
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\case_tcy.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_turnos.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\imports\new\punt_glob.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\FSM.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\sources_1\new\caso_fullh.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\imports\new\punt_total.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4 - copiaSeg\DISPLAY.srcs\sources_1\new\YAHTZEE.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Jan 18 19:04:44 2025] Launched synth_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.runs/synth_1/runme.log
+[Sat Jan 18 19:04:44 2025] Launched impl_1...
+Run output will be captured here: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4 - copiaSeg/DISPLAY.runs/impl_1/runme.log
