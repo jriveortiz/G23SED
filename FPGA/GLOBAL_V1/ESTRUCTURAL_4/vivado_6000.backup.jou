@@ -3,10 +3,10 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Jan 18 18:39:39 2025
-# Process ID: 11820
+# Start of session at: Sat Jan 18 18:07:04 2025
+# Process ID: 6000
 # Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4736 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6960 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_4\DISPLAY.xpr
 # Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/vivado.log
 # Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4\vivado.jou
 # Running On        :LAPTOP-I6E0CIJ5
@@ -19,6 +19,8 @@
 # Host memory       :8467 MB
 # Swap memory       :1997 MB
 # Total Virtual     :10464 MB
-# Available Virtual :2075 MB
+# Available Virtual :2516 MB
 #-----------------------------------------------------------
 start_gui
+open_project C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.xpr
+update_compile_order -fileset sources_1
