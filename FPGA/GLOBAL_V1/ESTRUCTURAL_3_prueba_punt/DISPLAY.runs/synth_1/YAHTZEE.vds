@@ -1,0 +1,630 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Jan 17 08:40:11 2025
+# Process ID: 15384
+# Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.runs/synth_1
+# Command line: vivado.exe -log YAHTZEE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source YAHTZEE.tcl
+# Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.runs/synth_1/YAHTZEE.vds
+# Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.runs/synth_1\vivado.jou
+# Running On        :LAPTOP-I6E0CIJ5
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8467 MB
+# Swap memory       :4299 MB
+# Total Virtual     :12766 MB
+# Available Virtual :2493 MB
+#-----------------------------------------------------------
+source YAHTZEE.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 542.328 ; gain = 235.336
+Command: read_checkpoint -auto_incremental -incremental C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/utils_1/imports/synth_1/DISPLAY_PUNTOS.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/utils_1/imports/synth_1/DISPLAY_PUNTOS.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top YAHTZEE -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Device 21-9227] Part: xc7a100tcsg324-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6272
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1411.477 ; gain = 449.422
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-9871] overwriting existing primary unit 'tiposcomunes' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/conversion_datos.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'YAHTZEE' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/YAHTZEE.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'FILTRO_BOTON' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'SYNCHRNZR' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/SYNCHRNZR.vhd:10]
+INFO: [Synth 8-638] synthesizing module 'EDGEDTCTR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/EDGEDTCTR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'EDGEDTCTR' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/EDGEDTCTR.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'FILTRO_BOTON' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/FSM.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/FSM.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'DISPLAY_PUNTOS' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DISPLAY.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'DIVISOR_HZ' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DIVISOR_HZ.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'DIVISOR_HZ' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DIVISOR_HZ.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'unsigned_to_bcd' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd:15]
+WARNING: [Synth 8-614] signal 'centenas' is read in the process but is not in the sensitivity list [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd:19]
+WARNING: [Synth 8-614] signal 'decenas' is read in the process but is not in the sensitivity list [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd:19]
+WARNING: [Synth 8-614] signal 'unidades' is read in the process but is not in the sensitivity list [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'unsigned_to_bcd' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd:15]
+WARNING: [Synth 8-614] signal 'clk_intermitente' is read in the process but is not in the sensitivity list [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DISPLAY.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'DECODER' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DECODER.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'DECODER' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DECODER.vhd:11]
+INFO: [Synth 8-638] synthesizing module 'FILTRO_LETRAS' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/FILTRO_LETRAS.vhd:19]
+WARNING: [Synth 8-614] signal 'dados' is read in the process but is not in the sensitivity list [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/FILTRO_LETRAS.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'DECODER_LETRAS' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DECODER_LETRAS.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'DECODER_LETRAS' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DECODER_LETRAS.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'FILTRO_LETRAS' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/FILTRO_LETRAS.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'DISPLAY_PUNTOS' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/DISPLAY.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'generaciondados' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd:19]
+	Parameter ancho bound to: 3 - type: integer 
+INFO: [Synth 8-3491] module 'Generador_LFSR' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:5' bound to instance 'LFSR_inst' of component 'Generador_LFSR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Generador_LFSR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generador_LFSR' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'Generador_LFSR' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:5' bound to instance 'LFSR_inst' of component 'Generador_LFSR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Generador_LFSR__parameterized1' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generador_LFSR__parameterized1' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Generador_LFSR' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:5' bound to instance 'LFSR_inst' of component 'Generador_LFSR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Generador_LFSR__parameterized3' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generador_LFSR__parameterized3' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Generador_LFSR' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:5' bound to instance 'LFSR_inst' of component 'Generador_LFSR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Generador_LFSR__parameterized5' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generador_LFSR__parameterized5' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'Generador_LFSR' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:5' bound to instance 'LFSR_inst' of component 'Generador_LFSR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'Generador_LFSR__parameterized7' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+	Parameter ancho bound to: 7 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Generador_LFSR__parameterized7' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'generaciondados' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd:19]
+INFO: [Synth 8-638] synthesizing module 'punt_glob' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:23]
+INFO: [Synth 8-3491] module 'caso_yahtz' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/caso_yahtz.vhd:36' bound to instance 'instance_caso_yahtz' of component 'caso_yahtz' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:218]
+INFO: [Synth 8-638] synthesizing module 'caso_yahtz' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/caso_yahtz.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'caso_yahtz' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/caso_yahtz.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+	Parameter param bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized0' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+	Parameter param bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized0' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized1' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+	Parameter param bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized1' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized2' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+	Parameter param bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized2' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized3' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+	Parameter param bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized3' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'case_i_ns__parameterized4' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+	Parameter param bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_i_ns__parameterized4' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:24]
+	Parameter param bound to: 3 - type: integer 
+	Parameter res bound to: 15 - type: integer 
+INFO: [Synth 8-3491] module 'case_tcy' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:34' bound to instance 'instance_case_t' of component 'case_tcy' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:312]
+INFO: [Synth 8-638] synthesizing module 'case_tcy' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:52]
+	Parameter param bound to: 3 - type: integer 
+	Parameter res bound to: 15 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_tcy' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:52]
+	Parameter param bound to: 4 - type: integer 
+	Parameter res bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'case_tcy' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:34' bound to instance 'instance_case_c' of component 'case_tcy' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:328]
+INFO: [Synth 8-638] synthesizing module 'case_tcy__parameterized1' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:52]
+	Parameter param bound to: 4 - type: integer 
+	Parameter res bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_tcy__parameterized1' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:52]
+	Parameter param bound to: 5 - type: integer 
+	Parameter res bound to: 50 - type: integer 
+INFO: [Synth 8-3491] module 'case_tcy' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:34' bound to instance 'instance_case_y' of component 'case_tcy' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:344]
+INFO: [Synth 8-638] synthesizing module 'case_tcy__parameterized3' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:52]
+	Parameter param bound to: 5 - type: integer 
+	Parameter res bound to: 50 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_tcy__parameterized3' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:52]
+INFO: [Synth 8-3491] module 'caso_fullh' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_fullh.vhd:16' bound to instance 'instance_caso_fullh' of component 'caso_fullh' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:361]
+INFO: [Synth 8-638] synthesizing module 'caso_fullh' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_fullh.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'caso_fullh' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_fullh.vhd:30]
+	Parameter param bound to: 3 - type: integer 
+	Parameter res bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'case_escaleras' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd:8' bound to instance 'instance_caso_ep' of component 'case_escaleras' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'case_escaleras' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd:25]
+	Parameter param bound to: 3 - type: integer 
+	Parameter res bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_escaleras' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd:25]
+	Parameter param bound to: 4 - type: integer 
+	Parameter res bound to: 25 - type: integer 
+INFO: [Synth 8-3491] module 'case_escaleras' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd:8' bound to instance 'instance_caso_eg' of component 'case_escaleras' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:389]
+INFO: [Synth 8-638] synthesizing module 'case_escaleras__parameterized1' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd:25]
+	Parameter param bound to: 4 - type: integer 
+	Parameter res bound to: 25 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'case_escaleras__parameterized1' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_escaleras.vhd:25]
+INFO: [Synth 8-3491] module 'caso_magico' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_magico.vhd:15' bound to instance 'instance_caso_m' of component 'caso_magico' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:404]
+INFO: [Synth 8-638] synthesizing module 'caso_magico' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_magico.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'caso_magico' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_magico.vhd:29]
+INFO: [Synth 8-3491] module 'caso_turnos' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd:6' bound to instance 'instancia_caso_turnos' of component 'caso_turnos' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:416]
+INFO: [Synth 8-638] synthesizing module 'caso_turnos' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'caso_turnos' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd:15]
+INFO: [Synth 8-3491] module 'punt_total' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd:32' bound to instance 'instancia_punt_total' of component 'punt_total' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:425]
+INFO: [Synth 8-638] synthesizing module 'punt_total' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'punt_total' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd:69]
+INFO: [Synth 8-3491] module 'demux' declared at 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/demux.vhd:8' bound to instance 'instancia_demux' of component 'demux' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:462]
+INFO: [Synth 8-638] synthesizing module 'demux' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/demux.vhd:32]
+WARNING: [Synth 8-153] case item 31'b0000000000000000000000000010111 will never be executed [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/demux.vhd:35]
+WARNING: [Synth 8-153] case item 31'b0000000000000000000000000010010 will never be executed [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/demux.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'demux' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/new/demux.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'punt_glob' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_10_UNSIGNED' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/MUX_10_UNSIGNED.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'MUX_10_UNSIGNED' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/MUX_10_UNSIGNED.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'YAHTZEE' (0#1) [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/new/YAHTZEE.vhd:29]
+WARNING: [Synth 8-7129] Port input14[9] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[8] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[7] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[6] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[5] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[4] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[3] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[2] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[1] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input14[0] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[9] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[8] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[7] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[6] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[5] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[4] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[3] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[2] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[1] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port input15[0] in module demux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module caso_turnos is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][20] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][19] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][18] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][17] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][16] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][15] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][14] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][13] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][12] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][11] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[4][10] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][20] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][19] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][18] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][17] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][16] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][15] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][14] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][13] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][12] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][11] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[3][10] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][20] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][19] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][18] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][17] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][16] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][15] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][14] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][13] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][12] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][11] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[2][10] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][31] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][30] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][29] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][28] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][27] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][26] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][25] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][24] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][23] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][22] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][21] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][20] in module caso_magico is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dados[1][19] in module caso_magico is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1540.977 ; gain = 578.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1540.977 ; gain = 578.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1540.977 ; gain = 578.922
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.175 . Memory (MB): peak = 1540.977 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/constrs_1/imports/digilent-xdc-master/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/YAHTZEE_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/YAHTZEE_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1635.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1635.484 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'etapa_reg' in module 'FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'indice_jugador_reg' in module 'FSM'
+WARNING: [Synth 8-3936] Found unconnected internal register 'resultado_i_reg' and it is trimmed from '32' to '10' bits. [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'resultado_i_reg' and it is trimmed from '32' to '10' bits. [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'resultado_i_reg' and it is trimmed from '32' to '10' bits. [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'resultado_i_reg' and it is trimmed from '32' to '10' bits. [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:55]
+WARNING: [Synth 8-3936] Found unconnected internal register 'resultado_i_reg' and it is trimmed from '32' to '10' bits. [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:55]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                               10 |                               10
+                  iSTATE |                               01 |                               01
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'indice_jugador_reg' in module 'FSM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                iSTATE13 |                  000000000000001 |                            00001
+                 iSTATE9 |                  000000000000010 |                            00010
+                 iSTATE6 |                  000000000000100 |                            00011
+                 iSTATE7 |                  000000000001000 |                            00100
+                 iSTATE5 |                  000000000010000 |                            00101
+                 iSTATE2 |                  000000000100000 |                            00110
+                 iSTATE0 |                  000000001000000 |                            00111
+                 iSTATE1 |                  000000010000000 |                            01000
+                  iSTATE |                  000000100000000 |                            01001
+                iSTATE12 |                  000001000000000 |                            01010
+                iSTATE10 |                  000010000000000 |                            01011
+                iSTATE11 |                  000100000000000 |                            01100
+                 iSTATE8 |                  001000000000000 |                            01101
+                 iSTATE4 |                  010000000000000 |                            01110
+                 iSTATE3 |                  100000000000000 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'etapa_reg' using encoding 'one-hot' in module 'FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'turno_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd:23]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   5 Input   32 Bit       Adders := 8     
+	   3 Input   32 Bit       Adders := 16    
+	   5 Input   10 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 112   
+	   2 Input    3 Bit       Adders := 118   
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 5     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               13 Bit    Registers := 3     
+	               10 Bit    Registers := 16    
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 43    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 80    
+	  15 Input   15 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 15    
+	   2 Input   13 Bit        Muxes := 9     
+	  15 Input   13 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 7     
+	   7 Input    8 Bit        Muxes := 5     
+	   2 Input    8 Bit        Muxes := 5     
+	  24 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 37    
+	  15 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 9     
+	  15 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 10    
+	   3 Input    4 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 2     
+	  15 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 14    
+	   5 Input    1 Bit        Muxes := 1     
+	  15 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[0]) is unused and will be removed from module case_i_ns__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[1]) is unused and will be removed from module case_i_ns__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[0]) is unused and will be removed from module case_i_ns__parameterized4__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[9]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[8]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[7]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[6]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[5]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[4]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[3]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[2]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[1]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[0]) is unused and will be removed from module caso_turnos__1.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[0]) is unused and will be removed from module case_i_ns__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[1]) is unused and will be removed from module case_i_ns__parameterized2.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[0]) is unused and will be removed from module case_i_ns__parameterized4.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[9]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[8]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[7]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[6]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[5]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[4]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[3]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[2]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[1]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (turno_reg[0]) is unused and will be removed from module caso_turnos.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__1.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__parameterized0__1.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__parameterized2__1.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__parameterized3__1.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__parameterized0.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__parameterized2.
+WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__parameterized3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------+-----------------+---------------+----------------+
+|Module Name    | RTL Object      | Depth x Width | Implemented As | 
++---------------+-----------------+---------------+----------------+
+|DECODER_LETRAS | segments        | 128x7         | LUT            | 
+|DISPLAY_PUNTOS | D4/DL3/segments | 128x7         | LUT            | 
+|DISPLAY_PUNTOS | D4/DL4/segments | 128x7         | LUT            | 
+|DISPLAY_PUNTOS | D4/DL5/segments | 128x7         | LUT            | 
+|DISPLAY_PUNTOS | D4/DL6/segments | 128x7         | LUT            | 
+|DISPLAY_PUNTOS | D4/DL7/segments | 128x7         | LUT            | 
++---------------+-----------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|YAHTZEE     | up/U2/sreg_reg[0]    | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|YAHTZEE     | down/U2/sreg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|YAHTZEE     | enter/U2/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    92|
+|3     |LUT1   |    15|
+|4     |LUT2   |    63|
+|5     |LUT3   |   156|
+|6     |LUT4   |   168|
+|7     |LUT5   |   238|
+|8     |LUT6   |   448|
+|9     |MUXF7  |    53|
+|10    |SRL16E |     3|
+|11    |FDCE   |    61|
+|12    |FDPE   |    53|
+|13    |FDRE   |   126|
+|14    |LD     |    54|
+|15    |IBUF   |    10|
+|16    |OBUF   |    30|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1635.484 ; gain = 673.430
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 457 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:16 . Memory (MB): peak = 1635.484 ; gain = 578.922
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 1635.484 ; gain = 673.430
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1635.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 199 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1635.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 54 instances were transformed.
+  LD => LDCE: 54 instances
+
+Synth Design complete | Checksum: 2d528d3a
+INFO: [Common 17-83] Releasing license: Synthesis
+115 Infos, 154 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1635.484 ; gain = 1087.965
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1635.484 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3/DISPLAY.runs/synth_1/YAHTZEE.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file YAHTZEE_utilization_synth.rpt -pb YAHTZEE_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 17 08:41:56 2025...

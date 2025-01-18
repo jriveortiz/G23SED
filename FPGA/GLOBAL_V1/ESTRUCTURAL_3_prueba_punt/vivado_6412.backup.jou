@@ -1,0 +1,228 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Jan 17 19:36:00 2025
+# Process ID: 6412
+# Current directory: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9868 C:\Users\usuario\Github\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_3_prueba_punt\DISPLAY.xpr
+# Log file: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/vivado.log
+# Journal file: C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt\vivado.jou
+# Running On        :DESKTOP-J6QLH0T
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-4800MQ CPU @ 2.70GHz
+# CPU Frequency     :2694 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :17107 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19657 MB
+# Available Virtual :14796 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/YAHTZEE.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/YAHTZEE.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/DISPLAY.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/DISPLAY.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/FILTRO_LETRAS.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/FILTRO_LETRAS.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/imports/dados.srcs/sim_1/new/lfsr.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/imports/dados.srcs/sim_1/new/lfsr.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/imports/dados.srcs/sim_1/new/tb_generaciondados.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/imports/dados.srcs/sim_1/new/tb_generaciondados.vhd
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/DECODER.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/DECODER.vhd
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/DIVISOR_HZ.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/DECODER_LETRAS.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/EDGEDTCTR.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/FSM.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/MUX_10_UNSIGNED.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/SYNCHRNZR.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd] -no_script -reset -force -quiet
+remove_files  {C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/DIVISOR_HZ.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/DECODER_LETRAS.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/EDGEDTCTR.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/FSM.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/top.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/MUX_10_UNSIGNED.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/SYNCHRNZR.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/unsigned_to_bcd.vhd}
+close [ open C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/punt_total_p.vhd w ]
+add_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/punt_total_p.vhd
+update_compile_order -fileset sources_1
+close [ open C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/case_tcy_p.vhd w ]
+add_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/case_tcy_p.vhd
+close [ open C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/case_fullh_p.vhd w ]
+add_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/case_fullh_p.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/case_tcy_p.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/case_tcy_p.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_FSM.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/simu_display_1.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/simu_divisor.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/simu_unsigned_to_bcd.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_FSM.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/simu_display_1.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/simu_divisor.vhd C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/simu_unsigned_to_bcd.vhd}
+close [ open C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/case_tcy_prueba.vhd w ]
+add_files C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sources_1/new/case_tcy_prueba.vhd
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_punt_total_p.vhd w ]
+add_files -fileset sim_1 C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_punt_total_p.vhd
+close [ open C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_case_fullh_p.vhd w ]
+add_files -fileset sim_1 C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_case_fullh_p.vhd
+close [ open C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_punt_glob.vhd w ]
+add_files -fileset sim_1 C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_punt_glob.vhd
+close [ open C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_case_tcy_p.vhd w ]
+add_files -fileset sim_1 C:/Users/usuario/Github/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_3_prueba_punt/DISPLAY.srcs/sim_1/new/tb_case_tcy_p.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_case_tcy_p [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top case_tcy_prueba [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_case_tcy_p.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_case_tcy_p.tcl
+close_sim
+launch_simulation
+source tb_case_tcy_p.tcl
+close_sim
+launch_simulation
+source tb_case_tcy_p.tcl
+close_sim
+launch_simulation
+source tb_case_tcy_p.tcl
+close_sim
+launch_simulation
+source tb_case_tcy_p.tcl
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top case_tcy_p [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_case_tcy_p.tcl
+close_sim
+launch_simulation
+source tb_case_tcy_p.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top caso_fullh_p [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_caso_fullh_p [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+run all
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+launch_simulation
+source tb_caso_fullh_p.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top punt_total_p [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_punt_total_p [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tb_punt_total_p.tcl
+close_sim
+launch_simulation
+source tb_punt_total_p.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top punt_glob [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top punt_glob_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
