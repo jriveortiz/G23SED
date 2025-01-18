@@ -6,7 +6,7 @@ use work.TiposComunes.all;
 entity caso_turnos is
    Port (
         clk           : in  STD_LOGIC;
-        reset         : in  STD_LOGIC := '0';
+        reset         : in  STD_LOGIC;
         resultado     : out unsigned(9 downto 0);
         rst_punt_total: out STD_LOGIC
    );
@@ -34,6 +34,7 @@ begin
         else
             rst_punt_total <= '0';
         end if;
+    
     end process;
 
 end Behavioral;

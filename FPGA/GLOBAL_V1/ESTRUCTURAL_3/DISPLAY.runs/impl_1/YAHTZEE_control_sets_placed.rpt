@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Fri Jan 17 08:43:54 2025
+| Date         : Fri Jan 17 17:14:25 2025
 | Host         : LAPTOP-I6E0CIJ5 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file YAHTZEE_control_sets_placed.rpt
 | Design       : YAHTZEE
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    14 |
-|    Minimum number of control sets                        |    14 |
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    42 |
+| Unused register locations in slices containing registers |    47 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    14 |
-| >= 0 to < 4        |     0 |
+| Total control sets |    18 |
+| >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     5 |
-| >= 6 to < 8        |     2 |
-| >= 8 to < 10       |     0 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     2 |
 | >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     1 |
-| >= 16              |     5 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             123 |           56 |
-| No           | No                    | Yes                    |             105 |           58 |
-| No           | Yes                   | No                     |              24 |            6 |
-| Yes          | No                    | No                     |              28 |           11 |
-| Yes          | No                    | Yes                    |               9 |            2 |
+| No           | No                    | No                     |             163 |           62 |
+| No           | No                    | Yes                    |             115 |           61 |
+| No           | Yes                   | No                     |              49 |           13 |
+| Yes          | No                    | No                     |              28 |           10 |
+| Yes          | No                    | Yes                    |               9 |            3 |
 | Yes          | Yes                   | No                     |               5 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,23 +70,27 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------------+---------------------------+----------------------------+------------------+----------------+--------------+
-|         Clock Signal        |       Enable Signal       |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
-+-----------------------------+---------------------------+----------------------------+------------------+----------------+--------------+
-|  clk_IBUF_BUFG              |                           | fsm/reset_turnos           |                4 |              4 |         1.00 |
-|  clk_IBUF_BUFG              | down/U2/E[0]              | fsm/reset                  |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG              | enter/U2/enter_def        | fsm/reset                  |                1 |              5 |         5.00 |
-|  clk_IBUF_BUFG              | fsm/tirar_dados0          | fsm/tirar_dados[4]_i_1_n_0 |                2 |              5 |         2.50 |
-|  clk_IBUF_BUFG              | fsm/letras0               |                            |                2 |              5 |         2.50 |
-|  clk_IBUF_BUFG              | puntuaciones1n_0_567_BUFG |                            |                2 |              6 |         3.00 |
-|  clk_IBUF_BUFG              | puntuaciones2n_0_797_BUFG |                            |                2 |              6 |         3.00 |
-|  display/HZ1/CLK_TEMP_reg_0 | fsm/E[0]                  |                            |                5 |             11 |         2.20 |
-|  display/HZ1/CLK_TEMP_reg_0 |                           | fsm/intermitente           |                8 |             15 |         1.88 |
-|  clk_IBUF_BUFG              |                           | display/HZ1/CONTADOR0      |                6 |             24 |         4.00 |
-|  puntuaciones1n_0_567_BUFG  |                           |                            |               12 |             27 |         2.25 |
-|  puntuaciones2n_0_797_BUFG  |                           |                            |               12 |             27 |         2.25 |
-|  clk_IBUF_BUFG              |                           |                            |               32 |             72 |         2.25 |
-|  clk_IBUF_BUFG              |                           | fsm/reset                  |               46 |             86 |         1.87 |
-+-----------------------------+---------------------------+----------------------------+------------------+----------------+--------------+
++----------------------------+---------------------------+---------------------------------+------------------+----------------+--------------+
+|        Clock Signal        |       Enable Signal       |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------+---------------------------+---------------------------------+------------------+----------------+--------------+
+|  fsm/intermitente_reg_0    |                           | display/HZ2/CLK_TEMP_reg_1      |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG             |                           | fsm/reset_turnos                |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG             | fsm/caso_punto[3]_i_1_n_0 | fsm/reset                       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG             | enter/U3/enter_def        | fsm/reset                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG             | fsm/tirar_dados0          | fsm/tirar_dados[4]_i_1_n_0      |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG             | fsm/letras0               |                                 |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG             | puntuaciones1n_0_612_BUFG |                                 |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG             | puntuaciones2n_0_842_BUFG |                                 |                2 |              6 |         3.00 |
+|  digisel_reg[7]_i_2_n_0    |                           | fsm/intermitente                |                6 |              7 |         1.17 |
+|  digisel_reg[7]_i_2_n_0    |                           | display/HZ2/CLK_TEMP_reg_1      |                5 |              8 |         1.60 |
+|  digisel_reg[7]_i_2_n_0    |                           | fsm/intermitente_reg_0          |                3 |              8 |         2.67 |
+|  digisel_reg[7]_i_2_n_0    | fsm/E[0]                  |                                 |                3 |             11 |         3.67 |
+|  clk_IBUF_BUFG             |                           | display/HZ2/CONTADOR[0]_i_1_n_0 |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG             |                           | display/HZ1/CONTADOR0           |                6 |             24 |         4.00 |
+|  puntuaciones1n_0_612_BUFG |                           |                                 |               12 |             27 |         2.25 |
+|  puntuaciones2n_0_842_BUFG |                           |                                 |               11 |             27 |         2.45 |
+|  clk_IBUF_BUFG             |                           | fsm/reset                       |               43 |             88 |         2.05 |
+|  clk_IBUF_BUFG             |                           |                                 |               39 |            112 |         2.87 |
++----------------------------+---------------------------+---------------------------------+------------------+----------------+--------------+
 
 

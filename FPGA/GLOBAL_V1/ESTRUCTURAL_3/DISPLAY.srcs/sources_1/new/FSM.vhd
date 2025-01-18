@@ -32,7 +32,7 @@ entity FSM is
         etapa_temp: out integer range 1 to 15;
         --esto va con un multiplexor a la salida de cada puntuación
         jugador_n,H_JP1,H_JP2: out std_logic;-- '0' para jugador 1 y '1' para jugador 2 
-        leds: out std_logic_vector(15 downto 1)
+        leds: out std_logic_vector(16 downto 1)
 );
 end FSM;
 
@@ -69,7 +69,7 @@ process(clk,reset)
                       indice: integer) is
     variable intentos: integer range 0 to 13 := 0; -- Contador de intentos
     begin
-        while intentos < 14 loop
+        for intentos in 0 to 13 loop
             -- Incrementar o decrementar caso
             caso := caso + incremento;
 
@@ -80,7 +80,7 @@ process(clk,reset)
                 caso := 13;
             end if;
             
-            intentos := intentos + 1;
+ --           intentos := intentos + 1;
             if jugadores(indice)(caso) = '0' then
                 exit;    
             end if;    
@@ -113,7 +113,6 @@ begin
                 --leds <= (100000000000000);
             
             when 2 => -- JUGADORES en caso de querer meter mas de 2 jugadores
-                --letras <= 17;
                 --Reset al registro de turno de los jugadores
                 jugadores(1) := (others =>'0'); 
                 jugadores(2) := (others =>'0'); 
@@ -153,7 +152,7 @@ begin
                 
             when 4 => -- MUESTRA "TURN - N"
                 habilitador_num<= '1';
-                reset_turnos <= '0';
+                reset_turnos <= '1';
                 letras <= 18; -- "Turn-"
                 
                  if boton_enter = '1' then
@@ -161,6 +160,7 @@ begin
                  end if;
                 
             when 5 =>    
+                 reset_turnos <= '0';
                  habilitador_num <= '0';
                  
                  if indice_jugador = 1 then 
@@ -191,22 +191,21 @@ begin
                 end loop;
              --   tirar_dados <= (others => '1');
                 habilitador_num <= '0';
-               
+               contador_dado := contador_dado + 1;
                 habilitador_dados <= '1'; -- tira los dados
-                
-                contador_dado := contador_dado + 1;
                 etapa := 8; 
              
              when 8 => -- CONFIRMACION DE LAS 3 TIRADAS
                 -- Muestra en la señal letras cada uno de los dados y con eso se relanzan
                 habilitador_dados <= '0';
                 tirar_dados <= (others => '0');
+                
                 letras <= 22; -- muestra los 5 dados
                 habilitador_num <= '0';
                 
                 --if boton_enter = '1' and dados_listos = '1' then
                 if boton_enter = '1' then
-                    if contador_dado = 3 then 
+                    if contador_dado > 2 then 
                         contador_dado := 0; -- reset del contador de tiradas
                         etapa := 9;
                     else
@@ -214,7 +213,16 @@ begin
                     end if;         
                 end if; 
             
-            when 9 => -- INTERMITENTE PARA BAJAR SWITCHES
+             when 9 => 
+                habilitador_dados <= '0';
+                letras <= 22; -- muestra los 5 dados
+                habilitador_num <= '0';
+                etapa:= 10;
+--                if boton_enter = '1' then
+--                        etapa := 10;
+--                end if;
+                
+            when 10 => -- INTERMITENTE PARA BAJAR SWITCHES
                 flag_sw:= '0';
                 
                 for i in 0 to 4 loop
@@ -227,11 +235,11 @@ begin
                 if flag_sw = '1' then 
                     intermitente <= '1';
                 else
-                    etapa := 10;
+                    etapa := 11;
                     intermitente <= '0';       
                 end if;
                 
-            when 10 => -- DESIGNA EL CASO A PUNTUACION Y PANTALLA
+            when 11 => -- DESIGNA EL CASO A PUNTUACION Y PANTALLA
                 
                 habilitador_num <= '1';
                 --Hago la transformación porque coinciden "caso_punto" con "letras"
@@ -280,7 +288,7 @@ begin
                     --primer enter
                     primer_enter <= (others =>'0');
                     primer_enter(caso_punto) <= '1'; 
-                    etapa := 11; 
+                    etapa := 12; 
 --                        if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
 --                            etapa := 12;
 --                        else
@@ -288,13 +296,13 @@ begin
 --                        end if; 
                 end if;
 --            end if;
-            when 11 =>--ETAPA FUGAZ
+            when 12 =>--ETAPA FUGAZ
                 primer_enter <= (others =>'0');
                 segundo_enter <= '1';
-                etapa := 12; 
+                etapa := 13; 
             
             
-            when 12 => -- MUESTRA PUNTOS JUGADOR 1
+            when 13 => -- MUESTRA PUNTOS JUGADOR 1
                 -- NECESITAMOS UNA FORMA DE DIFERENCIAR LOS ESTADOS FINALES DE CADA JUGADOR
                 -- PARA ESTAPA 10 Y 11
                 --nuevo enter y el ready 
@@ -306,10 +314,10 @@ begin
                 H_JP2 <= '0';
                 --if boton_enter = '1' and puntuacion_listos_1 = '1' then
                 if boton_enter = '1' then
-                        etapa := 13;
+                        etapa := 14;
                 end if;
             
-            when 13 =>--igual que etapa 13 JUGADOR 2
+            when 14 =>--igual que etapa 13 JUGADOR 2
                 letras <= 23; -- P-FIN
                 habilitador_num <= '1';
                 --primer_enter <= (others =>'0');
@@ -322,7 +330,7 @@ begin
                     --if  puntuacion_listos_2 = '1' then 
                         --etapa := 13 ;
                         if jugadores(1) = "1111111111111" and jugadores(2) = "1111111111111" then
-                            etapa := 14;
+                            etapa := 15;
                         else
                             if indice_jugador = 2 then 
                                 jugador_n <= '1';
@@ -339,14 +347,14 @@ begin
                 end if;
                
             
-            when 14 =>
+            when 15 =>
                 letras <= 24; -- FIN
                 habilitador_num <= '0'; 
                 if boton_enter = '1' then
-                    etapa := 15;
+                    etapa := 16;
                 end if;
             
-            when 15 =>
+            when 16 =>
                 letras <= 25; -- REINICIAR --> BEGIN
                 habilitador_num <= '0'; 
                 if boton_enter = '1' then
