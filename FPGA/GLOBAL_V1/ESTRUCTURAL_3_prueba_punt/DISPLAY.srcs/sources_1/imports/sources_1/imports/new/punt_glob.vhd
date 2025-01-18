@@ -263,7 +263,7 @@ begin
         );
 
     -- Instancia para param = 4
-    instance4: entity work.case_i_ns
+    instance4: entity work.case_i_ns 
         generic map (
             param => 4
         )
