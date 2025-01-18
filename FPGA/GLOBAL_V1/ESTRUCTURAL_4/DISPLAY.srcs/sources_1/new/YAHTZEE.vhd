@@ -100,7 +100,6 @@ puntuaciones1: entity work.punt_glob port map(
     CE => CE1,
     seleccion => letras,
     seleccionar => primer_enter,
-    seleccionar_pt => segundo_enter,
     dados => dados,
     resultado => puntos_1,
     ready => puntuacion_listos_1
@@ -112,7 +111,6 @@ puntuaciones2: entity work.punt_glob port map(
     CE => CE2, 
     seleccion => letras,
     seleccionar => primer_enter,
-    seleccionar_pt => segundo_enter,
     dados => dados,
     resultado => puntos_2,
     ready => puntuacion_listos_2
