@@ -1,0 +1,125 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Jan 23 22:15:02 2025
+| Host         : LAPTOP-I6E0CIJ5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file YAHTZEE_control_sets_placed.rpt
+| Design       : YAHTZEE
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    47 |
+|    Minimum number of control sets                        |    47 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   216 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    47 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |    29 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             443 |          144 |
+| No           | No                    | Yes                    |             141 |           63 |
+| No           | Yes                   | No                     |              49 |           13 |
+| Yes          | No                    | No                     |              41 |           14 |
+| Yes          | No                    | Yes                    |               9 |            4 |
+| Yes          | Yes                   | No                     |               5 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+------------------------------+---------------------------------+------------------+----------------+--------------+
+|              Clock Signal              |         Enable Signal        |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+------------------------------+---------------------------------+------------------+----------------+--------------+
+|  fsm/intermitente_reg_0                |                              | display/HZ2/CLK_TEMP_reg_1      |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                         | fsm/caso_punto[3]_i_1_n_0    | fsm/reset                       |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG                         | enter/U3/enter_def           | fsm/reset                       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                         | fsm/tirar_dados0             | fsm/tirar_dados[4]_i_1_n_0      |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG                         | fsm/letras0                  |                                 |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                         | instance_case_t/resultado0_0 |                                 |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                         | instance_case_t/resultado0   |                                 |                2 |              6 |         3.00 |
+|  digisel_reg[7]_i_2_n_0                |                              | fsm/intermitente                |                5 |              7 |         1.40 |
+|  digisel_reg[7]_i_2_n_0                |                              | fsm/intermitente_reg_0          |                2 |              8 |         4.00 |
+|  digisel_reg[7]_i_2_n_0                |                              | display/HZ2/CLK_TEMP_reg_1      |                2 |              8 |         4.00 |
+|  puntuaciones2/instance1/ready1        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance2/ready2        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance3/ready3        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance_caso_ep/CLK    |                              |                                 |                2 |             10 |         5.00 |
+|  puntuaciones2/instance_caso_eg/CLK    |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance5/ready5        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance6/ready6        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance_case_c/CLK     |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance_case_y/CLK     |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance_case_t/CLK     |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance_caso_fullh/CLK |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones2/instance_caso_m/CLK     |                              |                                 |                3 |             10 |         3.33 |
+|  jugador_n_BUFG                        |                              |                                 |                7 |             10 |         1.43 |
+|  puntuaciones2/instance4/ready4        |                              |                                 |                2 |             10 |         5.00 |
+|  fsm/CE1                               |                              |                                 |                5 |             10 |         2.00 |
+|  puntuaciones1/instance_caso_ep/CLK    |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance_caso_eg/CLK    |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance2/ready2        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance1/ready1        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance3/ready3        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance5/ready5        |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance4/ready4        |                              |                                 |                2 |             10 |         5.00 |
+|  puntuaciones1/instance6/ready6        |                              |                                 |                4 |             10 |         2.50 |
+|  puntuaciones1/instance_case_c/CLK     |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance_case_y/CLK     |                              |                                 |                4 |             10 |         2.50 |
+|  puntuaciones1/instance_caso_fullh/CLK |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance_case_t/CLK     |                              |                                 |                3 |             10 |         3.33 |
+|  puntuaciones1/instance_caso_m/CLK     |                              |                                 |                3 |             10 |         3.33 |
+|  digisel_reg[7]_i_2_n_0                | fsm/E[0]                     |                                 |                2 |             11 |         5.50 |
+|  clk_IBUF_BUFG                         | fsm/primer_enter0            |                                 |                5 |             13 |         2.60 |
+|  clk_IBUF_BUFG                         |                              | display/HZ2/CONTADOR[0]_i_1_n_0 |                6 |             24 |         4.00 |
+|  clk_IBUF_BUFG                         |                              | display/HZ1/CONTADOR0           |                6 |             24 |         4.00 |
+|  instance_case_t/resultado0_0          |                              |                                 |               10 |             27 |         2.70 |
+|  instance_case_t/resultado0            |                              |                                 |               10 |             27 |         2.70 |
+|  clk_IBUF_BUFG                         |                              | fsm/sumturno1                   |               15 |             30 |         2.00 |
+|  clk_IBUF_BUFG                         |                              | fsm/reset                       |               39 |             88 |         2.26 |
+|  clk_IBUF_BUFG                         |                              |                                 |               35 |            112 |         3.20 |
++----------------------------------------+------------------------------+---------------------------------+------------------+----------------+--------------+
+
+

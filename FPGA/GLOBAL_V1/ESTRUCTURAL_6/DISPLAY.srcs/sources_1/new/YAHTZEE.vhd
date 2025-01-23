@@ -48,7 +48,7 @@ enter: entity work.FILTRO_BOTON port map(clk,boton_enter,enter_def);
 fsm: entity work.FSM port map(
     clk => clk,
     reset => reset,
-    reset_def => reset_def,
+    --reset_def => reset_def,
     sw_enclave => sw_enclave,
     dados_listos => dados_listos,
     puntuacion_listos_1 => puntuacion_listos_1,
@@ -98,7 +98,7 @@ dados_aleatorios: entity work.generaciondados port map(
 puntuaciones1: entity work.punt_glob port map(
     clk=> clk,
     reset => sumturno1,
-    reset_def => reset_def,
+    --reset_def => reset_def,
     CE => CE1,
     seleccion => letras,
     seleccionar => primer_enter,
@@ -110,7 +110,7 @@ puntuaciones1: entity work.punt_glob port map(
 puntuaciones2: entity work.punt_glob port map(
     clk=> clk,
     reset => sumturno1,
-    reset_def=>reset_def,
+    --reset_def=>reset_def,
     CE => CE2, 
     seleccion => letras,
     seleccionar => primer_enter,

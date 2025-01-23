@@ -3,4 +3,5 @@
 +====================+===================+===================================================+
 | sys_clk_pin        | sys_clk_pin       | puntuaciones1/instance_caso_ep/resultado_reg[4]/D |
 | sys_clk_pin        | sys_clk_pin       | puntuaciones1/instance_caso_eg/resultado_reg[4]/D |
+| sys_clk_pin        | sys_clk_pin       | puntuaciones2/instance_caso_eg/resultado_reg[4]/D |
 +--------------------+-------------------+---------------------------------------------------+

@@ -33,8 +33,8 @@ entity FSM is
         etapa_temp: out integer range 1 to 15;
         --esto va con un multiplexor a la salida de cada puntuación
         jugador_n,H_JP1,H_JP2: out std_logic;-- '0' para jugador 1 y '1' para jugador 2 
-        leds: out std_logic_vector(16 downto 1);
-        reset_def: out std_logic
+        leds: out std_logic_vector(16 downto 1)
+        --reset_def: out std_logic
 );
 end FSM;
 
@@ -101,13 +101,13 @@ begin
         jugadores(2):= (others=>'0');
         caso_punto:= 1;
         etapa := 1;
-        reset_def <='1';
+        --reset_def <='1';
         intermitente <= '0';
     elsif rising_edge (clk) then 
         case etapa is
             when 1 => -- INICIO
                 -- Muestra escrito Yahtzee
-                reset_def <='0';
+                --reset_def <='0';
                 letras <= 0;
                 habilitador_num <= '1';-- solo muestra los primeros 5 digitos en el display
 --                sumturno1 <= '1';

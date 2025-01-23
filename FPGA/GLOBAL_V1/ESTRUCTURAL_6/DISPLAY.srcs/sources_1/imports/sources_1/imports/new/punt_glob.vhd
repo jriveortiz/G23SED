@@ -8,7 +8,7 @@ use work.types_pkg.all;
 entity punt_glob is
     Port ( 
         clk        : in  STD_LOGIC;
-        reset_def : in std_logic;
+        --reset_def : in std_logic;
         reset      : in  STD_LOGIC;
         ce      : in  STD_LOGIC;
         seleccion  : in integer range 0 to 32;  -- Definir rango de seleccion
@@ -138,14 +138,14 @@ component case_i_ns
     end component;
     
     -- Componente caso_turnos
-    component caso_turnos
-        Port (
-            reset_def           : in  STD_LOGIC;
-            reset         : in  STD_LOGIC;
-            resultado     : out unsigned(9 downto 0);
-            rst_punt_total: out STD_LOGIC
-        );
-    end component;
+--    component caso_turnos
+--        Port (
+--            reset_def           : in  STD_LOGIC;
+--            reset         : in  STD_LOGIC;
+--            resultado     : out unsigned(9 downto 0);
+--            rst_punt_total: out STD_LOGIC
+--        );
+--    end component;
     
     -- Declaración del componente
     component punt_total
@@ -412,9 +412,9 @@ begin
         );
 
 -- Instanciación del componente caso_turnos
-    instancia_caso_turnos: caso_turnos
+    instancia_caso_turnos: entity work.caso_turnos
         Port map (
-            reset_def     => reset_def,
+            clk     => clk,
             reset         => reset,
             resultado     => resultado_turnos,
             rst_punt_total=> reset_pt
