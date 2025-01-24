@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -87,7 +86,6 @@ read_vhdl -library xil_defaultlib {
   C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/new/FSM.vhd
   C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/new/MUX_10_UNSIGNED.vhd
   C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/dados.srcs/sources_1/new/generaciondados.vhd
-  C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/conversion_datos.vhd
   C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd
   C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/new/caso_turnos.vhd
   C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd

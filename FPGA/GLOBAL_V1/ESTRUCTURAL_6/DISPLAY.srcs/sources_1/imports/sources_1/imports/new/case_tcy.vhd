@@ -48,8 +48,9 @@ begin
 --            -- Operación sincronizada con el flanco de subida del reloj
 --            if flag = 1 then
             --if rising_edge(clk) then
-                if seleccionar'event and seleccionar = '1' then
+                --if seleccionar'event and seleccionar = '1' then
     --            flag <= 0;
+                if seleccionar = '1' then
                      ready <= '1';
                 end if;
                 n_ns := (others => 0);

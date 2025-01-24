@@ -60,6 +60,7 @@ begin
             if ready2'event and ready2 = '1' then
                 sumador := sumador + input2;
             end if;
+            
             if ready3'event and ready3 = '1' then
                 sumador := sumador + input3;
             end if;

@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Thu Jan 23 22:34:40 2025
-# Process ID: 12536
+# Start of session at: Fri Jan 24 15:40:54 2025
+# Process ID: 20060
 # Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.runs/synth_1
 # Command line: vivado.exe -log YAHTZEE.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source YAHTZEE.tcl
 # Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.runs/synth_1/YAHTZEE.vds
@@ -17,12 +17,12 @@
 # CPU Physical cores:4
 # CPU Logical cores :4
 # Host memory       :8467 MB
-# Swap memory       :7797 MB
-# Total Virtual     :16264 MB
-# Available Virtual :3098 MB
+# Swap memory       :5432 MB
+# Total Virtual     :13899 MB
+# Available Virtual :2788 MB
 #-----------------------------------------------------------
 source YAHTZEE.tcl -notrace
-create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 544.551 ; gain = 235.047
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 540.191 ; gain = 234.188
 Command: read_checkpoint -auto_incremental -incremental C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/utils_1/imports/synth_1/DISPLAY_PUNTOS.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/utils_1/imports/synth_1/DISPLAY_PUNTOS.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -36,11 +36,10 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4116
+INFO: [Synth 8-7075] Helper process launched with PID 19704
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1410.863 ; gain = 447.559
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1410.020 ; gain = 449.000
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-9871] overwriting existing primary unit 'tiposcomunes' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/conversion_datos.vhd:35]
 INFO: [Synth 8-638] synthesizing module 'YAHTZEE' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/new/YAHTZEE.vhd:29]
 INFO: [Synth 8-638] synthesizing module 'FILTRO_BOTON' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/new/FILTRO_BOTON.vhd:13]
 INFO: [Synth 8-638] synthesizing module 'SYNCHRNZR' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/new/SYNCHRNZR.vhd:10]
@@ -276,18 +275,18 @@ WARNING: [Synth 8-7129] Port dados[0][24] in module caso_magico is either unconn
 WARNING: [Synth 8-7129] Port dados[0][23] in module caso_magico is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.336 ; gain = 579.031
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1541.027 ; gain = 580.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.336 ; gain = 579.031
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1541.027 ; gain = 580.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1542.336 ; gain = 579.031
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1541.027 ; gain = 580.008
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.197 . Memory (MB): peak = 1542.336 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.194 . Memory (MB): peak = 1541.027 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -298,28 +297,28 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/YAHTZEE_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1646.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1644.230 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1646.613 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1644.230 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'etapa_reg' in module 'FSM'
 INFO: [Synth 8-802] inferred FSM for state register 'indice_jugador_reg' in module 'FSM'
@@ -363,13 +362,16 @@ WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/ga
 WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
 WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
 WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_i_ns.vhd:57]
-WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:74]
-WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:74]
-WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:74]
-WARNING: [Synth 8-327] inferring latch for variable 'salida_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd:97]
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'ready_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'ready_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'resultado_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'ready_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/case_tcy.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'salida_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd:98]
 WARNING: [Synth 8-327] inferring latch for variable 'ready_total_reg' [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.srcs/sources_1/imports/new/punt_total.vhd:54]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -398,7 +400,7 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 7     
-	                1 Bit    Registers := 42    
+	                1 Bit    Registers := 36    
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 80    
 	  16 Input   16 Bit        Muxes := 1     
@@ -461,7 +463,7 @@ WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will
 WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__parameterized2.
 WARNING: [Synth 8-3332] Sequential element (resultado_reg[9]) is unused and will be removed from module case_i_ns__parameterized3.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:14 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -486,19 +488,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:23 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:20 ; elapsed = 00:01:26 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:28 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -516,37 +518,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -589,39 +591,38 @@ Report Cell Usage:
 |9     |MUXF7  |    47|
 |10    |MUXF8  |    14|
 |11    |SRL16E |     3|
-|12    |FDCE   |    97|
+|12    |FDCE   |    91|
 |13    |FDPE   |    53|
 |14    |FDRE   |   477|
 |15    |LD     |    80|
-|16    |LDC    |     1|
+|16    |LDC    |     7|
 |17    |IBUF   |    10|
 |18    |OBUF   |    31|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:37 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1644.230 ; gain = 683.211
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 417 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:13 ; elapsed = 00:01:32 . Memory (MB): peak = 1646.613 ; gain = 579.031
-Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:38 . Memory (MB): peak = 1646.613 ; gain = 683.309
+Synthesis finished with 0 errors, 0 critical warnings and 420 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:10 ; elapsed = 00:01:25 . Memory (MB): peak = 1644.230 ; gain = 580.008
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1644.230 ; gain = 683.211
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1646.613 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 316 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1644.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 322 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1646.613 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1644.230 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 81 instances were transformed.
+  A total of 87 instances were transformed.
   LD => LDCE: 80 instances
-  LDC => LDCE: 1 instance 
+  LDC => LDCE: 7 instances
 
-Synth Design complete | Checksum: 7e65abaa
+Synth Design complete | Checksum: 77b49da6
 INFO: [Common 17-83] Releasing license: Synthesis
-115 Infos, 146 Warnings, 1 Critical Warnings and 0 Errors encountered.
+115 Infos, 149 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:48 . Memory (MB): peak = 1646.613 ; gain = 1097.297
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1646.613 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:50 . Memory (MB): peak = 1644.230 ; gain = 1098.453
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1644.230 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6/DISPLAY.runs/synth_1/YAHTZEE.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file YAHTZEE_utilization_synth.rpt -pb YAHTZEE_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 23 22:36:48 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 24 15:43:01 2025...
