@@ -1,7 +1,0 @@
-Running: xsim.dir/caso_yahtz_tb_behav/xsimk.exe -simmode gui -wdb caso_yahtz_tb_behav.wdb -simrunnum 0 -socket 62573
-Design successfully loaded
-Design Loading Memory Usage: 8340 KB (Peak: 8340 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 8788 KB (Peak: 8788 KB)
-Simulation CPU Usage: 31 ms

@@ -1,8 +1,0 @@
-Vivado Simulator v2024.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot punt_glob_tb_behav xil_defaultlib.punt_glob_tb -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-3290] entity port 'dados' does not match with type integer_vector of component port [C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_4/DISPLAY.srcs/sources_1/imports/sources_1/imports/new/punt_glob.vhd:104]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit punt_glob_tb in library work failed.

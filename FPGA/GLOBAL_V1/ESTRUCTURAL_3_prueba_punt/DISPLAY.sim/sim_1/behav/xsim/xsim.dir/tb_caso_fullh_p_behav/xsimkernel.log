@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_caso_fullh_p_behav/xsimk.exe -simmode gui -wdb tb_caso_fullh_p_behav.wdb -simrunnum 0 -socket 58869
-Design successfully loaded
-Design Loading Memory Usage: 7684 KB (Peak: 7684 KB)
-Design Loading CPU Usage: 46 ms
-Simulation completed
-Simulation Memory Usage: 8132 KB (Peak: 8132 KB)
-Simulation CPU Usage: 46 ms

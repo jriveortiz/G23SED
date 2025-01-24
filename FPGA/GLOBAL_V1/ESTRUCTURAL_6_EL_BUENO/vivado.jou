@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Jan 24 17:17:42 2025
+# Process ID: 12500
+# Current directory: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6_EL_BUENO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15684 C:\Users\gabri\OneDrive\Documentos\GitHub\G23SED\FPGA\GLOBAL_V1\ESTRUCTURAL_6_EL_BUENO\DISPLAY.xpr
+# Log file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6_EL_BUENO/vivado.log
+# Journal file: C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6_EL_BUENO\vivado.jou
+# Running On        :LAPTOP-I6E0CIJ5
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+# CPU Frequency     :2496 MHz
+# CPU Physical cores:4
+# CPU Logical cores :4
+# Host memory       :8467 MB
+# Swap memory       :7414 MB
+# Total Virtual     :15881 MB
+# Available Virtual :2441 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gabri/OneDrive/Documentos/GitHub/G23SED/FPGA/GLOBAL_V1/ESTRUCTURAL_6_EL_BUENO/DISPLAY.xpr
+update_compile_order -fileset sources_1
+synth_design -top YAHTZEE -part xc7a100tcsg324-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
